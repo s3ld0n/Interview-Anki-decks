@@ -1,0 +1,2286 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "a4e0864f-a733-11ea-b8a6-005056c00008", 
+    "deck_config_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    30, 
+                    1440
+                ], 
+                "leechAction": 1, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.2
+            }, 
+            "maxTaken": 180, 
+            "name": "AnKing", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    25, 
+                    1440
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    3, 
+                    3, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 30, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.5, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 120, 
+                "minSpace": 1, 
+                "perDay": 9999
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [
+        "Снимок0024.jpg"
+    ], 
+    "name": "Java Interview::02_1. Exceptions, Object", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "css": ".card {\n font-familiy: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bfont": "Arial", 
+                    "bqfmt": "", 
+                    "bsize": 12, 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }, 
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "css": "/* general card style */\n\nhtml {\n  /* scrollbar always visible in order to prevent shift when revealing answer*/\n  overflow-y: scroll;\n}\n\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* general layout */\n\n.text {\n  /* center left-aligned text on card */\n  display: inline-block;\n  align: center;\n  text-align: left;\n  margin: auto;\n  max-width: 40em;\n}\n\n.hidden {\n  /* guarantees a consistent width across front and back */\n  font-weight: bold;\n  display: block;\n  line-height:0;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.title {\n  font-weight: bold;\n  font-size: 1.1em;\n  margin-bottom: 1em;\n  text-align: center;\n}\n\n/* clozes */\n\n.cloze {\n  /* regular cloze deletion */\n  font-weight: bold;\n  color: #0048FF;\n}\n\n/* original text reveal hint */\n\n.fullhint a {\n  color: #0048FF;\n}\n\n.card21 .fullhint{\n  /* no need to display hint on last card */\n  display:none;\n}\n\n/* additional fields */\n\n.extra{\n  margin-top: 0.5em;\n  margin: auto;\n  max-width: 40em;\n}\n\n.extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.extra-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Original", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Title", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Remarks", 
+                    "ord": 2, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Sources", 
+                    "ord": 3, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Settings", 
+                    "ord": 4, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": true
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text1", 
+                    "ord": 5, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text2", 
+                    "ord": 6, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text3", 
+                    "ord": 7, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text4", 
+                    "ord": 8, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text5", 
+                    "ord": 9, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text6", 
+                    "ord": 10, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text7", 
+                    "ord": 11, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text8", 
+                    "ord": 12, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text9", 
+                    "ord": 13, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text10", 
+                    "ord": 14, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text11", 
+                    "ord": 15, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text12", 
+                    "ord": 16, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text13", 
+                    "ord": 17, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text14", 
+                    "ord": 18, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text15", 
+                    "ord": 19, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text16", 
+                    "ord": 20, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text17", 
+                    "ord": 21, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text18", 
+                    "ord": 22, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text19", 
+                    "ord": 23, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text20", 
+                    "ord": 24, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Full", 
+                    "ord": 25, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Cloze (overlapping)", 
+            "sortf": 1, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"back\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">{{Original}}</div>\n  </div>\n  <div class=\"extra\"><hr></div>\n  <div class=\"text\"><div class=\"fullhint\">{{hint:Original}}</div></div>\n  <div class=\"extra\">\n    {{#Remarks}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Remarks</div><div>{{Remarks}}</div>\n    </div>\n    {{/Remarks}}\n    {{#Sources}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Sources</div><div>{{Sources}}</div>\n    </div>\n    {{/Sources}}\n  </div>\n</div>\n<script>\n  // remove cloze syntax from revealed hint\n  var hint = document.querySelector('.fullhint>[id^=\"hint\"]')\n  var html = hint.innerHTML.replace(/\\[\\[oc(\\d+)::(.*?)(::(.*?))?\\]\\]/mg, \"$2\")\n  hint.innerHTML = html\n  // scroll to cloze\n  document.addEventListener('DOMContentLoaded', function() {\n    setTimeout(function(){\n      const cloze1 = document.getElementsByClassName(\"cloze\")[0];\n      const rect = cloze1.getBoundingClientRect();\n      const absTop = rect.top + window.pageYOffset;\n      const absBot = rect.bottom + window.pageYOffset;\n      if (absBot >= window.innerHeight) {\n        const height = rect.top - rect.bottom\n        const middle = absTop - (window.innerHeight/2) - (height/2);\n        window.scrollTo(0, middle);};\n    }, 1);\n  }, false);\n</script>", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "cloze-ol", 
+                    "ord": 0, 
+                    "qfmt": "<div class=\"front\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">\n       <div>{{Original}}</div>\n    </div>\n  </div>\n</div>"
+                }
+            ], 
+            "type": 1, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0197. Что такое класс Object?", 
+                "Object это базовый класс для всех остальных объектов в Java. Любой класс наследуется от Object и, соответственно, наследуют его методы."
+            ], 
+            "flags": 0, 
+            "guid": "z->Zh5?ltP", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>public boolean equals(Object obj)</li><li>int hashCode()</li><li>String toString()</li><li>Class&lt;? extends Object&gt; getClass()</li><li>protected Object clone()</li><li>void notify()</li><li>void notifyAll()</li><li>void wait()</li><li>void wait(long timeout)</li><li>protected void finalize()</li></ol>", 
+                "0198. Назовите методы класса Object", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::public boolean equals(Object obj)}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>public boolean equals(Object obj)</li><li>{{c2::int hashCode()}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>int hashCode()</li><li>{{c3::String toString()}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>String toString()</li><li>{{c4::Class&lt;? extends Object&gt; getClass()}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>Class&lt;? extends Object&gt; getClass()</li><li>{{c5::protected Object clone()}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>protected Object clone()</li><li>{{c6::void notify()}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>void notify()</li><li>{{c7::void notifyAll()}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>void notifyAll()</li><li>{{c8::void wait()}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>void wait()</li><li>{{c9::void wait(long timeout)}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>void wait(long timeout)</li><li>{{c10::protected void finalize()}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::public boolean equals(Object obj)}}</li><li>{{c21::int hashCode()}}</li><li>{{c21::String toString()}}</li><li>{{c21::Class&lt;? extends Object&gt; getClass()}}</li><li>{{c21::protected Object clone()}}</li><li>{{c21::void notify()}}</li><li>{{c21::void notifyAll()}}</li><li>{{c21::void wait()}}</li><li>{{c21::void wait(long timeout)}}</li><li>{{c21::protected void finalize()}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "fjFMwP&Dtm", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0199.&nbsp;Дайте определение понятию «конструктор».", 
+                "Конструктор — это специальный метод у которого отсутствует возвращаемый тип и который имеет то же имя, что и класс, в котором он используется. Конструктор вызывается при создании нового объекта класса и определяет действия необходимые для его инициализации."
+            ], 
+            "flags": 0, 
+            "guid": "tGR2cuVza1", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0200. Что такое «конструктор по умолчанию»?", 
+                "Если у какого-либо класса не определить конструктор, то компилятор сгенерирует конструктор без аргументов - так называемый «конструктор по умолчанию».&nbsp;Если у класса уже определен какой-либо конструктор, то конструктор по умолчанию создан не будет и, если он необходим, его нужно описывать явно."
+            ], 
+            "flags": 0, 
+            "guid": "O04E1aoRQ]", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0201.&nbsp;Чем отличаются конструктор по-умолчанию, конструктор копирования и конструктор с параметрами?", 
+                "У конструктора по умолчанию отсутствуют какие-либо аргументы. Конструктор копирования принимает в качестве аргумента уже существующий объект класса для последующего создания его клона. Конструктор с параметрами имеет в своей сигнатуре аргументы (обычно необходимые для инициализации полей класса)."
+            ], 
+            "flags": 0, 
+            "guid": "sJ9=pmY=z|", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0202.&nbsp;Где и как вы можете использовать приватный конструктор?", 
+                "Приватный конструктор может использоваться публичным статическим методом генерации объектов данного класса. Также доступ к нему разрешён вложенным классам и может использоваться для их нужд."
+            ], 
+            "flags": 0, 
+            "guid": "OC}.,*s<!Z", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0203.&nbsp;план ответа про классы-загрузчики и про динамическую загрузку классов", 
+                "<div><ul style=\"list-style-type: disc; \"><li>Что такое загрузчик классов (classloader)?</li><li>Виды основных загрузчиков классов</li><li>Иерархичность загрузчиков</li><li>Процесс загрузки класса</li><li>Особенности динамической загрузки классов</li><li>Способы инициализировать загрузку требуемого класса</li></ul></div>"
+            ], 
+            "flags": 0, 
+            "guid": "bm#2ZY0n%K", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0204. Что такое загрузчики классов (classloaders)?", 
+                "Часть JRE, которая динамически загружает Java классы в JVM."
+            ], 
+            "flags": 0, 
+            "guid": "ecCknV,M8}", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; базовый загрузчик (bootstrap/primordial).&nbsp;</li><li>&nbsp; &nbsp; загрузчик расширений (extention).</li><li>&nbsp; &nbsp; системный загрузчик (system/application).</li></ol></div>", 
+                "0205. Основные загрузчики классов, которые создаются вначале работы программы.", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; базовый загрузчик (bootstrap/primordial).&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::&nbsp; &nbsp; загрузчик расширений (extention).}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::&nbsp; &nbsp; системный загрузчик (system/application).}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; базовый загрузчик (bootstrap/primordial).&nbsp;}}</li><li>{{c21::&nbsp; &nbsp; загрузчик расширений (extention).}}</li><li>{{c21::&nbsp; &nbsp; системный загрузчик (system/application).}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "v_!KJgh|WP", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>каждый из загрузчиков (кроме базового) имеет родительский загрузчик и в большинстве случаев, перед тем как попробовать загрузить класс самостоятельно, он посылает вначале запрос родительскому загрузчику загрузить указанный класс.&nbsp;</li><li>Такое делегирование позволяет загружать классы тем загрузчиком, который находится ближе всего к базовому в иерархии делегирования.&nbsp;</li><li>Как следствие поиск классов будет происходить в источниках в порядке их доверия: сначала в библиотеке Core API, потом в папке расширений, потом в локальных файлах CLASSPATH.</li></ol></div>", 
+                "0206. Иерархичность загрузчиков классов", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::каждый из загрузчиков (кроме базового) имеет родительский загрузчик и в большинстве случаев, перед тем как попробовать загрузить класс самостоятельно, он посылает вначале запрос родительскому загрузчику загрузить указанный класс.&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>каждый из загрузчиков (кроме базового) имеет родительский загрузчик и в большинстве случаев, перед тем как попробовать загрузить класс самостоятельно, он посылает вначале запрос родительскому загрузчику загрузить указанный класс.&nbsp;</li><li>{{c2::Такое делегирование позволяет загружать классы тем загрузчиком, который находится ближе всего к базовому в иерархии делегирования.&nbsp;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Такое делегирование позволяет загружать классы тем загрузчиком, который находится ближе всего к базовому в иерархии делегирования.&nbsp;</li><li>{{c3::Как следствие поиск классов будет происходить в источниках в порядке их доверия: сначала в библиотеке Core API, потом в папке расширений, потом в локальных файлах CLASSPATH.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::каждый из загрузчиков (кроме базового) имеет родительский загрузчик и в большинстве случаев, перед тем как попробовать загрузить класс самостоятельно, он посылает вначале запрос родительскому загрузчику загрузить указанный класс.&nbsp;}}</li><li>{{c21::Такое делегирование позволяет загружать классы тем загрузчиком, который находится ближе всего к базовому в иерархии делегирования.&nbsp;}}</li><li>{{c21::Как следствие поиск классов будет происходить в источниках в порядке их доверия: сначала в библиотеке Core API, потом в папке расширений, потом в локальных файлах CLASSPATH.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "FA&>YUkk,0", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>Loading</li><li>Linking</li><li>Initialization</li></ol>", 
+                "0207. Процесс загрузки класса", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Loading}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::Linking}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::Initialization}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Loading}}</li><li>{{c21::Linking}}</li><li>{{c21::Initialization}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "y,I;RHF>Xg", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; Bytecode verification</li><li>&nbsp; &nbsp; Class preparation</li><li>&nbsp; &nbsp; Resolving</li></ol></div>", 
+                "0208. Этапы Linking процесса загрузки класса", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; Bytecode verification}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; Bytecode verification</li><li>{{c2::&nbsp; &nbsp; Class preparation}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; Class preparation</li><li>{{c3::&nbsp; &nbsp; Resolving}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; Bytecode verification}}</li><li>{{c21::&nbsp; &nbsp; Class preparation}}</li><li>{{c21::&nbsp; &nbsp; Resolving}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "NKUPpxTZ0/", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>&nbsp; &nbsp; отложенная (lazy) загрузка и связывание классов</li><li>&nbsp; &nbsp; проверка корректности загружаемого кода (type safeness).&nbsp;</li><li>&nbsp; &nbsp; программируемая загрузка.&nbsp;</li><li>&nbsp; &nbsp; множественные пространства имен.&nbsp;</li></ul></div>", 
+                "0209. Особенности динамической загрузки классов", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::&nbsp; &nbsp; отложенная (lazy) загрузка и связывание классов}}</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>&nbsp; &nbsp; отложенная (lazy) загрузка и связывание классов</li><li>{{c2::&nbsp; &nbsp; проверка корректности загружаемого кода (type safeness).&nbsp;}}</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>&nbsp; &nbsp; проверка корректности загружаемого кода (type safeness).&nbsp;</li><li>{{c3::&nbsp; &nbsp; программируемая загрузка.&nbsp;}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>&nbsp; &nbsp; программируемая загрузка.&nbsp;</li><li>{{c4::&nbsp; &nbsp; множественные пространства имен.&nbsp;}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::&nbsp; &nbsp; отложенная (lazy) загрузка и связывание классов}}</li><li>{{c21::&nbsp; &nbsp; проверка корректности загружаемого кода (type safeness).&nbsp;}}</li><li>{{c21::&nbsp; &nbsp; программируемая загрузка.&nbsp;}}</li><li>{{c21::&nbsp; &nbsp; множественные пространства имен.&nbsp;}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "H<`oV{Qksf", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>&nbsp; &nbsp; явный</li><li>&nbsp; &nbsp; неявный</li></ul></div>", 
+                "0210. Способы инициализировать загрузку требуемого класса", 
+                "", 
+                "", 
+                "1,0,0 | n,n,n,n", 
+                "<ul><li>...</li><li>...</li></ul>", 
+                "<ul><li>&nbsp; &nbsp; явный</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>&nbsp; &nbsp; неявный</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::&nbsp; &nbsp; явный}}</li><li>{{c21::&nbsp; &nbsp; неявный}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "zV_W~:Mebg", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0211.&nbsp;Что такое Reflection?", 
+                "это механизм получения данных о программе во время её выполнения (runtime). В Java Reflection осуществляется с помощью Java Reflection API, состоящего из классов пакетов java.lang и java.lang.reflect."
+            ], 
+            "flags": 0, 
+            "guid": "er?krA>NLj", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; Определение класса объекта;</li><li>&nbsp; &nbsp; Получение информации о модификаторах класса, полях, методах, конструкторах и суперклассах;</li><li>&nbsp; &nbsp; Определение интерфейсов, реализуемых классом;</li><li>&nbsp; &nbsp; Создание экземпляра класса;</li><li>&nbsp; &nbsp; Получение и установка значений полей объекта;</li><li>&nbsp; &nbsp; Вызов методов объекта;</li></ol></div>", 
+                "0212.&nbsp;Возможности Java Reflection API", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; Определение класса объекта;}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; Определение класса объекта;</li><li>{{c2::&nbsp; &nbsp; Получение информации о модификаторах класса, полях, методах, конструкторах и суперклассах;}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; Получение информации о модификаторах класса, полях, методах, конструкторах и суперклассах;</li><li>{{c3::&nbsp; &nbsp; Определение интерфейсов, реализуемых классом;}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>&nbsp; &nbsp; Определение интерфейсов, реализуемых классом;</li><li>{{c4::&nbsp; &nbsp; Создание экземпляра класса;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>&nbsp; &nbsp; Создание экземпляра класса;</li><li>{{c5::&nbsp; &nbsp; Получение и установка значений полей объекта;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>&nbsp; &nbsp; Получение и установка значений полей объекта;</li><li>{{c6::&nbsp; &nbsp; Вызов методов объекта;}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; Определение класса объекта;}}</li><li>{{c21::&nbsp; &nbsp; Получение информации о модификаторах класса, полях, методах, конструкторах и суперклассах;}}</li><li>{{c21::&nbsp; &nbsp; Определение интерфейсов, реализуемых классом;}}</li><li>{{c21::&nbsp; &nbsp; Создание экземпляра класса;}}</li><li>{{c21::&nbsp; &nbsp; Получение и установка значений полей объекта;}}</li><li>{{c21::&nbsp; &nbsp; Вызов методов объекта;}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "nlfWcI?!7e", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>0213.&nbsp;Зачем нужен equals(). Чем он отличается от операции ==?</div>", 
+                "<div>Метод equals() - определяет отношение эквивалентности объектов.</div><div>При сравнение объектов с помощью == сравнение происходит лишь между ссылками. При сравнении по переопределённому разработчиком equals() - по внутреннему состоянию объектов, по непереопределенном - тоже по ссылке.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "I:$k=+!da]", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; Использование оператора == для проверки, является ли аргумент ссылкой на указанный объект и проверка на null. Если является, возвращается true. Если сравниваемый объект == null, должно вернуться false.</li><li>&nbsp; &nbsp; Использование оператора instanceof (если допускается равенство с наследниками) или вызова метода getClass() (если равным считать только строго конкретный тип) для проверки, имеет ли аргумент правильный тип. Если не имеет, возвращается false.</li><li>&nbsp; &nbsp; Приведение аргумента к правильному типу. Поскольку эта операция следует за проверкой instanceof она гарантированно будет выполнена.</li><li>&nbsp; &nbsp; Обход всех значимых полей класса и проверка того, что значение поля в текущем объекте и значение того же поля в проверяемом на эквивалентность аргументе соответствуют друг другу. Если проверки для всех полей прошли успешно, возвращается результат true, в противном случае - false.</li><li>&nbsp; &nbsp; Проверить написанный метод equals на соответствие принципам эквивалентности JLS.</li></ol></div>", 
+                "0215.&nbsp;Порядок переопределения метода equals().", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; Использование оператора == для проверки, является ли аргумент ссылкой на указанный объект и проверка на null. Если является, возвращается true. Если сравниваемый объект == null, должно вернуться false.}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; Использование оператора == для проверки, является ли аргумент ссылкой на указанный объект и проверка на null. Если является, возвращается true. Если сравниваемый объект == null, должно вернуться false.</li><li>{{c2::&nbsp; &nbsp; Использование оператора instanceof (если допускается равенство с наследниками) или вызова метода getClass() (если равным считать только строго конкретный тип) для проверки, имеет ли аргумент правильный тип. Если не имеет, возвращается false.}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; Использование оператора instanceof (если допускается равенство с наследниками) или вызова метода getClass() (если равным считать только строго конкретный тип) для проверки, имеет ли аргумент правильный тип. Если не имеет, возвращается false.</li><li>{{c3::&nbsp; &nbsp; Приведение аргумента к правильному типу. Поскольку эта операция следует за проверкой instanceof она гарантированно будет выполнена.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>&nbsp; &nbsp; Приведение аргумента к правильному типу. Поскольку эта операция следует за проверкой instanceof она гарантированно будет выполнена.</li><li>{{c4::&nbsp; &nbsp; Обход всех значимых полей класса и проверка того, что значение поля в текущем объекте и значение того же поля в проверяемом на эквивалентность аргументе соответствуют друг другу. Если проверки для всех полей прошли успешно, возвращается результат true, в противном случае - false.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>&nbsp; &nbsp; Обход всех значимых полей класса и проверка того, что значение поля в текущем объекте и значение того же поля в проверяемом на эквивалентность аргументе соответствуют друг другу. Если проверки для всех полей прошли успешно, возвращается результат true, в противном случае - false.</li><li>{{c5::&nbsp; &nbsp; Проверить написанный метод equals на соответствие принципам эквивалентности JLS.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; Использование оператора == для проверки, является ли аргумент ссылкой на указанный объект и проверка на null. Если является, возвращается true. Если сравниваемый объект == null, должно вернуться false.}}</li><li>{{c21::&nbsp; &nbsp; Использование оператора instanceof (если допускается равенство с наследниками) или вызова метода getClass() (если равным считать только строго конкретный тип) для проверки, имеет ли аргумент правильный тип. Если не имеет, возвращается false.}}</li><li>{{c21::&nbsp; &nbsp; Приведение аргумента к правильному типу. Поскольку эта операция следует за проверкой instanceof она гарантированно будет выполнена.}}</li><li>{{c21::&nbsp; &nbsp; Обход всех значимых полей класса и проверка того, что значение поля в текущем объекте и значение того же поля в проверяемом на эквивалентность аргументе соответствуют друг другу. Если проверки для всех полей прошли успешно, возвращается результат true, в противном случае - false.}}</li><li>{{c21::&nbsp; &nbsp; Проверить написанный метод equals на соответствие принципам эквивалентности JLS.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "c9R9t~!%^m", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0215.Если equals() переопределен, есть ли какие-либо другие методы, которые следует переопределить?", 
+                "Равные объекты должны возвращать одинаковые хэш коды. При переопределении equals() нужно обязательно переопределять и метод hashCode()."
+            ], 
+            "flags": 0, 
+            "guid": "A-]IWaH[i)", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0216.&nbsp;Что будет, если переопределить equals() не переопределяя hashCode()? Какие могут возникнуть проблемы?", 
+                "<div>Если не переопределить hashcode(), будет использована имплементация класса Object, которая использует адрес объекта в памяти для вычисления хэш-кода и посколько сравниваемые объекты всегда будут иметь разный адрес в памяти их хеши всегда будут различаться, даже если они равны согласно методу equals().</div><div><br /></div><div>Некоторые коллекции, такие как&nbsp;HashSet, HashMap или HashTable используют хэши для хранения и извлечения объектов и если неправильно переопределить&nbsp;hashcode() и equals(), коллекции будут работать неправильно.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "rm4$Z**j+}", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0217.&nbsp;Каким образом реализованы методы hashCode() и equals() в классе Object?", 
+                "Реализация метода Object.equals() сводится к проверке на равенство двух ссылок<div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">public</span> <span style=\"color: #B00040\">boolean</span> <span style=\"color: #0000FF\">equals</span><span style=\"color: #666666\">(</span>Object obj<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n  <span style=\"color: #008000; font-weight: bold\">return</span> <span style=\"color: #666666\">(</span><span style=\"color: #008000; font-weight: bold\">this</span> <span style=\"color: #666666\">==</span> obj<span style=\"color: #666666\">);</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><br /><div>Реализация метода Object.hashCode() описана как native, т.е. определенной не с помощью Java кода и использует адрес объекта в памяти для вычисления хэша;</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "d~<}FC{C=u", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0218.&nbsp;Есть ли какие-либо рекомендации о том, какие поля следует использовать при подсчете hashCode()?", 
+                "Общий совет: выбирать поля, которые с большой долью вероятности будут различаться. Для этого необходимо использовать уникальные, лучше всего примитивные поля, например такие как id, uuid. При этом нужно следовать правилу, если поля задействованы при вычислении hashCode(), то они должны быть задействованы и при выполнении equals()."
+            ], 
+            "flags": 0, 
+            "guid": "pe=~=m1(2D", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0219.&nbsp;Могут ли у разных объектов быть одинаковые hashCode()?", 
+                "Да, могут. Метод hashCode() не гарантирует уникальность возвращаемого значения. Ситуация, когда у разных объектов одинаковые хэш коды называется коллизией. Вероятность возникновения коллизии зависит от используемого алгоритма генерации хэш кода."
+            ], 
+            "flags": 0, 
+            "guid": "k_?F{y*gr&", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0220.&nbsp;Могут ли у разных ссылок на один объект (ref0 == ref1) быть ref0.equals(ref1) == false?", 
+                "В общем случае - могут, если метод equals() реализован некорректно и не выполняет свойство рефлексивности: для любых ненулевых ссылок x метод x.equals(x) должен возвращать true."
+            ], 
+            "flags": 0, 
+            "guid": "mS}SD~wy!<", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0221.&nbsp;Можно ли так реализовать метод <code class=\"myCodeClass\">equals(Object that) {return this.hashCode() == that.hashCode()}?</code>", 
+                "Строго говоря нельзя, поскольку метод hashCode() не гарантирует уникальность значения для каждого объекта. Однако для сравнения экземпляров класса Object такой код допустим, т.к. метод hashCode() в классе Object возвращает уникальные значения для разных объектов (его вычисление основано на использовании адреса объекта в памяти)."
+            ], 
+            "flags": 0, 
+            "guid": "i(|Vo#L2wl", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0222. В equals() требуется проверять, что аргумент equals(Object that) такого же типа что и сам объект. В чем разница между this.getClass() == that.getClass() и that instanceof MyClass?", 
+                "<div>Оператор instanceof сравнивает объект и указанный тип. Его можно использовать для проверки является ли данный объект экземпляром некоторого класса, либо экземпляром его дочернего класса, либо экземпляром класса, который реализует указанный интерфейс.</div><div><br /></div><div>this.getClass() == that.getClass() проверяет два класса на идентичность, поэтому для корректной реализации контракта метода equals() необходимо использовать точное сравнение с помощью метода getClass().</div>"
+            ], 
+            "flags": 0, 
+            "guid": "bHblf+*DxK", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0223. Можно ли реализовать метод equals() класса MyClass вот так: class MyClass {public boolean equals(MyClass that) {return this == that;}}?", 
+                "Реализовать можно, но данный метод не переопределяет метод equals() класса Object, а перегружает его."
+            ], 
+            "flags": 0, 
+            "guid": "kUJoK3~1IY", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><div><ol><li>во время работы приложения значение хэш-кода объекта не изменяется, если объект не был изменен;</li><li>все одинаковые по содержанию объекты одного типа должны иметь одинаковые хэш-коды;</li><li>различные по содержанию объекты одного типа могут иметь различные хэш-коды.</li></ol></div></div>", 
+                "0224. Требования к hashCode()", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::во время работы приложения значение хэш-кода объекта не изменяется, если объект не был изменен;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>во время работы приложения значение хэш-кода объекта не изменяется, если объект не был изменен;</li><li>{{c2::все одинаковые по содержанию объекты одного типа должны иметь одинаковые хэш-коды;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>все одинаковые по содержанию объекты одного типа должны иметь одинаковые хэш-коды;</li><li>{{c3::различные по содержанию объекты одного типа могут иметь различные хэш-коды.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::во время работы приложения значение хэш-кода объекта не изменяется, если объект не был изменен;}}</li><li>{{c21::все одинаковые по содержанию объекты одного типа должны иметь одинаковые хэш-коды;}}</li><li>{{c21::различные по содержанию объекты одного типа могут иметь различные хэш-коды.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "O~4L9IR<sO", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>зачем нужно клонирование</li><li>метод clone() в классе Object</li><li>интерфейс Cloneable</li><li>проблема со ссылочными типами</li><li>глубокое клонирование</li><li>альтернативы клонированию</li></ol>", 
+                "0225.&nbsp;план ответа про клонирование объектов.", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::зачем нужно клонирование}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>зачем нужно клонирование</li><li>{{c2::метод clone() в классе Object}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>метод clone() в классе Object</li><li>{{c3::интерфейс Cloneable}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>интерфейс Cloneable</li><li>{{c4::проблема со ссылочными типами}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>проблема со ссылочными типами</li><li>{{c5::глубокое клонирование}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>глубокое клонирование</li><li>{{c6::альтернативы клонированию}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::зачем нужно клонирование}}</li><li>{{c21::метод clone() в классе Object}}</li><li>{{c21::интерфейс Cloneable}}</li><li>{{c21::проблема со ссылочными типами}}</li><li>{{c21::глубокое клонирование}}</li><li>{{c21::альтернативы клонированию}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Eyvvb-Mq]D", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0226. Зачем нужно клонирование", 
+                "<div>Использование оператора присваивания не создает нового объекта, а лишь копирует ссылку на объект. Таким образом, две ссылки указывают на одну и ту же область памяти, на один и тот же объект. Для создания нового объекта с таким же состоянием используется клонирование объекта.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "n%swc^K{(3", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0227.&nbsp;метод clone() в классе Object", 
+                "Класс Object содержит protected метод clone(), осуществляющий побайтовое копирование объекта производного класса. Однако сначала необходимо переопределить метод clone() как public для обеспечения возможности его вызова. В переопределенном методе следует вызвать базовую версию метода super.clone(), которая и выполняет собственно клонирование."
+            ], 
+            "flags": 0, 
+            "guid": "D{>4O`b*x2", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0228.&nbsp;интерфейс Cloneable", 
+                "Чтобы окончательно сделать объект клонируемым, класс должен реализовать интерфейс Cloneable. Интерфейс Cloneable не содержит методов относится к маркерным интерфейсам, а его реализация гарантирует, что метод clone() класса Object возвратит точную копию вызвавшего его объекта с воспроизведением значений всех его полей. В противном случае метод генерирует исключение CloneNotSupportedException. Следует отметить, что при использовании этого механизма объект создается без вызова конструктора."
+            ], 
+            "flags": 0, 
+            "guid": "sZO[}!JznQ", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0229. В чем проблема с методом clone()?", 
+                "Это решение эффективно только в случае, если поля клонируемого объекта представляют собой значения базовых типов и их обёрток или неизменяемых (immutable) объектных типов. Если же поле клонируемого типа является изменяемым ссылочным типом, то для корректного клонирования требуется другой подход. Причина заключается в том, что при создании копии поля оригинал и копия представляют собой ссылку на один и тот же объект. В этой ситуации следует также клонировать и сам объект поля класса."
+            ], 
+            "flags": 0, 
+            "guid": "ojuAr`^:@F", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0230. глубокое клонирование", 
+                "возможно только в случае, если тип атрибута класса также реализует интерфейс Cloneable и переопределяет метод clone(). Так как, если это будет иначе вызов метода невозможен из-за его недоступности. Отсюда следует, что если класс имеет суперкласс, то для реализации механизма клонирования текущего класса-потомка необходимо наличие корректной реализации такого механизма в суперклассе. При этом следует отказаться от использования объявлений final для полей объектных типов по причине невозможности изменения их значений при реализации клонирования."
+            ], 
+            "flags": 0, 
+            "guid": "jO?]{2WbPl", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; Специализированный конструктор копирования</li><li>&nbsp; &nbsp; Фабричный метод</li><li>&nbsp; &nbsp; Механизм сериализации</li></ol></div>", 
+                "0231. альтернативы методу clone()", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; Специализированный конструктор копирования}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::&nbsp; &nbsp; Фабричный метод}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::&nbsp; &nbsp; Механизм сериализации}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; Специализированный конструктор копирования}}</li><li>{{c21::&nbsp; &nbsp; Фабричный метод}}</li><li>{{c21::&nbsp; &nbsp; Механизм сериализации}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "dzVrG&xI;{", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>&nbsp; &nbsp; Если класс имеет только члены примитивных типов, то будет создана совершенно новая копия объекта и возвращена ссылка на этот объект.</li><li>&nbsp; &nbsp; Если класс помимо членов примитивных типов содержит члены ссылочных типов, то тогда копируются ссылки на объекты этих классов. Следовательно, оба объекта будут иметь одинаковые ссылки.</li></ul></div>", 
+                "0232.&nbsp;Правила поверхностного клонирования", 
+                "", 
+                "", 
+                "1,0,0 | n,n,n,n", 
+                "<ul><li>...</li><li>...</li></ul>", 
+                "<ul><li>&nbsp; &nbsp; Если класс имеет только члены примитивных типов, то будет создана совершенно новая копия объекта и возвращена ссылка на этот объект.</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>&nbsp; &nbsp; Если класс помимо членов примитивных типов содержит члены ссылочных типов, то тогда копируются ссылки на объекты этих классов. Следовательно, оба объекта будут иметь одинаковые ссылки.</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::&nbsp; &nbsp; Если класс имеет только члены примитивных типов, то будет создана совершенно новая копия объекта и возвращена ссылка на этот объект.}}</li><li>{{c21::&nbsp; &nbsp; Если класс помимо членов примитивных типов содержит члены ссылочных типов, то тогда копируются ссылки на объекты этих классов. Следовательно, оба объекта будут иметь одинаковые ссылки.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "n7oA&1M5.|", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>Глубокое копирование дублирует абсолютно всю информацию объекта</li><li>Нет необходимости копировать отдельно примитивные данные;</li><li>Все члены ссылочного типа в оригинальном классе должны поддерживать клонирование. Для каждого такого члена при переопределении метода clone() должен вызываться super.clone();</li><li>Если какой-либо член класса не поддерживает клонирование, то в методе клонирования необходимо создать новый экземпляр этого класса и скопировать каждый его член со всеми атрибутами в новый объект класса, по одному.</li></ul></div>", 
+                "0233. Глубокое клонирование", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::Глубокое копирование дублирует абсолютно всю информацию объекта}}</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>Глубокое копирование дублирует абсолютно всю информацию объекта</li><li>{{c2::Нет необходимости копировать отдельно примитивные данные;}}</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>Нет необходимости копировать отдельно примитивные данные;</li><li>{{c3::Все члены ссылочного типа в оригинальном классе должны поддерживать клонирование. Для каждого такого члена при переопределении метода clone() должен вызываться super.clone();}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>Все члены ссылочного типа в оригинальном классе должны поддерживать клонирование. Для каждого такого члена при переопределении метода clone() должен вызываться super.clone();</li><li>{{c4::Если какой-либо член класса не поддерживает клонирование, то в методе клонирования необходимо создать новый экземпляр этого класса и скопировать каждый его член со всеми атрибутами в новый объект класса, по одному.}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::Глубокое копирование дублирует абсолютно всю информацию объекта}}</li><li>{{c21::Нет необходимости копировать отдельно примитивные данные;}}</li><li>{{c21::Все члены ссылочного типа в оригинальном классе должны поддерживать клонирование. Для каждого такого члена при переопределении метода clone() должен вызываться super.clone();}}</li><li>{{c21::Если какой-либо член класса не поддерживает клонирование, то в методе клонирования необходимо создать новый экземпляр этого класса и скопировать каждый его член со всеми атрибутами в новый объект класса, по одному.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "y5e;wkWpH}", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0234.&nbsp;Какой способ клонирования предпочтительней?", 
+                "Наиболее безопасным и следовательно предпочтительным способом клонирования является использование специализированного конструктора копирования"
+            ], 
+            "flags": 0, 
+            "guid": "MsF*D<zhiy", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>Отсутствие ошибок наследования (не нужно беспокоиться, что у наследников появятся новые поля, которые не будут склонированы через метод clone());</li><li>Поля для клонирования указываются явно;</li><li>Возможность клонировать даже final поля.</li></ul></div>", 
+                "0235. В чем преимущества использования&nbsp;специализированного конструктора копирования", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::Отсутствие ошибок наследования (не нужно беспокоиться, что у наследников появятся новые поля, которые не будут склонированы через метод clone());}}</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>Отсутствие ошибок наследования (не нужно беспокоиться, что у наследников появятся новые поля, которые не будут склонированы через метод clone());</li><li>{{c2::Поля для клонирования указываются явно;}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>Поля для клонирования указываются явно;</li><li>{{c3::Возможность клонировать даже final поля.}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::Отсутствие ошибок наследования (не нужно беспокоиться, что у наследников появятся новые поля, которые не будут склонированы через метод clone());}}</li><li>{{c21::Поля для клонирования указываются явно;}}</li><li>{{c21::Возможность клонировать даже final поля.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "N_`0KUulrl", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0236.&nbsp;Почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable?", 
+                "Метод clone() объявлен в классе Object с указанием модификатора native, чтобы обеспечить доступ к стандартному механизму поверхностного копирования объектов. Одновременно он объявлен и как protected, чтобы нельзя было вызвать этот метод у не переопределивших его объектов. Непосредственно интерфейс Cloneable является маркерными. Вызов переопределённого метода clone() у не Cloneable объекта вызовет выбрасывание CloneNotSupportedException."
+            ], 
+            "flags": 0, 
+            "guid": "IgV,<tmYxR", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0237. Что такое исключительная ситуация в программе?", 
+                "возникновение ситуаций, которые приводят к нарушению выполнения данного алгоритма,&nbsp;любые возникающие события, которые препятствуют выполнению базового алгоритма программы"
+            ], 
+            "flags": 0, 
+            "guid": "GA-X}{Zw%W", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0238. Что происходит при возникновении исключения", 
+                "создается объект, описывающий это исключение. Затем текущий ход выполнения приложения останавливается, и включается механизм обработки исключений. При этом ссылка на объект-исключение передается обработчику исключений, который пытается решить возникшую проблему и продолжить выполнение программы."
+            ], 
+            "flags": 0, 
+            "guid": "f**}zqaBX7", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0239. Что такое обработка исключительных ситуаций?", 
+                "механизм языков программирования, предназначенный для описания реакции программы на ошибки времени выполнения и другие возможные проблемы (исключения), которые могут возникнуть при выполнении программы и приводят к невозможности (бессмысленности) дальнейшей отработки программой её базового алгоритма."
+            ], 
+            "flags": 0, 
+            "guid": "d1-Bg<&r{N", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>try</li><li>catch</li><li>finally&nbsp;</li><li>throw</li><li>throws</li></ol></div>", 
+                "0240. Ключевые слова для работы с исключениями", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::try}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>try</li><li>{{c2::catch}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>catch</li><li>{{c3::finally&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>finally&nbsp;</li><li>{{c4::throw}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>throw</li><li>{{c5::throws}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::try}}</li><li>{{c21::catch}}</li><li>{{c21::finally&nbsp;}}</li><li>{{c21::throw}}</li><li>{{c21::throws}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "rcKl_=s.mS", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0241. Иерархия исключений", 
+                "<div><div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Object</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Throwable(CHECKED)</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\\</div><div>&nbsp; &nbsp; &nbsp;Error(UNCHECKED) &nbsp; &nbsp;Exception(CHECKED)</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; RuntimeException(UNCHECKED)</div></div></div><div><br /></div><div><img src=\"Снимок0024.jpg\" /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "F}/*,}hSxv", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Исключения делятся на несколько классов, но все они имеют общего предка — класс Throwable, потомками которого являются классы Exception и Error.</li><li>Ошибки (Errors) представляют собой более серьёзные проблемы, которые, согласно спецификации Java, не следует обрабатывать в собственной программе, поскольку они связаны с проблемами уровня JVM. Например, исключения такого рода возникают, если закончилась память доступная виртуальной машине.</li><li>Исключения (Exceptions) являются результатом проблем в программе, которые в принципе решаемы, предсказуемы и последствия которых возможно устранить внутри программы. Например, произошло деление целого числа на ноль.</li></ol></div>", 
+                "0242.&nbsp;Опишите иерархию исключений.", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Исключения делятся на несколько классов, но все они имеют общего предка — класс Throwable, потомками которого являются классы Exception и Error.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Исключения делятся на несколько классов, но все они имеют общего предка — класс Throwable, потомками которого являются классы Exception и Error.</li><li>{{c2::Ошибки (Errors) представляют собой более серьёзные проблемы, которые, согласно спецификации Java, не следует обрабатывать в собственной программе, поскольку они связаны с проблемами уровня JVM. Например, исключения такого рода возникают, если закончилась память доступная виртуальной машине.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Ошибки (Errors) представляют собой более серьёзные проблемы, которые, согласно спецификации Java, не следует обрабатывать в собственной программе, поскольку они связаны с проблемами уровня JVM. Например, исключения такого рода возникают, если закончилась память доступная виртуальной машине.</li><li>{{c3::Исключения (Exceptions) являются результатом проблем в программе, которые в принципе решаемы, предсказуемы и последствия которых возможно устранить внутри программы. Например, произошло деление целого числа на ноль.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Исключения делятся на несколько классов, но все они имеют общего предка — класс Throwable, потомками которого являются классы Exception и Error.}}</li><li>{{c21::Ошибки (Errors) представляют собой более серьёзные проблемы, которые, согласно спецификации Java, не следует обрабатывать в собственной программе, поскольку они связаны с проблемами уровня JVM. Например, исключения такого рода возникают, если закончилась память доступная виртуальной машине.}}</li><li>{{c21::Исключения (Exceptions) являются результатом проблем в программе, которые в принципе решаемы, предсказуемы и последствия которых возможно устранить внутри программы. Например, произошло деление целого числа на ноль.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "kC4pRi=hsz", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>checked (контролируемые/проверяемые исключения) должны обрабатываться блоком catch или описываться в сигнатуре метода (например IOException). Наличие такого обработчика/модификатора сигнатуры проверяются на этапе компиляции;</li><li>unchecked (неконтролируемые/непроверяемые исключения), к которым относятся ошибки Error (например OutOfMemoryError), обрабатывать которые не рекомендуется и исключения времени выполнения, представленные классом RuntimeException и его наследниками (например NullPointerException), которые могут не обрабатываться блоком catch и не быть описанными в сигнатуре метода.</li></ol></div>", 
+                "0243. Какие виды исключений в Java вы знаете, чем они отличаются?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::checked (контролируемые/проверяемые исключения) должны обрабатываться блоком catch или описываться в сигнатуре метода (например IOException). Наличие такого обработчика/модификатора сигнатуры проверяются на этапе компиляции;}}</li><li>...</li></ol>", 
+                "<ol><li>checked (контролируемые/проверяемые исключения) должны обрабатываться блоком catch или описываться в сигнатуре метода (например IOException). Наличие такого обработчика/модификатора сигнатуры проверяются на этапе компиляции;</li><li>{{c2::unchecked (неконтролируемые/непроверяемые исключения), к которым относятся ошибки Error (например OutOfMemoryError), обрабатывать которые не рекомендуется и исключения времени выполнения, представленные классом RuntimeException и его наследниками (например NullPointerException), которые могут не обрабатываться блоком catch и не быть описанными в сигнатуре метода.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::checked (контролируемые/проверяемые исключения) должны обрабатываться блоком catch или описываться в сигнатуре метода (например IOException). Наличие такого обработчика/модификатора сигнатуры проверяются на этапе компиляции;}}</li><li>{{c21::unchecked (неконтролируемые/непроверяемые исключения), к которым относятся ошибки Error (например OutOfMemoryError), обрабатывать которые не рекомендуется и исключения времени выполнения, представленные классом RuntimeException и его наследниками (например NullPointerException), которые могут не обрабатываться блоком catch и не быть описанными в сигнатуре метода.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "tP=M,<?LP5", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0244.&nbsp;Какой оператор позволяет принудительно выбросить исключение?", 
+                "<div>Это оператор throw:</div><div><br /></div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">throw</span> <span style=\"color: #008000; font-weight: bold\">new</span> Exception<span style=\"color: #666666\">();</span>\n</pre></div>\n</td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "NyCio{h$_>", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0245.&nbsp;О чем говорит ключевое слово throws?", 
+                "Модификатор throws прописывается в сигнатуре метода и указывает на то, что метод потенциально может выбросить исключение с указанным типом."
+            ], 
+            "flags": 0, 
+            "guid": "e0-L)`iq&i", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0246.&nbsp;Как написать собственное («пользовательское») исключение?", 
+                "<div>Необходимо унаследоваться от базового класса требуемого типа исключений (например от Exception или RuntimeException).</div><div><br /></div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">class</span> <span style=\"color: #0000FF; font-weight: bold\">CustomException</span> <span style=\"color: #008000; font-weight: bold\">extends</span> Exception <span style=\"color: #666666\">{</span>\n    <span style=\"color: #008000; font-weight: bold\">public</span> <span style=\"color: #0000FF\">CustomException</span><span style=\"color: #666666\">()</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #008000; font-weight: bold\">super</span><span style=\"color: #666666\">();</span>\n    <span style=\"color: #666666\">}</span>\n\n    <span style=\"color: #008000; font-weight: bold\">public</span> <span style=\"color: #0000FF\">CustomException</span><span style=\"color: #666666\">(</span><span style=\"color: #008000; font-weight: bold\">final</span> String string<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #008000; font-weight: bold\">super</span><span style=\"color: #666666\">(</span>string <span style=\"color: #666666\">+</span> <span style=\"color: #BA2121\">\" is invalid\"</span><span style=\"color: #666666\">);</span>\n    <span style=\"color: #666666\">}</span>\n\n    <span style=\"color: #008000; font-weight: bold\">public</span> <span style=\"color: #0000FF\">CustomException</span><span style=\"color: #666666\">(</span><span style=\"color: #008000; font-weight: bold\">final</span> Throwable cause<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #008000; font-weight: bold\">super</span><span style=\"color: #666666\">(</span>cause<span style=\"color: #666666\">);</span>\n    <span style=\"color: #666666\">}</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "y[Vy>%4T+W", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ul><li>ArithmeticException</li><li>ClassCastException</li><li>ConcurrentModificationException</li><li>IllegalArgumentException</li><li>IllegalStateException</li><li>IndexOutOfBoundsException</li><li>NoSuchElementException</li><li>NullPointerException</li><li>UnsupportedOperationException и др.</li></ul>", 
+                "0247.&nbsp;Какие существуют unchecked exception?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::ArithmeticException}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>ArithmeticException</li><li>{{c2::ClassCastException}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>ClassCastException</li><li>{{c3::ConcurrentModificationException}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>ConcurrentModificationException</li><li>{{c4::IllegalArgumentException}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>...</li><li>IllegalArgumentException</li><li>{{c5::IllegalStateException}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>...</li><li>...</li><li>IllegalStateException</li><li>{{c6::IndexOutOfBoundsException}}</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>IndexOutOfBoundsException</li><li>{{c7::NoSuchElementException}}</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>NoSuchElementException</li><li>{{c8::NullPointerException}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>NullPointerException</li><li>{{c9::UnsupportedOperationException и др.}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::ArithmeticException}}</li><li>{{c21::ClassCastException}}</li><li>{{c21::ConcurrentModificationException}}</li><li>{{c21::IllegalArgumentException}}</li><li>{{c21::IllegalStateException}}</li><li>{{c21::IndexOutOfBoundsException}}</li><li>{{c21::NoSuchElementException}}</li><li>{{c21::NullPointerException}}</li><li>{{c21::UnsupportedOperationException и др.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "A(G:7,PB}g", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0248.&nbsp;Что представляет из себя ошибки класса Error?", 
+                "Ошибки класса Error представляют собой наиболее серьёзные проблемы уровня JVM. Например, исключения такого рода возникают, если закончилась память доступная виртуальной машине. Обрабатывать такие ошибки не запрещается, но делать этого не рекомендуется."
+            ], 
+            "flags": 0, 
+            "guid": "yJIRVPf392", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0249.&nbsp;Что вы знаете о OutOfMemoryError?", 
+                "OutOfMemoryError выбрасывается, когда виртуальная машина Java не может создать (разместить) объект из-за нехватки памяти, а сборщик мусора не может высвободить достаточное её количество."
+            ], 
+            "flags": 0, 
+            "guid": "hf*^x5vY49", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; java.lang.OutOfMemoryError: Java heap space</li><li>&nbsp; &nbsp; java.lang.OutOfMemoryError: PermGen space</li><li>&nbsp; &nbsp; java.lang.OutOfMemoryError: GC overhead limit exceeded</li><li>&nbsp; &nbsp; java.lang.OutOfMemoryError: unable to create new native thread</li></ol></div>", 
+                "0250.&nbsp;Типы OutOfMemoryError 'ов", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; java.lang.OutOfMemoryError: Java heap space}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; java.lang.OutOfMemoryError: Java heap space</li><li>{{c2::&nbsp; &nbsp; java.lang.OutOfMemoryError: PermGen space}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; java.lang.OutOfMemoryError: PermGen space</li><li>{{c3::&nbsp; &nbsp; java.lang.OutOfMemoryError: GC overhead limit exceeded}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>&nbsp; &nbsp; java.lang.OutOfMemoryError: GC overhead limit exceeded</li><li>{{c4::&nbsp; &nbsp; java.lang.OutOfMemoryError: unable to create new native thread}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; java.lang.OutOfMemoryError: Java heap space}}</li><li>{{c21::&nbsp; &nbsp; java.lang.OutOfMemoryError: PermGen space}}</li><li>{{c21::&nbsp; &nbsp; java.lang.OutOfMemoryError: GC overhead limit exceeded}}</li><li>{{c21::&nbsp; &nbsp; java.lang.OutOfMemoryError: unable to create new native thread}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "vbzu!qty+l", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>try — данное ключевое слово используется для отметки начала блока кода, который потенциально может привести к ошибке.&nbsp;</li><li>catch — ключевое слово для отметки начала блока кода, предназначенного для перехвата и обработки исключений в случае их возникновения.&nbsp;</li><li>finally — ключевое слово для отметки начала блока кода, который является дополнительным. Этот блок помещается после последнего блока catch. Управление передаётся в блок finally в любом случае, было выброшено исключение или нет.</li></ol>", 
+                "0251.&nbsp;Опишите работу блока try-catch-finally.", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::try — данное ключевое слово используется для отметки начала блока кода, который потенциально может привести к ошибке.&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>try — данное ключевое слово используется для отметки начала блока кода, который потенциально может привести к ошибке.&nbsp;</li><li>{{c2::catch — ключевое слово для отметки начала блока кода, предназначенного для перехвата и обработки исключений в случае их возникновения.&nbsp;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>catch — ключевое слово для отметки начала блока кода, предназначенного для перехвата и обработки исключений в случае их возникновения.&nbsp;</li><li>{{c3::finally — ключевое слово для отметки начала блока кода, который является дополнительным. Этот блок помещается после последнего блока catch. Управление передаётся в блок finally в любом случае, было выброшено исключение или нет.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::try — данное ключевое слово используется для отметки начала блока кода, который потенциально может привести к ошибке.&nbsp;}}</li><li>{{c21::catch — ключевое слово для отметки начала блока кода, предназначенного для перехвата и обработки исключений в случае их возникновения.&nbsp;}}</li><li>{{c21::finally — ключевое слово для отметки начала блока кода, который является дополнительным. Этот блок помещается после последнего блока catch. Управление передаётся в блок finally в любом случае, было выброшено исключение или нет.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "w#`Wc0U$WQ", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>Данная конструкция, которая появилась в Java 7, позволяет использовать блок try-catch не заботясь о закрытии ресурсов, используемых в данном сегменте кода.&nbsp;</li><li>Ресурсы объявляются в скобках сразу после try, а компилятор уже сам неявно создаёт секцию finally, в которой и происходит освобождение занятых в блоке ресурсов.&nbsp;Под ресурсами подразумеваются сущности, реализующие интерфейс java.lang.Autocloseable.</li></ol>", 
+                "0252.&nbsp;Что такое механизм try-with-resources?", 
+                "<div>Общий вид конструкции:</div><div><br /></div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">try</span><span style=\"color: #666666\">(</span><span style=\"color: #408080; font-style: italic\">/*объявление ресурсов*/</span><span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n    <span style=\"color: #408080; font-style: italic\">//...</span>\n<span style=\"color: #666666\">}</span> <span style=\"color: #008000; font-weight: bold\">catch</span><span style=\"color: #666666\">(</span>Exception ex<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n    <span style=\"color: #408080; font-style: italic\">//...</span>\n<span style=\"color: #666666\">}</span> <span style=\"color: #008000; font-weight: bold\">finally</span> <span style=\"color: #666666\">{</span>\n    <span style=\"color: #408080; font-style: italic\">//...</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center>Стоит заметить, что блоки catch и явный finally выполняются уже после того, как закрываются ресурсы в неявном finally.</div>", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Данная конструкция, которая появилась в Java 7, позволяет использовать блок try-catch не заботясь о закрытии ресурсов, используемых в данном сегменте кода.&nbsp;}}</li><li>...</li></ol>", 
+                "<ol><li>Данная конструкция, которая появилась в Java 7, позволяет использовать блок try-catch не заботясь о закрытии ресурсов, используемых в данном сегменте кода.&nbsp;</li><li>{{c2::Ресурсы объявляются в скобках сразу после try, а компилятор уже сам неявно создаёт секцию finally, в которой и происходит освобождение занятых в блоке ресурсов.&nbsp;Под ресурсами подразумеваются сущности, реализующие интерфейс java.lang.Autocloseable.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Данная конструкция, которая появилась в Java 7, позволяет использовать блок try-catch не заботясь о закрытии ресурсов, используемых в данном сегменте кода.&nbsp;}}</li><li>{{c21::Ресурсы объявляются в скобках сразу после try, а компилятор уже сам неявно создаёт секцию finally, в которой и происходит освобождение занятых в блоке ресурсов.&nbsp;Под ресурсами подразумеваются сущности, реализующие интерфейс java.lang.Autocloseable.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Iu-Z(?ziLu", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0253.&nbsp;Возможно ли использование блока try-finally (без catch)?", 
+                "Такая запись допустима, но смысла в такой записи не так много, всё же лучше иметь блок catch, в котором будет обрабатываться необходимое исключение."
+            ], 
+            "flags": 0, 
+            "guid": "Fm!/u~%Nh_", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0254.&nbsp;Может ли один блок catch отлавливать сразу несколько исключений?", 
+                "<div>В Java 7 стала доступна новая языковая конструкция, с помощью которой можно перехватывать несколько исключений одним блоком catch:</div><div><br /></div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">try</span> <span style=\"color: #666666\">{</span>  \n    <span style=\"color: #408080; font-style: italic\">//...</span>\n<span style=\"color: #666666\">}</span> <span style=\"color: #008000; font-weight: bold\">catch</span><span style=\"color: #666666\">(</span>IOException <span style=\"color: #666666\">|</span> SQLException ex<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n    <span style=\"color: #408080; font-style: italic\">//...</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "Or&0|>+b?%", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0255.&nbsp;Всегда ли исполняется блок finally?", 
+                "Код в блоке finally будет всегда выполнен, независимо от того, выброшено исключение или нет, если только не подвесить код в try бесконечным циклом или не \"убить\" JVM, например, через System.exit(0).<div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">try</span> <span style=\"color: #666666\">{</span> \n    System<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">exit</span><span style=\"color: #666666\">(0);</span> \n<span style=\"color: #666666\">}</span> <span style=\"color: #008000; font-weight: bold\">catch</span><span style=\"color: #666666\">(</span>Exception e<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span> \n    e<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">printStackTrace</span><span style=\"color: #666666\">();</span> \n<span style=\"color: #666666\">}</span> <span style=\"color: #008000; font-weight: bold\">finally</span> <span style=\"color: #666666\">{</span> <span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "mMW,9tkpqq", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0256.&nbsp;Может ли метод main() выбросить исключение во вне и если да, то где будет происходить обработка данного исключения?", 
+                "Может и оно будет передано в виртуальную машину Java (JVM)."
+            ], 
+            "flags": 0, 
+            "guid": "J5tw3n$~oS", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0257.&nbsp;Предположим, есть метод, который может выбросить IOException и FileNotFoundException. В какой последовательности должны идти блоки catch? Сколько блоков catch будет выполнено?", 
+                "<div>Общее правило: обрабатывать исключения нужно от «младшего» к старшему. Т.е. нельзя поставить в первый блок catch(Exception ex) {}, иначе все дальнейшие блоки catch() уже ничего не смогут обработать, т.к. любое исключение будет соответствовать обработчику catch(Exception ex).</div><div><br /></div><div>Таким образом, исходя из факта, что FileNotFoundException extends IOException сначала нужно обработать FileNotFoundException, а затем уже IOException:</div><div><br /></div><div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #B00040\">void</span> <span style=\"color: #0000FF\">method</span><span style=\"color: #666666\">()</span> <span style=\"color: #666666\">{</span>\n    <span style=\"color: #008000; font-weight: bold\">try</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #408080; font-style: italic\">//...</span>\n    <span style=\"color: #666666\">}</span> <span style=\"color: #008000; font-weight: bold\">catch</span> <span style=\"color: #666666\">(</span>FileNotFoundException ex<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #408080; font-style: italic\">//...</span>\n    <span style=\"color: #666666\">}</span> <span style=\"color: #008000; font-weight: bold\">catch</span> <span style=\"color: #666666\">(</span>IOException ex<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #408080; font-style: italic\">//...</span>\n    <span style=\"color: #666666\">}</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><br /></div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "xZ?:As}!^e", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0258.&nbsp;Что такое generics?", 
+                "Generics - это технический термин, обозначающий набор свойств языка позволяющих определять и использовать обобщенные типы и методы. Обобщенные типы или методы отличаются от обычных тем, что имеют типизированные параметры."
+            ], 
+            "flags": 0, 
+            "guid": "g)raZMy&3Z", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0259. Пример использования обобщенных типов (generics)", 
+                "Примером использования обобщенных типов может служить Java Collection Framework. Так, класс LinkedList&lt;E&gt; - типичный обобщенный тип. Он содержит параметр E, который представляет тип элементов, которые будут храниться в коллекции. Создание объектов обобщенных типов происходит посредством замены параметризированных типов реальными типами данных. Вместо того, чтобы просто использовать LinkedList, ничего не говоря о типе элемента в списке, предлагается использовать точное указание типа LinkedList&lt;String&gt;, LinkedList&lt;Integer&gt; и т.п."
+            ], 
+            "flags": 0, 
+            "guid": "m25f#pkrOf", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0260.&nbsp;Что такое «интернационализация»?", 
+                "способ создания приложений, при котором их можно легко адаптировать для разных аудиторий, говорящих на разных языках."
+            ], 
+            "flags": 0, 
+            "guid": "c&Vc[!7(v$", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0261. Что такое локализация?", 
+                "адаптация интерфейса приложения под несколько языков. Добавление нового языка может внести определенные сложности в локализацию интерфейса."
+            ], 
+            "flags": 0, 
+            "guid": "Bc_~0xhQW]", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0205_1.&nbsp;&nbsp;базовый загрузчик (bootstrap/primordial)", 
+                "Загружает основные системные и внутренние классы JDK (Core API - пакеты java.* (rt.jar и i18n.jar) . Важно заметить, что базовый загрузчик является «Изначальным» или «Корневым» и частью JVM, вследствие чего его нельзя создать внутри кода программы."
+            ], 
+            "flags": 0, 
+            "guid": "hX/!pCwLul", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Загружает различные пакеты расширений, которые располагаются в директории &lt;JAVA_HOME&gt;/lib/ext или другой директории, описанной в системном параметре java.ext.dirs. Это позволяет обновлять и добавлять новые расширения без необходимости модифицировать настройки используемых приложений.<br />Загрузчик расширений реализован классом sun.misc.Launcher$ExtClassLoader.", 
+                "<div>0205_2. загрузчик расширений (extention)</div>", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<div>{{c1::Загружает различные пакеты расширений, которые располагаются в директории &lt;JAVA_HOME&gt;/lib/ext или другой директории, описанной в системном параметре java.ext.dirs. Это позволяет обновлять и добавлять новые расширения без необходимости модифицировать настройки используемых приложений.}}</div><div>...</div>", 
+                "<div>...</div><div>{{c2::Загрузчик расширений реализован классом sun.misc.Launcher$ExtClassLoader.}}</div>", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "<div>{{c21::Загружает различные пакеты расширений, которые располагаются в директории &lt;JAVA_HOME&gt;/lib/ext или другой директории, описанной в системном параметре java.ext.dirs. Это позволяет обновлять и добавлять новые расширения без необходимости модифицировать настройки используемых приложений.}}</div><div>{{c21::Загрузчик расширений реализован классом sun.misc.Launcher$ExtClassLoader.}}</div>"
+            ], 
+            "flags": 0, 
+            "guid": "y&`Zsg4M-u", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ul><li>Загружает классы, пути к которым указаны в переменной окружения CLASSPATH или пути, которые указаны в командной строке запуска JVM после ключей -classpath или -cp.&nbsp;</li><li>Системный загрузчик реализован классом sun.misc.Launcher$AppClassLoader.</li></ul>", 
+                "0205_3.&nbsp;системный загрузчик (system/application)", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::Загружает классы, пути к которым указаны в переменной окружения CLASSPATH или пути, которые указаны в командной строке запуска JVM после ключей -classpath или -cp.&nbsp;}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>{{c2::Системный загрузчик реализован классом sun.misc.Launcher$AppClassLoader.}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::Загружает классы, пути к которым указаны в переменной окружения CLASSPATH или пути, которые указаны в командной строке запуска JVM после ключей -classpath или -cp.&nbsp;}}</li><li>{{c21::Системный загрузчик реализован классом sun.misc.Launcher$AppClassLoader.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "b.*7eV~zV&", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0207_1.&nbsp;Процесс загрузки класса Loading", 
+                "на этой фазе происходит поиск и физическая загрузка файла класса в определенном источнике (в зависимости от загрузчика). Этот процесс определяет базовое представление класса в памяти. На этом этапе такие понятия как «методы», «поля» и т.д. пока не известны."
+            ], 
+            "flags": 0, 
+            "guid": "u4xPTnowSr", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0207_3.&nbsp;Initialization-процесс загрузки класса", 
+                "вызов статических блоков инициализации и присваивание полям класса значений по умолчанию."
+            ], 
+            "flags": 0, 
+            "guid": "bKOHj|Fd2u", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0231_1. альтернатива clone() - cпециализированный конструктор копирования", 
+                "в классе описывается конструктор, который принимает объект этого же класса и инициализирует поля нового объекта значениями полей переданного."
+            ], 
+            "flags": 0, 
+            "guid": "B|&k`x^/0s", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0231_2.&nbsp;альтернатива методу clone() -&nbsp;Фабричный метод (Factory method)", 
+                "порождающий паттерн проектирования, который определяет общий интерфейс для создания объектов в суперклассе, позволяя подклассам изменять тип создаваемых объектов."
+            ], 
+            "flags": 0, 
+            "guid": "m4&R@>By/F", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0231_3.&nbsp;альтернатива методу clone() - механизм сериализации", 
+                "сохранение и последующее восстановление объекта в/из потока байтов."
+            ], 
+            "flags": 0, 
+            "guid": "?#P2gaDmY", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0240_1. ключевое слово&nbsp;try", 
+                "используется для отметки начала блока кода, который потенциально может привести к ошибке.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "u93|DNg;_u", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0240_2. ключевое слово&nbsp;catch", 
+                "ключевое слово для отметки начала блока кода, предназначенного для перехвата и обработки исключений."
+            ], 
+            "flags": 0, 
+            "guid": "L?%j**U52%", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0240_3. ключевое слово&nbsp;finally", 
+                "ключевое слово для отметки начала блока кода, которое является дополнительным. Этот блок помещается после последнего блока 'catch'. Управление обычно передаётся в блок 'finally' в любом случае.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "qHG5hSKCr", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0240_4. ключевое слово&nbsp;throw", 
+                "служит для генерации исключений."
+            ], 
+            "flags": 0, 
+            "guid": "lisW+@,_:;", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0240_5. ключевое слово&nbsp;throws", 
+                "прописывается в сигнатуре метода, и обозначающее что метод потенциально может выбросить исключение с указанным типом."
+            ], 
+            "flags": 0, 
+            "guid": "we1I;ph7jL", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0250_1.&nbsp;&nbsp;java.lang.OutOfMemoryError: Java heap space - что означает", 
+                "Не хватает места в куче, а именно, в области памяти в которую помещаются объекты, создаваемые в приложении программно. Обычно проблема кроется в утечке памяти. Размер задается параметрами -Xms и -Xmx."
+            ], 
+            "flags": 0, 
+            "guid": "g5-]=adT|!", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0250_2. java.lang.OutOfMemoryError: PermGen space", 
+                "(в Java 8+ PermGen более не существует) Данная ошибка возникает при нехватке места в Permanent области, размер которой задается параметрами -XX:PermSize и -XX:MaxPermSize."
+            ], 
+            "flags": 0, 
+            "guid": "xyBVen{E.8", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0250_3.&nbsp;java.lang.OutOfMemoryError: GC overhead limit exceeded", 
+                "Данная ошибка может возникнуть как при переполнении первой, так и второй областей работы сборщика мусора. Связана она с тем, что памяти осталось мало и сборщик мусора постоянно работает, пытаясь высвободить немного места. Данную ошибку можно отключить с помощью параметра -XX:-UseGCOverheadLimit."
+            ], 
+            "flags": 0, 
+            "guid": "zpcl2(IWFf", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0250_4.&nbsp;java.lang.OutOfMemoryError: unable to create new native thread:&nbsp;", 
+                "Выбрасывается, когда нет возможности создавать новые потоки."
+            ], 
+            "flags": 0, 
+            "guid": "glQ^[&J1xx", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_1. метод Object.equals(Object obj)", 
+                "служит для сравнения объектов по значению"
+            ], 
+            "flags": 0, 
+            "guid": "Ds_~#C[(~I", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_2. метод int hashCode() класса Object", 
+                "возвращает hash код объекта"
+            ], 
+            "flags": 0, 
+            "guid": "gRTJz-!I=y", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_3. метод toString() класса Object", 
+                "возвращает строковое представление объекта"
+            ], 
+            "flags": 0, 
+            "guid": "yE0LgrN/:3", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_4. метод&nbsp;Class&lt;? extends Object&gt; getClass() класса Object", 
+                "возвращает класс объекта во время выполнения"
+            ], 
+            "flags": 0, 
+            "guid": "A763kRL95U", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_5. метод protected Object clone()&nbsp;класса Object", 
+                "создает и возвращает копию объекта"
+            ], 
+            "flags": 0, 
+            "guid": "vb[8~c6*sv", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_6. метод void notify()&nbsp;класса Object", 
+                "возобновляет поток, ожидающий монитор"
+            ], 
+            "flags": 0, 
+            "guid": "Bh6mXv{OU[", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_7. метод void notifyAll() класса Object", 
+                "все потоки, ожидающие монитор"
+            ], 
+            "flags": 0, 
+            "guid": "J>f=[a%6`/", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_8. метод void wait()&nbsp;класса Object", 
+                "остановка вызвавшего метод потока до момента пока другой поток не вызовет метод notify() или notifyAll() для этого объекта;"
+            ], 
+            "flags": 0, 
+            "guid": "Mn9U:/TA.^", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_9. метод void wait(long timeout)&nbsp;класса Object", 
+                "остановка вызвавшего метод потока на определённое время или пока другой поток не вызовет метод notify() или notifyAll() для этого объекта"
+            ], 
+            "flags": 0, 
+            "guid": "wXb-E]2Pf7", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0198_10. метод protected void finalize()&nbsp;класса Object", 
+                "может вызываться сборщиком мусора в момент удаления объекта при сборке мусора."
+            ], 
+            "flags": 0, 
+            "guid": "N2,BOb#OXm", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0208_1. Bytecode verification -&nbsp;", 
+                "этап linking-процесса загрузки класса при котором происходит&nbsp;проверка байт-кода на соответствие требованиям определенным в спецификации JVM."
+            ], 
+            "flags": 0, 
+            "guid": "lJeU+yj[.)", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0208_2.&nbsp;Class preparation", 
+                "этап linking-процесса загрузки класса при котором происходит&nbsp;создание и инициализация необходимых структур, используемых для представления полей, методов, реализованных интерфейсов и т.п., определенных в загружаемом классе."
+            ], 
+            "flags": 0, 
+            "guid": "pQI+M[m#:[", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0208_3.&nbsp;Resolving", 
+                "этап linking-процесса загрузки класса при котором происходит&nbsp;загрузка набора классов, на которые ссылается загружаемый класс."
+            ], 
+            "flags": 0, 
+            "guid": "E<3iz}g!w:", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0209. отложенная (lazy) загрузка и связывание классов во время динамической загрузки классов", 
+                "Загрузка классов производится только при необходимости, что позволяет экономить ресурсы и распределять нагрузку."
+            ], 
+            "flags": 0, 
+            "guid": "gum1E#|bzl", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0209_2. проверка корректности загружаемого кода (type safeness) во время динамической загрузки классов", 
+                "Все действия связанные с контролем использования типов производятся только во время загрузки класса, позволяя избежать дополнительной нагрузки во время выполнения кода."
+            ], 
+            "flags": 0, 
+            "guid": "b:,!aWm$Rg", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0209_3. программируемая загрузка во время динамической загрузки классов", 
+                "Пользовательский загрузчик полностью контролирует процесс получения запрошенного класса — самому ли искать байт-код и создавать класс или делегировать создание другому загрузчику. Дополнительно существует возможность выставлять различные атрибуты безопасности для загружаемых классов, позволяя таким образом работать с кодом из ненадежных источников."
+            ], 
+            "flags": 0, 
+            "guid": "c[bR}IHe@o", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0209_4. про множественные пространства имен - во время динамической загрузки классов", 
+                "Каждый загрузчик имеет своё пространство имён для создаваемых классов. Соответственно, классы, загруженные двумя различными загрузчиками на основе общего байт-кода, в системе будут различаться."
+            ], 
+            "flags": 0, 
+            "guid": "K>P6JEIlS:", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0210_1. как явно инициализировать загрузку класс", 
+                "вызов ClassLoader.loadClass() или Class.forName() (по умолчанию используется загрузчик, создавший текущий класс, но есть возможность и явного указания загрузчика);"
+            ], 
+            "flags": 0, 
+            "guid": "B*1&KLn4X<", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0210_2. в чем суть неявной инициализации загрузки класса", 
+                "когда для дальнейшей работы приложения требуется ранее не использованный класс, JVM инициирует его загрузку."
+            ], 
+            "flags": 0, 
+            "guid": "vOA[O(OWcg", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>класс объекта</li><li>модификаторы класса</li><li>поля</li><li>методы</li><li>конструкторы</li><li>суперклассы</li><li>реализуемые интерфейсы</li><li>аннотации</li><li>информация о массиве, если объект - массив и др.</li></ol></div>", 
+                "0212_1. какую информацию об объекте можно получить при помощи Reflection API", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::класс объекта}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>класс объекта</li><li>{{c2::модификаторы класса}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>модификаторы класса</li><li>{{c3::поля}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>поля</li><li>{{c4::методы}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>методы</li><li>{{c5::конструкторы}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>конструкторы</li><li>{{c6::суперклассы}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>суперклассы</li><li>{{c7::реализуемые интерфейсы}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>реализуемые интерфейсы</li><li>{{c8::аннотации}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>аннотации</li><li>{{c9::информация о массиве, если объект - массив и др.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::класс объекта}}</li><li>{{c21::модификаторы класса}}</li><li>{{c21::поля}}</li><li>{{c21::методы}}</li><li>{{c21::конструкторы}}</li><li>{{c21::суперклассы}}</li><li>{{c21::реализуемые интерфейсы}}</li><li>{{c21::аннотации}}</li><li>{{c21::информация о массиве, если объект - массив и др.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "P}3Wrh}DgF", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>Рефлексивность</li><li>Симметричность</li><li>Транзитивность</li><li>Непротиворечивость</li><li>Для любой ненулевой ссылки на значение х выражение х.equals(null) должно возвращать false.</li></ol>", 
+                "0214_1.&nbsp;Принципы эквивалентности при переопределении equals() предусмотренные спецификацией Java", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Рефлексивность}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Рефлексивность</li><li>{{c2::Симметричность}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Симметричность</li><li>{{c3::Транзитивность}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Транзитивность</li><li>{{c4::Непротиворечивость}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>Непротиворечивость</li><li>{{c5::Для любой ненулевой ссылки на значение х выражение х.equals(null) должно возвращать false.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Рефлексивность}}</li><li>{{c21::Симметричность}}</li><li>{{c21::Транзитивность}}</li><li>{{c21::Непротиворечивость}}</li><li>{{c21::Для любой ненулевой ссылки на значение х выражение х.equals(null) должно возвращать false.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Beiz(X16Tq", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0214_2. Рефлексивность (принцип эквивалентности)", 
+                "для любой ссылки на значение x, x.equals(x) вернет true - объект равен самому себе."
+            ], 
+            "flags": 0, 
+            "guid": "e,58wKV|SO", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0214_3. Симметричность&nbsp;(принцип эквивалентности)", 
+                "для любых ссылок на значения x и y, x.equals(y) должно вернуть true, тогда и только тогда, когда y.equals(x) возвращает true."
+            ], 
+            "flags": 0, 
+            "guid": "j`]>u5*l0|", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0214_4. Транзитивность&nbsp;(принцип эквивалентности)", 
+                "для любых ссылок на значения x, y и z, если x.equals(y) и y.equals(z) возвращают true, тогда и x.equals(z) вернёт true;"
+            ], 
+            "flags": 0, 
+            "guid": "BKNg@RVh{e", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0214_5. Непротиворечивость&nbsp;(принцип эквивалентности)", 
+                "для любых ссылок на значения х и у, если несколько раз вызвать х.equals(y), постоянно будет возвращаться значение true либо постоянно будет возвращаться значение false при условии, что никакая информация, используемая при сравнении объектов, не поменялась."
+            ], 
+            "flags": 0, 
+            "guid": "xZka8mc0{V", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }
+    ]
+}

@@ -1,0 +1,3087 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "cac85a00-a733-11ea-80fd-005056c00008", 
+    "deck_config_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    30, 
+                    1440
+                ], 
+                "leechAction": 1, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.2
+            }, 
+            "maxTaken": 180, 
+            "name": "AnKing", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    25, 
+                    1440
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    3, 
+                    3, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 30, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.5, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 120, 
+                "minSpace": 1, 
+                "perDay": 9999
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [
+        "java-collection-hierarchy.png", 
+        "paste-112017042046979.png", 
+        "paste-167641163497475.png"
+    ], 
+    "name": "Java Interview::03. Collections", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "css": ".card {\n font-familiy: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bfont": "Arial", 
+                    "bqfmt": "", 
+                    "bsize": 12, 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }, 
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "ef2c1764-a69a-11ea-993c-005056c00008", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: left;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-family: Dejavu Sans Mono;\n color: green;\n}\n.nightMode .cloze {\n color: lightblue;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Extra", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Cloze", 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br>\n{{Extra}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Cloze", 
+                    "ord": 0, 
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ], 
+            "type": 1, 
+            "vers": []
+        }, 
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "css": "/* general card style */\n\nhtml {\n  /* scrollbar always visible in order to prevent shift when revealing answer*/\n  overflow-y: scroll;\n}\n\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* general layout */\n\n.text {\n  /* center left-aligned text on card */\n  display: inline-block;\n  align: center;\n  text-align: left;\n  margin: auto;\n  max-width: 40em;\n}\n\n.hidden {\n  /* guarantees a consistent width across front and back */\n  font-weight: bold;\n  display: block;\n  line-height:0;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.title {\n  font-weight: bold;\n  font-size: 1.1em;\n  margin-bottom: 1em;\n  text-align: center;\n}\n\n/* clozes */\n\n.cloze {\n  /* regular cloze deletion */\n  font-weight: bold;\n  color: #0048FF;\n}\n\n/* original text reveal hint */\n\n.fullhint a {\n  color: #0048FF;\n}\n\n.card21 .fullhint{\n  /* no need to display hint on last card */\n  display:none;\n}\n\n/* additional fields */\n\n.extra{\n  margin-top: 0.5em;\n  margin: auto;\n  max-width: 40em;\n}\n\n.extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.extra-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Original", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Title", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Remarks", 
+                    "ord": 2, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Sources", 
+                    "ord": 3, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Settings", 
+                    "ord": 4, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": true
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text1", 
+                    "ord": 5, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text2", 
+                    "ord": 6, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text3", 
+                    "ord": 7, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text4", 
+                    "ord": 8, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text5", 
+                    "ord": 9, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text6", 
+                    "ord": 10, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text7", 
+                    "ord": 11, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text8", 
+                    "ord": 12, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text9", 
+                    "ord": 13, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text10", 
+                    "ord": 14, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text11", 
+                    "ord": 15, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text12", 
+                    "ord": 16, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text13", 
+                    "ord": 17, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text14", 
+                    "ord": 18, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text15", 
+                    "ord": 19, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text16", 
+                    "ord": 20, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text17", 
+                    "ord": 21, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text18", 
+                    "ord": 22, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text19", 
+                    "ord": 23, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text20", 
+                    "ord": 24, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Full", 
+                    "ord": 25, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Cloze (overlapping)", 
+            "sortf": 1, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"back\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">{{Original}}</div>\n  </div>\n  <div class=\"extra\"><hr></div>\n  <div class=\"text\"><div class=\"fullhint\">{{hint:Original}}</div></div>\n  <div class=\"extra\">\n    {{#Remarks}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Remarks</div><div>{{Remarks}}</div>\n    </div>\n    {{/Remarks}}\n    {{#Sources}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Sources</div><div>{{Sources}}</div>\n    </div>\n    {{/Sources}}\n  </div>\n</div>\n<script>\n  // remove cloze syntax from revealed hint\n  var hint = document.querySelector('.fullhint>[id^=\"hint\"]')\n  var html = hint.innerHTML.replace(/\\[\\[oc(\\d+)::(.*?)(::(.*?))?\\]\\]/mg, \"$2\")\n  hint.innerHTML = html\n  // scroll to cloze\n  document.addEventListener('DOMContentLoaded', function() {\n    setTimeout(function(){\n      const cloze1 = document.getElementsByClassName(\"cloze\")[0];\n      const rect = cloze1.getBoundingClientRect();\n      const absTop = rect.top + window.pageYOffset;\n      const absBot = rect.bottom + window.pageYOffset;\n      if (absBot >= window.innerHeight) {\n        const height = rect.top - rect.bottom\n        const middle = absTop - (window.innerHeight/2) - (height/2);\n        window.scrollTo(0, middle);};\n    }, 1);\n  }, false);\n</script>", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "cloze-ol", 
+                    "ord": 0, 
+                    "qfmt": "<div class=\"front\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">\n       <div>{{Original}}</div>\n    </div>\n  </div>\n</div>"
+                }
+            ], 
+            "type": 1, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>структура данных, которая способная хранить однотипные объекты и управлять ими.</li><li>используются для хранения данных, доступа и манипуляций с данными, а также для передачи данных от одного метода к другому.</li><li>Все интерфейсы и классы, относящиеся к коллекциям, находятся в пакете java.util</li></ol>", 
+                "<div>0262.&nbsp;Что такое «коллекция»?</div>", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::структура данных, которая способная хранить однотипные объекты и управлять ими.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>структура данных, которая способная хранить однотипные объекты и управлять ими.</li><li>{{c2::используются для хранения данных, доступа и манипуляций с данными, а также для передачи данных от одного метода к другому.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>используются для хранения данных, доступа и манипуляций с данными, а также для передачи данных от одного метода к другому.</li><li>{{c3::Все интерфейсы и классы, относящиеся к коллекциям, находятся в пакете java.util}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::структура данных, которая способная хранить однотипные объекты и управлять ими.}}</li><li>{{c21::используются для хранения данных, доступа и манипуляций с данными, а также для передачи данных от одного метода к другому.}}</li><li>{{c21::Все интерфейсы и классы, относящиеся к коллекциям, находятся в пакете java.util}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "hN;s}R;Pu}", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0263. Главные интерфейcы в вершине иерархии JCF", 
+                "Collection и Map"
+            ], 
+            "flags": 0, 
+            "guid": "HsG3$v&gR[", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ul><li>List</li><li>Set</li><li>Queue</li></ul>", 
+                "0264. Какие интерфейсы расширяют интерфейс Collection?", 
+                "<img src=\"java-collection-hierarchy.png\" />", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::List}}</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>List</li><li>{{c2::Set}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>Set</li><li>{{c3::Queue}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::List}}</li><li>{{c21::Set}}</li><li>{{c21::Queue}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "D1=7l/dipt", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0265. Интерфейс List", 
+                "представляет собой коллекцию, в которой допустимы дублирующие значения. Элементы такой коллекции пронумерованы, начиная от нуля, к ним можно обратиться по индексу."
+            ], 
+            "flags": 0, 
+            "guid": "m0Xf)?sSXO", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>ArrayList&nbsp;</li><li>LinkedList&nbsp;</li><li>Vector&nbsp;</li><li>Stack</li></ul></div>", 
+                "0266. реализации интерфейса List", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::ArrayList&nbsp;}}</li><li>...</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>ArrayList&nbsp;</li><li>{{c2::LinkedList&nbsp;}}</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>LinkedList&nbsp;</li><li>{{c3::Vector&nbsp;}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>Vector&nbsp;</li><li>{{c4::Stack}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::ArrayList&nbsp;}}</li><li>{{c21::LinkedList&nbsp;}}</li><li>{{c21::Vector&nbsp;}}</li><li>{{c21::Stack}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "xfK_v;MUEY", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0267. Интерфейс&nbsp;Set", 
+                "описывает неупорядоченную коллекцию, не содержащую повторяющихся элементов."
+            ], 
+            "flags": 0, 
+            "guid": "jpZsWqv.@V", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>HashSet&nbsp;</li><li>LinkedHashSet&nbsp;</li><li>TreeSet&nbsp;</li></ul></div>", 
+                "0268. реализации Set", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::HashSet&nbsp;}}</li><li>...</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>{{c2::LinkedHashSet&nbsp;}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>...</li><li>{{c3::TreeSet&nbsp;}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::HashSet&nbsp;}}</li><li>{{c21::LinkedHashSet&nbsp;}}</li><li>{{c21::TreeSet&nbsp;}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "q*W~Qe,fgX", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0269. интерфейс&nbsp;Queue&nbsp;", 
+                "предназначена для хранения элементов с предопределённым способом вставки и извлечения FIFO (first-in-first-out)"
+            ], 
+            "flags": 0, 
+            "guid": "Ll$uED7Fri", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>&nbsp; &nbsp; PriorityQueue<br />&nbsp; &nbsp; ArrayDeque&nbsp;</div>", 
+                "0270. реализации Queue", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<div>{{c1::&nbsp; &nbsp; PriorityQueue}}</div><div>...</div>", 
+                "<div>...</div><div>{{c2::&nbsp; &nbsp; ArrayDeque&nbsp;}}</div>", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "<div>{{c21::&nbsp; &nbsp; PriorityQueue}}</div><div>{{c21::&nbsp; &nbsp; ArrayDeque&nbsp;}}</div>"
+            ], 
+            "flags": 0, 
+            "guid": "q=7U2=0X_i", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Hashtable</li><li>HashMap&nbsp;</li><li>LinkedHashMap</li><li>TreeMap</li><li>WeakHashMap</li></ol></div>", 
+                "0271. реализации Map", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Hashtable}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Hashtable</li><li>{{c2::HashMap&nbsp;}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>HashMap&nbsp;</li><li>{{c3::LinkedHashMap}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>LinkedHashMap</li><li>{{c4::TreeMap}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>TreeMap</li><li>{{c5::WeakHashMap}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Hashtable}}</li><li>{{c21::HashMap&nbsp;}}</li><li>{{c21::LinkedHashMap}}</li><li>{{c21::TreeMap}}</li><li>{{c21::WeakHashMap}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "u-p}{kK9sB", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0272. Расположите в виде иерархии следующие интерфейсы: List, Set, Map, SortedSet, SortedMap, Collection, Iterable, Iterator, NavigableSet, NavigableMap.", 
+                "<div><ul style=\"list-style-type: disc; \"><li>Iterable</li><ul><li>Collection</li><ul><li>List</li><li>Set</li><ul><li>SortedSet</li><li>NavigableSet</li></ul></ul></ul><li>Map</li><ul><li>SortedMap</li><ul><li>NavigableMap</li></ul></ul><li>Iterator</li></ul></div>"
+            ], 
+            "flags": 0, 
+            "guid": "rNP3@Z$nLQ", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0273.&nbsp;Почему Map — это не Collection, в то время как List и Set являются Collection?", 
+                "Collection представляет собой совокупность некоторых элементов. Map - это совокупность пар «ключ-значение»."
+            ], 
+            "flags": 0, 
+            "guid": "Gn<0yK0KN>", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0274.&nbsp;В чем разница между классами java.util.Collection и java.util.Collections?", 
+                "<div>java.util.Collections - набор статических методов для работы с коллекциями.</div><div>java.util.Collection - один из основных интерфейсов Java Collections Framework.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "w%]e*Z3O{/", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0275.&nbsp;Что такое «fail-fast поведение»?", 
+                "fail-fast поведение означает, что при возникновении ошибки или состояния, которое может привести к ошибке, система немедленно прекращает дальнейшую работу и уведомляет об этом. Использование fail-fast подхода позволяет избежать недетерминированного поведения программы в течение времени."
+            ], 
+            "flags": 0, 
+            "guid": "D)|i,}RFNg", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0276. fail-fast поведение итераторов в&nbsp;Java Collections API", 
+                "если после создания итератора была произведена модификация коллекции, т.е. добавлен или удален элемент напрямую из коллекции, а не используя методы итератора,&nbsp;некоторые итераторы ведут себя как fail-fast и выбрасывают ConcurrentModificationException"
+            ], 
+            "flags": 0, 
+            "guid": "CvLtj.]F91", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0277. реализация&nbsp;«fail-fast поведения» в коллекциях", 
+                "осуществляется за счет подсчета количества модификаций. у коллекции есть поле&nbsp;modCount, в котором хранится количество структурных изменений коллекции (добавлений\\удалений элементов), при создании итератора, в его поле&nbsp;expectedModCount копируется текущее значение&nbsp;modCount и в последствии проверяется при каждой операции итератора - если значения не совпадают, выбрасывается&nbsp;ConcurrentModificationException, при этом когда вызывается remove() итератора, значение modCount тоже изменяется соответственно. Непотокобезопасно."
+            ], 
+            "flags": 0, 
+            "guid": "Am.UA,5GnX", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0278.&nbsp;Какая разница между fail-fast и fail-safe?", 
+                "В противоположность fail-fast, итераторы fail-safe не вызывают никаких исключений при изменении структуры, потому что они работают с клоном коллекции вместо оригинала."
+            ], 
+            "flags": 0, 
+            "guid": "En/ZB8;^ep", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0279.&nbsp;Приведите примеры итераторов реализующих поведение fail-safe", 
+                "Итератор коллекции CopyOnWriteArrayList и итератор представления keySet коллекции ConcurrentHashMap являются примерами итераторов fail-safe."
+            ], 
+            "flags": 0, 
+            "guid": "n{O,vB^8H?", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>с помощью Enumeration нельзя добавлять/удалять элементы;</li><li>в Iterator исправлены имена методов для повышения читаемости кода (Enumeration.hasMoreElements() соответствует Iterator.hasNext(), Enumeration.nextElement() соответствует Iterator.next() и т.д);</li><li>Enumeration присутствуют в устаревших классах, таких как Vector/Stack, тогда как Iterator есть во всех современных классах-коллекциях.</li></ol></div>", 
+                "0280.&nbsp;Чем различаются Enumeration и Iterator", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::с помощью Enumeration нельзя добавлять/удалять элементы;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>с помощью Enumeration нельзя добавлять/удалять элементы;</li><li>{{c2::в Iterator исправлены имена методов для повышения читаемости кода (Enumeration.hasMoreElements() соответствует Iterator.hasNext(), Enumeration.nextElement() соответствует Iterator.next() и т.д);}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>в Iterator исправлены имена методов для повышения читаемости кода (Enumeration.hasMoreElements() соответствует Iterator.hasNext(), Enumeration.nextElement() соответствует Iterator.next() и т.д);</li><li>{{c3::Enumeration присутствуют в устаревших классах, таких как Vector/Stack, тогда как Iterator есть во всех современных классах-коллекциях.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::с помощью Enumeration нельзя добавлять/удалять элементы;}}</li><li>{{c21::в Iterator исправлены имена методов для повышения читаемости кода (Enumeration.hasMoreElements() соответствует Iterator.hasNext(), Enumeration.nextElement() соответствует Iterator.next() и т.д);}}</li><li>{{c21::Enumeration присутствуют в устаревших классах, таких как Vector/Stack, тогда как Iterator есть во всех современных классах-коллекциях.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "e6]V$wv-%<", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0281.&nbsp;Как между собой связаны Iterable и Iterator?", 
+                "Интерфейс Iterable имеет метод - iterator(), который возвращает Iterator."
+            ], 
+            "flags": 0, 
+            "guid": "q9<|ddfJ}t", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0282.&nbsp;Как между собой связаны Iterable, Iterator и «for-each»?", 
+                "Классы, реализующие интерфейс Iterable, могут применяться в конструкции for-each, которая использует Iterator."
+            ], 
+            "flags": 0, 
+            "guid": "sW>9!1ja=k", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><div><ol><li>ListIterator расширяет интерфейс Iterator</li><li>ListIterator может быть использован только для перебора элементов коллекции List;</li><li>Iterator позволяет перебирать элементы только в одном направлении, при помощи метода next(). Тогда как ListIterator позволяет перебирать список в обоих направлениях, при помощи методов next() и previous();</li><li>ListIterator не указывает на конкретный элемент: его текущая позиция располагается между элементами, которые возвращают методы previous() и next().</li><li>При помощи ListIterator вы можете добавлять элементы в список при помощи метода add(). Iterator такого метода не имеет.</li></ol></div></div>", 
+                "0283.&nbsp;Сравните Iterator и ListIterator.", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::ListIterator расширяет интерфейс Iterator}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>ListIterator расширяет интерфейс Iterator</li><li>{{c2::ListIterator может быть использован только для перебора элементов коллекции List;}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>ListIterator может быть использован только для перебора элементов коллекции List;</li><li>{{c3::Iterator позволяет перебирать элементы только в одном направлении, при помощи метода next(). Тогда как ListIterator позволяет перебирать список в обоих направлениях, при помощи методов next() и previous();}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Iterator позволяет перебирать элементы только в одном направлении, при помощи метода next(). Тогда как ListIterator позволяет перебирать список в обоих направлениях, при помощи методов next() и previous();</li><li>{{c4::ListIterator не указывает на конкретный элемент: его текущая позиция располагается между элементами, которые возвращают методы previous() и next().}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>ListIterator не указывает на конкретный элемент: его текущая позиция располагается между элементами, которые возвращают методы previous() и next().</li><li>{{c5::При помощи ListIterator вы можете добавлять элементы в список при помощи метода add(). Iterator такого метода не имеет.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::ListIterator расширяет интерфейс Iterator}}</li><li>{{c21::ListIterator может быть использован только для перебора элементов коллекции List;}}</li><li>{{c21::Iterator позволяет перебирать элементы только в одном направлении, при помощи метода next(). Тогда как ListIterator позволяет перебирать список в обоих направлениях, при помощи методов next() и previous();}}</li><li>{{c21::ListIterator не указывает на конкретный элемент: его текущая позиция располагается между элементами, которые возвращают методы previous() и next().}}</li><li>{{c21::При помощи ListIterator вы можете добавлять элементы в список при помощи метода add(). Iterator такого метода не имеет.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "k=]$eQ+9yg", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0284.&nbsp;Что произойдет при вызове Iterator.next() без предварительного вызова Iterator.hasNext()?", 
+                "Если итератор указывает на последний элемент коллекции, то возникнет исключение NoSuchElementException, иначе будет возвращен следующий элемент."
+            ], 
+            "flags": 0, 
+            "guid": "xI7-|@-^q=", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0285. Сколько элементов будет пропущено, если Iterator.next() будет вызван после 10-ти вызовов Iterator.hasNext()?", 
+                "Нисколько - hasNext() осуществляет только проверку наличия следующего элемента."
+            ], 
+            "flags": 0, 
+            "guid": "FQO(gg5P+6", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0286.&nbsp;Как поведёт себя коллекция, если вызвать iterator.remove()?", 
+                "Если вызову iterator.remove() предшествовал вызов iterator.next(), то iterator.remove() удалит элемент коллекции, на который указывает итератор, в противном случае будет выброшено IllegalStateException()."
+            ], 
+            "flags": 0, 
+            "guid": "u$r9N,GxHo", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0287.&nbsp;Как поведёт себя уже инстанциированный итератор для collection, если вызвать collection.remove()?", 
+                "При следующем вызове методов итератора будет выброшено ConcurrentModificationException."
+            ], 
+            "flags": 0, 
+            "guid": "ho4u!c,f@B", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Попробовать подобрать другой итератор, работающий по принципу fail-safe. К примеру, для List можно использовать ListIterator.</li><li>Использовать ConcurrentHashMap и CopyOnWriteArrayList.</li><li>Преобразовать список в массив и перебирать массив.</li><li>Блокировать изменения списка на время перебора с помощью блока synchronized.</li></ol></div>", 
+                "0288.&nbsp;Как избежать ConcurrentModificationException во время перебора коллекции?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Попробовать подобрать другой итератор, работающий по принципу fail-safe. К примеру, для List можно использовать ListIterator.}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Попробовать подобрать другой итератор, работающий по принципу fail-safe. К примеру, для List можно использовать ListIterator.</li><li>{{c2::Использовать ConcurrentHashMap и CopyOnWriteArrayList.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Использовать ConcurrentHashMap и CopyOnWriteArrayList.</li><li>{{c3::Преобразовать список в массив и перебирать массив.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Преобразовать список в массив и перебирать массив.</li><li>{{c4::Блокировать изменения списка на время перебора с помощью блока synchronized.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Попробовать подобрать другой итератор, работающий по принципу fail-safe. К примеру, для List можно использовать ListIterator.}}</li><li>{{c21::Использовать ConcurrentHashMap и CopyOnWriteArrayList.}}</li><li>{{c21::Преобразовать список в массив и перебирать массив.}}</li><li>{{c21::Блокировать изменения списка на время перебора с помощью блока synchronized.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "E}O.OsF{{+", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0289.&nbsp;Какая коллекция работает по принципу FIFO?", 
+                "FIFO, First-In-First-Out («первым пришел-первым ушел») - по этому принципу построена коллекция Queue."
+            ], 
+            "flags": 0, 
+            "guid": "Np!?tR3!!9", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>Методы класса Vector синхронизированы, а ArrayList - нет;</li><li>По умолчанию, Vector удваивает свой размер, когда заканчивается выделенная под элементы память. ArrayList же увеличивает свой размер только на половину.</li></ul></div>", 
+                "0290.&nbsp;Чем отличается ArrayList от Vector?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::Методы класса Vector синхронизированы, а ArrayList - нет;}}</li><li>...</li></ul>", 
+                "<ul><li>Методы класса Vector синхронизированы, а ArrayList - нет;</li><li>{{c2::По умолчанию, Vector удваивает свой размер, когда заканчивается выделенная под элементы память. ArrayList же увеличивает свой размер только на половину.}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::Методы класса Vector синхронизированы, а ArrayList - нет;}}</li><li>{{c21::По умолчанию, Vector удваивает свой размер, когда заканчивается выделенная под элементы память. ArrayList же увеличивает свой размер только на половину.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "v,L9ogaQDE", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>доступ к произвольному элементу по индексу за время O(1);</li><li>доступ к элементам по значению за линейное время O(N);</li><li>вставка в конец в среднем производится за время O(1);</li><li>удаление произвольного элемента из списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку влево (реальный размер массива (capacity) не изменяется);</li><li>вставка элемента в произвольное место списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку вправо;</li><li>минимум накладных расходов при хранении.</li></ol></div>", 
+                "0292. опишите ArrayList", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::доступ к произвольному элементу по индексу за время O(1);}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>доступ к произвольному элементу по индексу за время O(1);</li><li>{{c2::доступ к элементам по значению за линейное время O(N);}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>доступ к элементам по значению за линейное время O(N);</li><li>{{c3::вставка в конец в среднем производится за время O(1);}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>вставка в конец в среднем производится за время O(1);</li><li>{{c4::удаление произвольного элемента из списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку влево (реальный размер массива (capacity) не изменяется);}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>удаление произвольного элемента из списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку влево (реальный размер массива (capacity) не изменяется);</li><li>{{c5::вставка элемента в произвольное место списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку вправо;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>вставка элемента в произвольное место списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку вправо;</li><li>{{c6::минимум накладных расходов при хранении.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::доступ к произвольному элементу по индексу за время O(1);}}</li><li>{{c21::доступ к элементам по значению за линейное время O(N);}}</li><li>{{c21::вставка в конец в среднем производится за время O(1);}}</li><li>{{c21::удаление произвольного элемента из списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку влево (реальный размер массива (capacity) не изменяется);}}</li><li>{{c21::вставка элемента в произвольное место списка занимает значительное время т.к. при этом все элементы находящиеся «правее» смещаются на одну ячейку вправо;}}</li><li>{{c21::минимум накладных расходов при хранении.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "H|~U+*{Yg$", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>на получение элемента по индексу или значению потребуется линейное время O(N);</li><li>на добавление и удаление в начало или конец списка потребуется O(1);</li><li>вставка или удаление в/из произвольного место O(N);</li><li>требует больше памяти для хранения такого же количества элементов, потому что кроме самого элемента хранятся еще указатели на следующий и предыдущий элементы списка.</li></ol></div>", 
+                "0293. опишите LinkedList", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::на получение элемента по индексу или значению потребуется линейное время O(N);}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>на получение элемента по индексу или значению потребуется линейное время O(N);</li><li>{{c2::на добавление и удаление в начало или конец списка потребуется O(1);}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>на добавление и удаление в начало или конец списка потребуется O(1);</li><li>{{c3::вставка или удаление в/из произвольного место O(N);}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>вставка или удаление в/из произвольного место O(N);</li><li>{{c4::требует больше памяти для хранения такого же количества элементов, потому что кроме самого элемента хранятся еще указатели на следующий и предыдущий элементы списка.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::на получение элемента по индексу или значению потребуется линейное время O(N);}}</li><li>{{c21::на добавление и удаление в начало или конец списка потребуется O(1);}}</li><li>{{c21::вставка или удаление в/из произвольного место O(N);}}</li><li>{{c21::требует больше памяти для хранения такого же количества элементов, потому что кроме самого элемента хранятся еще указатели на следующий и предыдущий элементы списка.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "v?B4=@ElQ:", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0294.&nbsp;В каких случаях лучше использовать ArrayList, а в каких LinkedList?", 
+                "В целом, LinkedList в абсолютных величинах проигрывает ArrayList и по потребляемой памяти и по скорости выполнения операций. LinkedList предпочтительно применять, когда нужны частые операции вставки/удаления или в случаях, когда необходимо гарантированное время добавления элемента в список."
+            ], 
+            "flags": 0, 
+            "guid": "n0#0}k80Xo", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0295.&nbsp;Какое худшее время работы метода contains() для элемента, который есть в LinkedList?", 
+                "O(N). Время поиска элемента линейно пропорционально количеству элементов с списке."
+            ], 
+            "flags": 0, 
+            "guid": "p8|{2?B)6P", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0296.&nbsp;Какое худшее время работы метода contains() для элемента, который есть в ArrayList?", 
+                "O(N). Время поиска элемента линейно пропорционально количеству элементов с списке."
+            ], 
+            "flags": 0, 
+            "guid": "b]Dmnp?5eU", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0297. Какое худшее время работы метода add() для LinkedList?", 
+                "O(N). Добавление в начало/конец списка осуществляется за время O(1)."
+            ], 
+            "flags": 0, 
+            "guid": "EaPkSOzSCO", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0298.&nbsp;Какое худшее время работы метода add() для ArrayList?", 
+                "O(N). Вставка элемента в конец списка осуществляется за время O(1), но если вместимость массива недостаточна, то происходит создание нового массива с увеличенным размером и копирование всех элементов из старого массива в новый."
+            ], 
+            "flags": 0, 
+            "guid": "Fp(%_d>RZ<", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0299.&nbsp;Необходимо добавить 1 млн. элементов, какую структуру вы используете?", 
+                "Однозначный ответ можно дать только исходя из информации о том в какую часть списка происходит добавление элементов, что потом будет происходить с элементами списка, существуют ли какие-то ограничения по памяти или скорости выполнения."
+            ], 
+            "flags": 0, 
+            "guid": "AR9vGuEDJq", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0300. Как происходит удаление элементов из ArrayList? Как меняется в этом случае размер ArrayList?", 
+                "При удалении произвольного элемента из списка, все элементы находящиеся «правее» смещаются на одну ячейку влево и реальный размер массива (его емкость, capacity) не изменяется никак. Механизм автоматического «расширения» массива существует, а вот автоматического «сжатия» нет, можно только явно выполнить «сжатие» командой trimToSize()."
+            ], 
+            "flags": 0, 
+            "guid": "gJdqcg-RGk", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0301.&nbsp;Предложите эффективный алгоритм удаления нескольких рядом стоящих элементов из середины списка, реализуемого ArrayList.", 
+                "Допустим нужно удалить n элементов с позиции m в списке. Вместо выполнения удаления одного элемента n раз (каждый раз смещая на 1 позицию элементы, стоящие «правее» в списке), нужно выполнить смещение всех элементов, стоящих «правее» n + m позиции на n элементов «левее» к началу списка. Таким образом, вместо выполнения n итераций перемещения элементов списка, все выполняется за 1 проход."
+            ], 
+            "flags": 0, 
+            "guid": "Bxv$aeWp[/", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0302.&nbsp;Сколько необходимо дополнительной памяти при вызове ArrayList.add()?", 
+                "Если в массиве достаточно места для размещения нового элемента, то дополнительной памяти не требуется. Иначе происходит создание нового массива размером в 1,5 раза превышающим существующий (это верно для JDK выше 1.7, в более ранних версиях размер увеличения иной)."
+            ], 
+            "flags": 0, 
+            "guid": "J]3zMl9*&.", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0303.&nbsp;Сколько выделяется дополнительно памяти при вызове LinkedList.add()?", 
+                "Создается один новый экземпляр вложенного класса Node."
+            ], 
+            "flags": 0, 
+            "guid": "Q{fi+<<^zL", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0304.&nbsp;Оцените количество памяти на хранение одного примитива типа byte в LinkedList?", 
+                "Каждый элемент LinkedList хранит ссылку на предыдущий элемент, следующий элемент и ссылку на данные.<div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">private</span> <span style=\"color: #008000; font-weight: bold\">static</span> <span style=\"color: #008000; font-weight: bold\">class</span> <span style=\"color: #0000FF; font-weight: bold\">Node</span><span style=\"color: #666666\">&lt;</span>E<span style=\"color: #666666\">&gt;</span> <span style=\"color: #666666\">{</span>\n        E item<span style=\"color: #666666\">;</span>\n        Node<span style=\"color: #666666\">&lt;</span>E<span style=\"color: #666666\">&gt;</span> next<span style=\"color: #666666\">;</span>\n        Node<span style=\"color: #666666\">&lt;</span>E<span style=\"color: #666666\">&gt;</span> prev<span style=\"color: #666666\">;</span>\n<span style=\"color: #408080; font-style: italic\">//...</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><div>Для 32-битных систем каждая ссылка занимает 32 бита (4 байта). Сам объект (заголовок) вложенного класса Node занимает 8 байт. 4 + 4 + 4 + 8 = 20 байт, а т.к. размер каждого объекта в Java кратен 8, соответственно получаем 24 байта. Примитив типа byte занимает 1 байт памяти, но в JCF примитивы упаковываются: объект типа Byte занимает в памяти 16 байт (8 байт на заголовок объекта, 1 байт на поле типа byte и 7 байт для кратности 8). Значения от -128 до 127 кэшируются и для них новые объекты каждый раз не создаются. Таким образом, в x32 JVM 24 байта тратятся на хранение одного элемента в списке и 16 байт - на хранение упакованного объекта типа Byte. Итого 40 байт.</div><div><br /></div><div>Для 64-битной JVM каждая ссылка занимает 64 бита (8 байт), размер заголовка каждого объекта составляет 16 байт (два машинных слова). Вычисления аналогичны: 8 + 8 + 8 + 16 = 40байт и 24 байта. Итого 64 байта.</div></div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "lN1s((ary_", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0305.&nbsp;Оцените количество памяти на хранение одного примитива типа byte в ArrayList?", 
+                "ArrayList основан на массиве, для примитивных типов данных осуществляется автоматическая упаковка значения, поэтому 16 байт тратится на хранение упакованного объекта и 4 байта (8 для x64) - на хранение ссылки на этот объект в самой структуре данных. Таким образом, в x32 JVM 4 байта используются на хранение одного элемента и 16 байт - на хранение упакованного объекта типа Byte. Для x64 - 8 байт и 24 байта соответственно."
+            ], 
+            "flags": 0, 
+            "guid": "pU)KB,WywN", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; проверка массива на вместимость. Если вместимости недостаточно, то увеличение размера массива и копирование всех элементов в новый массив (O(N));</li><li>&nbsp; &nbsp; копирование всех элементов, расположенных правее от позиции вставки, на одну позицию вправо (O(N));</li><li>&nbsp; &nbsp; вставка элемента (O(1)).</li></ol></div>", 
+                "0307. опишите операцию добавления элемента в середину для&nbsp;ArrayList", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; проверка массива на вместимость. Если вместимости недостаточно, то увеличение размера массива и копирование всех элементов в новый массив (O(N));}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; проверка массива на вместимость. Если вместимости недостаточно, то увеличение размера массива и копирование всех элементов в новый массив (O(N));</li><li>{{c2::&nbsp; &nbsp; копирование всех элементов, расположенных правее от позиции вставки, на одну позицию вправо (O(N));}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; копирование всех элементов, расположенных правее от позиции вставки, на одну позицию вправо (O(N));</li><li>{{c3::&nbsp; &nbsp; вставка элемента (O(1)).}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; проверка массива на вместимость. Если вместимости недостаточно, то увеличение размера массива и копирование всех элементов в новый массив (O(N));}}</li><li>{{c21::&nbsp; &nbsp; копирование всех элементов, расположенных правее от позиции вставки, на одну позицию вправо (O(N));}}</li><li>{{c21::&nbsp; &nbsp; вставка элемента (O(1)).}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "t8z,5gEb|z", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>&nbsp; &nbsp; поиск позиции вставки (O(N));</li><li>&nbsp; &nbsp; вставка элемента (O(1)).</li></ul></div>", 
+                "0308.&nbsp;операция добавления элемента в середину для&nbsp;LinkedList?", 
+                "", 
+                "", 
+                "1,0,0 | n,n,n,n", 
+                "<ul><li>...</li><li>...</li></ul>", 
+                "<ul><li>&nbsp; &nbsp; поиск позиции вставки (O(N));</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>&nbsp; &nbsp; вставка элемента (O(1)).</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::&nbsp; &nbsp; поиск позиции вставки (O(N));}}</li><li>{{c21::&nbsp; &nbsp; вставка элемента (O(1)).}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "E;wa?9a?/9", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0308. операция добавления элемента в середину быстрее для ArrayList или для LinkedList?", 
+                "В худшем случае вставка в середину списка эффективнее для LinkedList. В остальных - скорее всего, для ArrayList, поскольку копирование элементов осуществляется за счет вызова быстрого системного метода System.arraycopy()."
+            ], 
+            "flags": 0, 
+            "guid": "Fp:<3({rX?", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0309.&nbsp;В реализации класса ArrayList есть следующие поля: Object[] elementData, int size. Объясните, зачем хранить отдельно size, если всегда можно взять elementData.length?", 
+                "Размер массива elementData представляет собой вместимость (capacity) ArrayList, которая всегда больше переменной size - реального количества хранимых элементов. При необходимости вместимость автоматически возрастает."
+            ], 
+            "flags": 0, 
+            "guid": "Q,ezGJUdW[", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0310. интерфейс Queue&nbsp;", 
+                "это очередь, которая обычно (но необязательно) строится по принципу FIFO (First-In-First-Out) - соответственно извлечение элемента осуществляется с начала очереди, вставка элемента - в конец очереди. Хотя этот принцип нарушает, к примеру PriorityQueue, использующая «natural ordering» или переданный Comparator при вставке нового элемента."
+            ], 
+            "flags": 0, 
+            "guid": "w>Y[N?2Pfo", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0311. интерфейс&nbsp;Deque", 
+                "Deque (Double Ended Queue) расширяет Queue и согласно документации это линейная коллекция, поддерживающая вставку/извлечение элементов с обоих концов. Помимо этого реализации интерфейса Deque могут строится по принципу FIFO, либо LIFO."
+            ], 
+            "flags": 0, 
+            "guid": ":)vq_lYLF", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0312.&nbsp;Реализации и Deque, и Queue обычно не переопределяют методы {{c1::equals() и hashCode(), вместо этого используются унаследованные методы класса Object, основанные на сравнении ссылок.}}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "jAA9f{MbeX", 
+            "note_model_uuid": "ef2c1764-a69a-11ea-993c-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0313.&nbsp;Почему LinkedList реализует и List, и Deque?", 
+                "LinkedList позволяет добавлять элементы в начало и конец списка за константное время, что хорошо согласуется с поведением интерфейса Deque."
+            ], 
+            "flags": 0, 
+            "guid": "O{tF7`&7b>", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0314.&nbsp;LinkedList — это односвязный, двусвязный или четырехсвязный список?", 
+                "Двусвязный: каждый элемент LinkedList хранит ссылку на предыдущий и следующий элементы."
+            ], 
+            "flags": 0, 
+            "guid": "xi>g!k|$|^", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0315.&nbsp;Как перебрать элементы LinkedList в обратном порядке, не используя медленный get(index)?", 
+                "Для этого в LinkedList есть обратный итератор, который можно получить вызва метод descendingIterator()."
+            ], 
+            "flags": 0, 
+            "guid": "s~:Yob)`Ed", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0316.&nbsp;Что позволяет сделать PriorityQueue?", 
+                "Особенностью PriorityQueue является возможность управления порядком элементов. По-умолчанию, элементы сортируются с использованием «natural ordering», но это поведение может быть переопределено при помощи объекта Comparator, который задаётся при создании очереди. Данная коллекция не поддерживает null в качестве элементов.<div><br /></div><div>Используя PriorityQueue, можно, например, реализовать алгоритм Дейкстры для поиска кратчайшего пути от одной вершины графа к другой. Либо для хранения объектов согласно определённого свойства.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "w`u_+gw&,Y", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0317.&nbsp;Stack считается «устаревшим». Чем его рекомендуют заменять? Почему?", 
+                "Stack был добавлен в Java 1.0 как реализация стека LIFO (last-in-first-out) и является расширением коллекции Vector, хотя это несколько нарушает понятие стека (например, класс Vector предоставляет возможность обращаться к любому элементу по индексу). Является частично синхронизированной коллекцией (кроме метода добавления push()) с вытекающими отсюда последствиями в виде негативного воздействия на производительность. После добавления в Java 1.6 интерфейса Deque, рекомендуется использовать реализации именно этого интерфейса, например ArrayDeque."
+            ], 
+            "flags": 0, 
+            "guid": "w5Bhv+)bq$", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Методы класса Hashtable синхронизированы, что приводит к снижению производительности, а HashMap - нет;</li><li>HashTable не может содержать элементы null, тогда как HashMap может содержать один ключ null и любое количество значений null;</li><li>Iterator у HashMap, в отличие от Enumeration у HashTable, работает по принципу «fail-fast» (выдает исключение при любой несогласованности данных).</li><li>Hashtable это устаревший класс и его использование не рекомендовано.</li></ol></div>", 
+                "0318.&nbsp;Зачем нужен HashMap, если есть Hashtable?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Методы класса Hashtable синхронизированы, что приводит к снижению производительности, а HashMap - нет;}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Методы класса Hashtable синхронизированы, что приводит к снижению производительности, а HashMap - нет;</li><li>{{c2::HashTable не может содержать элементы null, тогда как HashMap может содержать один ключ null и любое количество значений null;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>HashTable не может содержать элементы null, тогда как HashMap может содержать один ключ null и любое количество значений null;</li><li>{{c3::Iterator у HashMap, в отличие от Enumeration у HashTable, работает по принципу «fail-fast» (выдает исключение при любой несогласованности данных).}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Iterator у HashMap, в отличие от Enumeration у HashTable, работает по принципу «fail-fast» (выдает исключение при любой несогласованности данных).</li><li>{{c4::Hashtable это устаревший класс и его использование не рекомендовано.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Методы класса Hashtable синхронизированы, что приводит к снижению производительности, а HashMap - нет;}}</li><li>{{c21::HashTable не может содержать элементы null, тогда как HashMap может содержать один ключ null и любое количество значений null;}}</li><li>{{c21::Iterator у HashMap, в отличие от Enumeration у HashTable, работает по принципу «fail-fast» (выдает исключение при любой несогласованности данных).}}</li><li>{{c21::Hashtable это устаревший класс и его использование не рекомендовано.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "nJszrJ*7uN", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>IdentityHashMap - это структура данных, так же реализующая интерфейс Map и использующая при сравнении ключей (значений) сравнение ссылок, а не вызов метода equals(). Другими словами, в IdentityHashMap два ключа k1 и k2 будут считаться равными, если они указывают на один объект, т.е. выполняется условие k1 == k2.</li><li>IdentityHashMap не использует метод hashCode(), вместо которого применяется метод System.identityHashCode(), по этой причине IdentityHashMap по сравнению с HashMap имеет более высокую производительность, особенно если последний хранит объекты с дорогостоящими методами equals() и hashCode().</li><li>Одним из основных требований к использованию HashMap является неизменяемость ключа, а, т.к. IdentityHashMap не использует методы equals() и hashCode(), то это правило на него не распространяется.</li><li>IdentityHashMap может применяться для реализации сериализации/клонирования. При выполнении подобных алгоритмов программе необходимо обслуживать хэш-таблицу со всеми ссылками на объекты, которые уже были обработаны. Такая структура не должна рассматривать уникальные объекты как равные, даже если метод equals() возвращает true.</li></ol></div>", 
+                "0319.&nbsp;В чем разница между HashMap и IdentityHashMap? Для чего нужна IdentityHashMap?", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::IdentityHashMap - это структура данных, так же реализующая интерфейс Map и использующая при сравнении ключей (значений) сравнение ссылок, а не вызов метода equals(). Другими словами, в IdentityHashMap два ключа k1 и k2 будут считаться равными, если они указывают на один объект, т.е. выполняется условие k1 == k2.}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::IdentityHashMap не использует метод hashCode(), вместо которого применяется метод System.identityHashCode(), по этой причине IdentityHashMap по сравнению с HashMap имеет более высокую производительность, особенно если последний хранит объекты с дорогостоящими методами equals() и hashCode().}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::Одним из основных требований к использованию HashMap является неизменяемость ключа, а, т.к. IdentityHashMap не использует методы equals() и hashCode(), то это правило на него не распространяется.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>{{c4::IdentityHashMap может применяться для реализации сериализации/клонирования. При выполнении подобных алгоритмов программе необходимо обслуживать хэш-таблицу со всеми ссылками на объекты, которые уже были обработаны. Такая структура не должна рассматривать уникальные объекты как равные, даже если метод equals() возвращает true.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::IdentityHashMap - это структура данных, так же реализующая интерфейс Map и использующая при сравнении ключей (значений) сравнение ссылок, а не вызов метода equals(). Другими словами, в IdentityHashMap два ключа k1 и k2 будут считаться равными, если они указывают на один объект, т.е. выполняется условие k1 == k2.}}</li><li>{{c21::IdentityHashMap не использует метод hashCode(), вместо которого применяется метод System.identityHashCode(), по этой причине IdentityHashMap по сравнению с HashMap имеет более высокую производительность, особенно если последний хранит объекты с дорогостоящими методами equals() и hashCode().}}</li><li>{{c21::Одним из основных требований к использованию HashMap является неизменяемость ключа, а, т.к. IdentityHashMap не использует методы equals() и hashCode(), то это правило на него не распространяется.}}</li><li>{{c21::IdentityHashMap может применяться для реализации сериализации/клонирования. При выполнении подобных алгоритмов программе необходимо обслуживать хэш-таблицу со всеми ссылками на объекты, которые уже были обработаны. Такая структура не должна рассматривать уникальные объекты как равные, даже если метод equals() возвращает true.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Na/:7lYv4-", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0320. Типы ссылок в Java", 
+                "В Java существует 4 типа ссылок: сильные (strong reference), мягкие (SoftReference), слабые (WeakReference) и фантомные (PhantomReference). Особенности каждого типа ссылок связаны с работой Garbage Collector. Если объект можно достичь только с помощью цепочки WeakReference (то есть на него отсутствуют сильные и мягкие ссылки), то данный объект будет помечен на удаление."
+            ], 
+            "flags": 0, 
+            "guid": "v#TK[zPVHk", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0321.&nbsp;WeakHashMap&nbsp;", 
+                "это структура данных, реализующая интерфейс Map и основанная на использовании WeakReference для хранения ключей. Таким образом, пара «ключ-значение» будет удалена из WeakHashMap, если на объект-ключ более не имеется сильных ссылок."
+            ], 
+            "flags": 0, 
+            "guid": "B%LiuP<Neh", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0322. Пример использования&nbsp;WeakHashMap", 
+                "В качестве примера использования такой структуры данных можно привести следующую ситуацию: допустим имеются объекты, которые необходимо расширить дополнительной информацией, при этом изменение класса этих объектов нежелательно либо невозможно. В этом случае добавляем каждый объект в WeakHashMap в качестве ключа, а в качестве значения - нужную информацию. Таким образом, пока на объект имеется сильная ссылка (либо мягкая), можно проверять хэш-таблицу и извлекать информацию. Как только объект будет удален, то WeakReference для этого ключа будет помещен в ReferenceQueue и затем соответствующая запись для этой слабой ссылки будет удалена из WeakHashMap."
+            ], 
+            "flags": 0, 
+            "guid": "rxNoI4{!8?", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0323.&nbsp;В WeakHashMap используются WeakReferences. А почему бы не создать SoftHashMap на SoftReferences?", 
+                "SoftHashMap представлена в сторонних библиотеках, например, в Apache Commons."
+            ], 
+            "flags": 0, 
+            "guid": "LK)^WT(d:j", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0324.&nbsp;В WeakHashMap используются WeakReferences. А почему бы не создать PhantomHashMap на PhantomReferences?", 
+                "PhantomReference при вызове метода get() возвращает всегда null, поэтому тяжело представить назначение такой структуры данных."
+            ], 
+            "flags": 0, 
+            "guid": "sV,q3c%@8y", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>Реализация LinkedHashMap отличается от HashMap поддержкой двухсвязанного списка, определяющего порядок итерации по элементам структуры данных.&nbsp;</li><li>По умолчанию элементы списка упорядочены согласно их порядку добавления в LinkedHashMap (insertion-order).</li><li>порядок итерации можно изменить, установив параметр конструктора accessOrder в значение true. В этом случае доступ осуществляется по порядку последнего обращения к элементу (access-order). Это означает, что при вызове методов get() или put() элемент, к которому обращаемся, перемещается в конец списка.</li><li>При добавлении элемента, который уже присутствует в LinkedHashMap (т.е. с одинаковым ключом), порядок итерации по элементам не изменяется.</li></ol>", 
+                "0325.&nbsp;LinkedHashMap - что в нем от LinkedList, а что от HashMap?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Реализация LinkedHashMap отличается от HashMap поддержкой двухсвязанного списка, определяющего порядок итерации по элементам структуры данных.&nbsp;}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Реализация LinkedHashMap отличается от HashMap поддержкой двухсвязанного списка, определяющего порядок итерации по элементам структуры данных.&nbsp;</li><li>{{c2::По умолчанию элементы списка упорядочены согласно их порядку добавления в LinkedHashMap (insertion-order).}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>По умолчанию элементы списка упорядочены согласно их порядку добавления в LinkedHashMap (insertion-order).</li><li>{{c3::порядок итерации можно изменить, установив параметр конструктора accessOrder в значение true. В этом случае доступ осуществляется по порядку последнего обращения к элементу (access-order). Это означает, что при вызове методов get() или put() элемент, к которому обращаемся, перемещается в конец списка.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>порядок итерации можно изменить, установив параметр конструктора accessOrder в значение true. В этом случае доступ осуществляется по порядку последнего обращения к элементу (access-order). Это означает, что при вызове методов get() или put() элемент, к которому обращаемся, перемещается в конец списка.</li><li>{{c4::При добавлении элемента, который уже присутствует в LinkedHashMap (т.е. с одинаковым ключом), порядок итерации по элементам не изменяется.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Реализация LinkedHashMap отличается от HashMap поддержкой двухсвязанного списка, определяющего порядок итерации по элементам структуры данных.&nbsp;}}</li><li>{{c21::По умолчанию элементы списка упорядочены согласно их порядку добавления в LinkedHashMap (insertion-order).}}</li><li>{{c21::порядок итерации можно изменить, установив параметр конструктора accessOrder в значение true. В этом случае доступ осуществляется по порядку последнего обращения к элементу (access-order). Это означает, что при вызове методов get() или put() элемент, к которому обращаемся, перемещается в конец списка.}}</li><li>{{c21::При добавлении элемента, который уже присутствует в LinkedHashMap (т.е. с одинаковым ключом), порядок итерации по элементам не изменяется.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "P:g-p^fXaS", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0326.&nbsp;В чем проявляется «сортированность» SortedMap, кроме того, что toString() выводит все элементы по порядку?", 
+                "Так же оно проявляется при итерации по коллекции."
+            ], 
+            "flags": 0, 
+            "guid": "d(?9^Ys}9R", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>HashMap состоит из «корзин» (bucket). С технической точки зрения «корзины» — это элементы массива, которые хранят ссылки на списки элементов.&nbsp;</li><li>При добавлении новой пары «ключ-значение», вычисляет хэш-код ключа, на основании которого вычисляется номер корзины (номер ячейки массива), в которую попадет новый элемент.&nbsp;</li><li>Если корзина пустая, то в нее сохраняется ссылка на вновь добавляемый элемент, если же там уже есть элемент, то происходит последовательный переход по ссылкам между элементами в цепочке, в поисках последнего элемента, от которого и ставится ссылка на вновь добавленный элемент. Если в списке был найден элемент с таким же ключом, то он заменяется.</li></ol>", 
+                "0327. Как устроен HashMap?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::HashMap состоит из «корзин» (bucket). С технической точки зрения «корзины» — это элементы массива, которые хранят ссылки на списки элементов.&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>HashMap состоит из «корзин» (bucket). С технической точки зрения «корзины» — это элементы массива, которые хранят ссылки на списки элементов.&nbsp;</li><li>{{c2::При добавлении новой пары «ключ-значение», вычисляет хэш-код ключа, на основании которого вычисляется номер корзины (номер ячейки массива), в которую попадет новый элемент.&nbsp;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>При добавлении новой пары «ключ-значение», вычисляет хэш-код ключа, на основании которого вычисляется номер корзины (номер ячейки массива), в которую попадет новый элемент.&nbsp;</li><li>{{c3::Если корзина пустая, то в нее сохраняется ссылка на вновь добавляемый элемент, если же там уже есть элемент, то происходит последовательный переход по ссылкам между элементами в цепочке, в поисках последнего элемента, от которого и ставится ссылка на вновь добавленный элемент. Если в списке был найден элемент с таким же ключом, то он заменяется.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::HashMap состоит из «корзин» (bucket). С технической точки зрения «корзины» — это элементы массива, которые хранят ссылки на списки элементов.&nbsp;}}</li><li>{{c21::При добавлении новой пары «ключ-значение», вычисляет хэш-код ключа, на основании которого вычисляется номер корзины (номер ячейки массива), в которую попадет новый элемент.&nbsp;}}</li><li>{{c21::Если корзина пустая, то в нее сохраняется ссылка на вновь добавляемый элемент, если же там уже есть элемент, то происходит последовательный переход по ссылкам между элементами в цепочке, в поисках последнего элемента, от которого и ставится ссылка на вновь добавленный элемент. Если в списке был найден элемент с таким же ключом, то он заменяется.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "I)>M$>)ulU", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0328.&nbsp;Как работает HashMap при попытке сохранить в него два элемента по ключам с одинаковым hashCode(), но для которых equals() == false?", 
+                "По значению hashCode() вычисляется индекс ячейки массива, в список которой этот элемент будет добавлен. Перед добавлением осуществляется проверка на наличие элементов в этой ячейке. Если элементы с таким hashCode() уже присутствует, но их equals() методы не равны, то элемент будет добавлен в конец списка."
+            ], 
+            "flags": 0, 
+            "guid": "F<LW9|RMwI", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0329.&nbsp;Какое начальное количество корзин в HashMap?", 
+                "В конструкторе по умолчанию - 16, используя конструкторы с параметрами можно задавать произвольное начальное количество корзин."
+            ], 
+            "flags": 0, 
+            "guid": "n6lS^k<)~#", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0330.&nbsp;Какова оценка временной сложности операций над элементами из HashMap? Гарантирует ли HashMap указанную сложность выборки элемента?", 
+                "<div>В общем случае операции добавления, поиска и удаления элементов занимают константное время.</div><div>Данная сложность не гарантируется, т.к. если хэш-функция распределяет элементы по корзинам равномерно, временная сложность станет не хуже O(lg(N)), а в случае, когда хэш-функция постоянно возвращает одно и то же значение HashMap превратится в связный список со сложностью О(n) .</div>"
+            ], 
+            "flags": 0, 
+            "guid": "mKstr$ZuMI", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0331.&nbsp;Возможна ли ситуация, когда HashMap выродится в список даже с ключами имеющими разные hashCode()?", 
+                "Это возможно в случае, если метод, определяющий номер корзины будет возвращать одинаковые значения."
+            ], 
+            "flags": 0, 
+            "guid": "wo.$`E8w@c", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0332.&nbsp;В каком случае может быть потерян элемент в HashMap?", 
+                "Допустим, в качестве ключа используется не примитив, а объект с несколькими полями. После добавления элемента в HashMap у объекта, который выступает в качестве ключа, изменяют одно поле, которое участвует в вычислении хэш-кода. В результате при попытке найти данный элемент по исходному ключу, будет происходить обращение к правильной корзине, а вот equals уже не найдет указанный ключ в списке элементов. Тем не менее, даже если equals реализован таким образом, что изменение данного поля объекта не влияет на результат, то после увеличения размера корзин и пересчета хэш-кодов элементов, указанный элемент, с измененным значением поля, с большой долей вероятности попадет в совершенно другую корзину и тогда уже потеряется совсем."
+            ], 
+            "flags": 0, 
+            "guid": "w`:,dy^2E_", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0333.&nbsp;Почему нельзя использовать byte[] в качестве ключа в HashMap?", 
+                "Хэш-код массива не зависит от хранимых в нем элементов, а присваивается при создании массива (метод вычисления хэш-кода массива не переопределен и вычисляется по стандартному Object.hashCode() на основании адреса массива). Так же у массивов не переопределен equals и выполняется сравнение указателей. Это приводит к тому, что обратиться к сохраненному с ключом-массивом элементу не получится при использовании другого массива такого же размера и с такими же элементами, доступ можно осуществить лишь в одном случае — при использовании той же самой ссылки на массив, что использовалась для сохранения элемента."
+            ], 
+            "flags": 0, 
+            "guid": "K^F,zZjhdb", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0334.&nbsp;Какова роль equals() и hashCode() в HashMap?", 
+                "hashCode позволяет определить корзину для поиска элемента, а equals используется для сравнения ключей элементов в списке корзины и искомого ключа."
+            ], 
+            "flags": 0, 
+            "guid": "uymfeH{D2L", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0335.&nbsp;Каково максимальное число значений hashCode()?", 
+                "Число значений следует из сигнатуры int hashCode() и равно диапазону типа int — 2^32."
+            ], 
+            "flags": 0, 
+            "guid": "P(zKMz]]#t", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0336.&nbsp;Какое худшее время работы метода get(key) для ключа, который есть (которого нет) в HashMap?", 
+                "O(N). Худший случай - это поиск ключа в HashMap, вырожденного в список по причине совпадения ключей по hashCode() и для выяснения хранится ли элемент с определённым ключом может потребоваться перебор всего списка."
+            ], 
+            "flags": 0, 
+            "guid": "q0!qO-J$_Z", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>ключ равен null: 1 - выполняется единственный метод getForNullKey().</li><li>любой ключ отличный от null: 4 - вычисление хэш-кода ключа; определение номера корзины; поиск значения; возврат значения.</li></ul></div>", 
+                "0337.&nbsp;Сколько переходов происходит в момент вызова HashMap.get(key) по ключу, который есть в таблице?", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::ключ равен null: 1 - выполняется единственный метод getForNullKey().}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>{{c2::любой ключ отличный от null: 4 - вычисление хэш-кода ключа; определение номера корзины; поиск значения; возврат значения.}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::ключ равен null: 1 - выполняется единственный метод getForNullKey().}}</li><li>{{c21::любой ключ отличный от null: 4 - вычисление хэш-кода ключа; определение номера корзины; поиск значения; возврат значения.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "JftnE=>$UG", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0338.&nbsp;Сколько создается новых объектов, когда вы добавляете новый элемент в HashMap?", 
+                "Один новый объект статического вложенного класса Entry&lt;K,V&gt;."
+            ], 
+            "flags": 0, 
+            "guid": "Q;Z+hfLu)8", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0339.&nbsp;Как и когда происходит увеличение количества корзин в HashMap?", 
+                "Помимо capacity у HashMap есть еще поле loadFactor, на основании которого, вычисляется предельное количество занятых корзин capacity * loadFactor. По умолчанию loadFactor = 0.75. По достижению предельного значения, число корзин увеличивается в 2 раза и для всех хранимых элементов вычисляется новое «местоположение» с учетом нового числа корзин."
+            ], 
+            "flags": 0, 
+            "guid": "lavwt+Upa/", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>initialCapacity - исходный размер HashMap, количество корзин в хэш-таблице в момент её создания.</li><li>loadFactor - коэффициент заполнения HashMap, при превышении которого происходит увеличение количества корзин и автоматическое перехэширование. Равен отношению числа уже хранимых элементов в таблице к её размеру.</li></ul></div>", 
+                "<div>0340.&nbsp;Объясните смысл параметров в конструкторе HashMap(int initialCapacity, float loadFactor).</div>", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::initialCapacity - исходный размер HashMap, количество корзин в хэш-таблице в момент её создания.}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>{{c2::loadFactor - коэффициент заполнения HashMap, при превышении которого происходит увеличение количества корзин и автоматическое перехэширование. Равен отношению числа уже хранимых элементов в таблице к её размеру.}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::initialCapacity - исходный размер HashMap, количество корзин в хэш-таблице в момент её создания.}}</li><li>{{c21::loadFactor - коэффициент заполнения HashMap, при превышении которого происходит увеличение количества корзин и автоматическое перехэширование. Равен отношению числа уже хранимых элементов в таблице к её размеру.}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "NYGf|tu>4N", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0341.&nbsp;Будет ли работать HashMap, если все добавляемые ключи будут иметь одинаковый hashCode()?", 
+                "Да, будет, но в этом случае HashMap вырождается в связный список и теряет свои преимущества."
+            ], 
+            "flags": 0, 
+            "guid": "nn6/RwCs_u", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0342.&nbsp;Как перебрать все ключи Map?", 
+                "Использовать метод keySet(), который возвращает множество Set&lt;K&gt; ключей."
+            ], 
+            "flags": 0, 
+            "guid": "t$*a$#QBU|", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0343.&nbsp;Как перебрать все значения Map?", 
+                "Использовать метод values(), который возвращает коллекцию Collection&lt;V&gt; значений."
+            ], 
+            "flags": 0, 
+            "guid": "EXKwyFTxWN", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0344. Как перебрать все пары «ключ-значение» в Map?", 
+                "Использовать метод entrySet(), который возвращает множество Set&lt;Map.Entry&lt;K, V&gt;&gt; пар «ключ-значение»."
+            ], 
+            "flags": 0, 
+            "guid": "i}3#auJQ`#", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>TreeSet обеспечивает упорядоченно хранение элементов в виде красно-черного дерева. Сложность выполнения основных операций не хуже O(lg(N)).</li><li>HashSet использует для хранения элементов такой же подход, что и HashMap, за тем отличием, что в HashSet в качестве ключа и значения выступает сам элемент, кроме того HashSet не поддерживает упорядоченное хранение элементов и обеспечивает временную сложность выполнения операций аналогично HashMap.</li></ol></div>", 
+                "0345.&nbsp;В чем отличия TreeSet и HashSet?", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::TreeSet обеспечивает упорядоченно хранение элементов в виде красно-черного дерева. Сложность выполнения основных операций не хуже O(lg(N)).}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::HashSet использует для хранения элементов такой же подход, что и HashMap, за тем отличием, что в HashSet в качестве ключа и значения выступает сам элемент, кроме того HashSet не поддерживает упорядоченное хранение элементов и обеспечивает временную сложность выполнения операций аналогично HashMap.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::TreeSet обеспечивает упорядоченно хранение элементов в виде красно-черного дерева. Сложность выполнения основных операций не хуже O(lg(N)).}}</li><li>{{c21::HashSet использует для хранения элементов такой же подход, что и HashMap, за тем отличием, что в HashSet в качестве ключа и значения выступает сам элемент, кроме того HashSet не поддерживает упорядоченное хранение элементов и обеспечивает временную сложность выполнения операций аналогично HashMap.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "KMl]es?]|.", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0346.&nbsp;Что будет, если добавлять элементы в TreeSet по возрастанию?", 
+                "В основе TreeSet лежит красно-черное дерево, которое умеет само себя балансировать. В итоге, TreeSet все равно в каком порядке вы добавляете в него элементы, преимущества этой структуры данных будут сохраняться."
+            ], 
+            "flags": 0, 
+            "guid": "i7[Iw#UEwO", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0347.&nbsp;Чем LinkedHashSet отличается от HashSet?", 
+                "LinkedHashSet отличается от HashSet только тем, что в его основе лежит LinkedHashMap вместо HashMap. Благодаря этому порядок элементов при обходе коллекции является идентичным порядку добавления элементов (insertion-order). При добавлении элемента, который уже присутствует в LinkedHashSet (т.е. с одинаковым ключом), порядок обхода элементов не изменяется."
+            ], 
+            "flags": 0, 
+            "guid": "?i&llrU$>", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>В структуре данных хранятся объекты только одного типа Enum, указываемого при создании.&nbsp;</li><li>Для хранения значений EnumSet использует массив битов (bit vector), - это позволяет получить высокую компактность и эффективность.&nbsp;</li><li>Проход по EnumSet осуществляется согласно порядку объявления элементов перечисления.</li><li>Все основные операции выполняются за O(1) и обычно (но негарантированно) быстрей аналогов из HashSet, а пакетные операции (bulk operations), такие как containsAll() и retainAll() выполняются даже гораздо быстрей.</li><li>Помимо всего EnumSet предоставляет множество статических методов инициализации для упрощенного и удобного создания экземпляров.</li></ol></div>", 
+                "0348.&nbsp;Для Enum есть специальный класс java.util.EnumSet. Зачем? Чем авторов не устраивал HashSet или TreeSet?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::В структуре данных хранятся объекты только одного типа Enum, указываемого при создании.&nbsp;}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>В структуре данных хранятся объекты только одного типа Enum, указываемого при создании.&nbsp;</li><li>{{c2::Для хранения значений EnumSet использует массив битов (bit vector), - это позволяет получить высокую компактность и эффективность.&nbsp;}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Для хранения значений EnumSet использует массив битов (bit vector), - это позволяет получить высокую компактность и эффективность.&nbsp;</li><li>{{c3::Проход по EnumSet осуществляется согласно порядку объявления элементов перечисления.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Проход по EnumSet осуществляется согласно порядку объявления элементов перечисления.</li><li>{{c4::Все основные операции выполняются за O(1) и обычно (но негарантированно) быстрей аналогов из HashSet, а пакетные операции (bulk operations), такие как containsAll() и retainAll() выполняются даже гораздо быстрей.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>Все основные операции выполняются за O(1) и обычно (но негарантированно) быстрей аналогов из HashSet, а пакетные операции (bulk operations), такие как containsAll() и retainAll() выполняются даже гораздо быстрей.</li><li>{{c5::Помимо всего EnumSet предоставляет множество статических методов инициализации для упрощенного и удобного создания экземпляров.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::В структуре данных хранятся объекты только одного типа Enum, указываемого при создании.&nbsp;}}</li><li>{{c21::Для хранения значений EnumSet использует массив битов (bit vector), - это позволяет получить высокую компактность и эффективность.&nbsp;}}</li><li>{{c21::Проход по EnumSet осуществляется согласно порядку объявления элементов перечисления.}}</li><li>{{c21::Все основные операции выполняются за O(1) и обычно (но негарантированно) быстрей аналогов из HashSet, а пакетные операции (bulk operations), такие как containsAll() и retainAll() выполняются даже гораздо быстрей.}}</li><li>{{c21::Помимо всего EnumSet предоставляет множество статических методов инициализации для упрощенного и удобного создания экземпляров.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "mU3o3)UP66", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Basic for Loop</li><li>Enhanced for loop</li><li>Iterator</li><li>ListIterator</li><li>Iterable.forEach()</li><li>Stream.forEach()</li></ol></div>", 
+                "0349. Какие существуют способы перебирать элементы списка?", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Basic for Loop}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::Enhanced for loop}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::Iterator}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>{{c4::ListIterator}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>{{c5::Iterable.forEach()}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>{{c6::Stream.forEach()}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Basic for Loop}}</li><li>{{c21::Enhanced for loop}}</li><li>{{c21::Iterator}}</li><li>{{c21::ListIterator}}</li><li>{{c21::Iterable.forEach()}}</li><li>{{c21::Stream.forEach()}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "r*Yf#>4i~i", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>0350.Каким образом можно получить синхронизированные объекты стандартных коллекций?</div>", 
+                "С помощью статических методов synchronizedMap() и synchronizedList() класса Collections. Данные методы возвращают синхронизированный декоратор переданной коллекции. При этом все равно в случае обхода по коллекции требуется ручная синхронизация.<br />Начиная с Java 6 JCF был расширен специальными коллекциями, поддерживающими многопоточный доступ, такими как CopyOnWriteArrayList и ConcurrentHashMap."
+            ], 
+            "flags": 0, 
+            "guid": "ie*tKEfBHd", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Collections.unmodifiableList(list);</li><li>Collections.unmodifiableSet(set);</li><li>Collections.unmodifiableMap(map).</li></ol></div>", 
+                "0351. Как получить коллекцию только для чтения?", 
+                "Эти методы принимают коллекцию в качестве параметра, и возвращают коллекцию только для чтения с теми же элементами внутри.", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Collections.unmodifiableList(list);}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::Collections.unmodifiableSet(set);}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::Collections.unmodifiableMap(map).}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Collections.unmodifiableList(list);}}</li><li>{{c21::Collections.unmodifiableSet(set);}}</li><li>{{c21::Collections.unmodifiableMap(map).}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "v:AVIOI_AX", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0352.&nbsp;Напишите однопоточную программу, которая заставляет коллекцию выбросить ConcurrentModificationException.", 
+                "<div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">public</span> <span style=\"color: #008000; font-weight: bold\">static</span> <span style=\"color: #B00040\">void</span> <span style=\"color: #0000FF\">main</span><span style=\"color: #666666\">(</span>String<span style=\"color: #666666\">[]</span> args<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n    List<span style=\"color: #666666\">&lt;</span>Integer<span style=\"color: #666666\">&gt;</span> list <span style=\"color: #666666\">=</span> <span style=\"color: #008000; font-weight: bold\">new</span> ArrayList<span style=\"color: #666666\">&lt;&gt;();</span>\n    list<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">add</span><span style=\"color: #666666\">(1);</span>\n    list<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">add</span><span style=\"color: #666666\">(2);</span>\n    list<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">add</span><span style=\"color: #666666\">(3);</span>\n\n    <span style=\"color: #008000; font-weight: bold\">for</span> <span style=\"color: #666666\">(</span>Integer integer <span style=\"color: #666666\">:</span> list<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n        list<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">remove</span><span style=\"color: #666666\">(1);</span>\n    <span style=\"color: #666666\">}</span>\n<span style=\"color: #666666\">}</span></pre></div></td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "JO+*;t@{!i", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0353.&nbsp;Приведите пример, когда какая-либо коллекция выбрасывает UnsupportedOperationException.", 
+                "<div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">public</span> <span style=\"color: #008000; font-weight: bold\">static</span> <span style=\"color: #B00040\">void</span> <span style=\"color: #0000FF\">main</span><span style=\"color: #666666\">(</span>String<span style=\"color: #666666\">[]</span> args<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n    List<span style=\"color: #666666\">&lt;</span>Integer<span style=\"color: #666666\">&gt;</span> list <span style=\"color: #666666\">=</span> Collections<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">emptyList</span><span style=\"color: #666666\">();</span>\n    list<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">add</span><span style=\"color: #666666\">(0);</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "b8Q06+Y_T!", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0354. что такое симметрическая разность двух коллекций", 
+                "это множество элементов, одновременно не принадлежащих обоим исходным коллекциям."
+            ], 
+            "flags": 0, 
+            "guid": "i_+2@0e@cp", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0355.&nbsp;Реализуйте симметрическую разность двух коллекций используя методы Collection (addAll(...), removeAll(...), retainAll(...)).", 
+                "<div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #666666\">&lt;</span>T<span style=\"color: #666666\">&gt;</span> Collection<span style=\"color: #666666\">&lt;</span>T<span style=\"color: #666666\">&gt;</span> <span style=\"color: #0000FF\">symmetricDifference</span><span style=\"color: #666666\">(</span>Collection<span style=\"color: #666666\">&lt;</span>T<span style=\"color: #666666\">&gt;</span> a<span style=\"color: #666666\">,</span> Collection<span style=\"color: #666666\">&lt;</span>T<span style=\"color: #666666\">&gt;</span> b<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>    \n    <span style=\"color: #408080; font-style: italic\">// Объединяем коллекции.</span>\n    Collection<span style=\"color: #666666\">&lt;</span>T<span style=\"color: #666666\">&gt;</span> result <span style=\"color: #666666\">=</span> <span style=\"color: #008000; font-weight: bold\">new</span> ArrayList<span style=\"color: #666666\">&lt;&gt;(</span>a<span style=\"color: #666666\">);</span>\n    result<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">addAll</span><span style=\"color: #666666\">(</span>b<span style=\"color: #666666\">);</span>\n    \n    <span style=\"color: #408080; font-style: italic\">// Получаем пересечение коллекций.</span>\n    Collection<span style=\"color: #666666\">&lt;</span>T<span style=\"color: #666666\">&gt;</span> intersection <span style=\"color: #666666\">=</span> <span style=\"color: #008000; font-weight: bold\">new</span> ArrayList<span style=\"color: #666666\">&lt;&gt;(</span>a<span style=\"color: #666666\">);</span>\n    intersection<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">retainAll</span><span style=\"color: #666666\">(</span>b<span style=\"color: #666666\">);</span>\n    \n    <span style=\"color: #408080; font-style: italic\">// Удаляем элементы, расположенные в обоих коллекциях.</span>\n    result<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">removeAll</span><span style=\"color: #666666\">(</span>intersection<span style=\"color: #666666\">);</span>\n\n    <span style=\"color: #008000; font-weight: bold\">return</span> result<span style=\"color: #666666\">;</span>\n<span style=\"color: #666666\">}</span></pre></div></td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "Qtl&mbIOaB", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0356.&nbsp;Как, используя LinkedHashMap, сделать кэш c «invalidation policy»?", 
+                "Необходимо использовать LRU-алгоритм (Least Recently Used algorithm) и LinkedHashMap с access-order. В этом случае при обращении к элементу он будет перемещаться в конец списка, а наименее используемые элементы будут постепенно группироваться в начале списка. Так же в стандартной реализации LinkedHashMap есть метод removeEldestEntries(), который возвращает true, если текущий объект LinkedHashMap должен удалить наименее используемый элемент из коллекции при использовании методов put() и putAll().<div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">public</span> <span style=\"color: #008000; font-weight: bold\">class</span> <span style=\"color: #0000FF; font-weight: bold\">LRUCache</span><span style=\"color: #666666\">&lt;</span>K<span style=\"color: #666666\">,</span> V<span style=\"color: #666666\">&gt;</span> <span style=\"color: #008000; font-weight: bold\">extends</span> LinkedHashMap<span style=\"color: #666666\">&lt;</span>K<span style=\"color: #666666\">,</span> V<span style=\"color: #666666\">&gt;</span> <span style=\"color: #666666\">{</span>\n    <span style=\"color: #008000; font-weight: bold\">private</span> <span style=\"color: #008000; font-weight: bold\">static</span> <span style=\"color: #008000; font-weight: bold\">final</span> <span style=\"color: #B00040\">int</span> MAX_ENTRIES <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">10;</span>\n\n    <span style=\"color: #008000; font-weight: bold\">public</span> <span style=\"color: #0000FF\">LRUCache</span><span style=\"color: #666666\">(</span><span style=\"color: #B00040\">int</span> initialCapacity<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #008000; font-weight: bold\">super</span><span style=\"color: #666666\">(</span>initialCapacity<span style=\"color: #666666\">,</span> <span style=\"color: #666666\">0.85f,</span> <span style=\"color: #008000; font-weight: bold\">true</span><span style=\"color: #666666\">);</span>\n    <span style=\"color: #666666\">}</span>\n\n    <span style=\"color: #AA22FF\">@Override</span>\n    <span style=\"color: #008000; font-weight: bold\">protected</span> <span style=\"color: #B00040\">boolean</span> <span style=\"color: #0000FF\">removeEldestEntry</span><span style=\"color: #666666\">(</span>Map<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">Entry</span><span style=\"color: #666666\">&lt;</span>K<span style=\"color: #666666\">,</span> V<span style=\"color: #666666\">&gt;</span> eldest<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n        <span style=\"color: #008000; font-weight: bold\">return</span> size<span style=\"color: #666666\">()</span> <span style=\"color: #666666\">&gt;</span> MAX_ENTRIES<span style=\"color: #666666\">;</span>\n    <span style=\"color: #666666\">}</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center>Стоит заметить, что LinkedHashMap не позволяет полностью реализовать LRU-алгоритм, поскольку при вставке уже имеющегося в коллекции элемента порядок итерации по элементам не меняется.</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "if9WMftFIq", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0357.&nbsp;Как одной строчкой скопировать элементы любой collection в массив?", 
+                "<center><table style=\"text-align: left;\"><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">Object<span style=\"color: #666666\">[]</span> array <span style=\"color: #666666\">=</span> collection<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">toArray</span><span style=\"color: #666666\">();</span></pre></div></td></tr></tbody></table></center><div style=\"text-align: left;\"><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "uJYjW28;s/", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0358.&nbsp;Как одним вызовом из List получить List со всеми элементами, кроме первых и последних 3-х?", 
+                "<center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">List<span style=\"color: #666666\">&lt;</span>Integer<span style=\"color: #666666\">&gt;</span> subList <span style=\"color: #666666\">=</span> list<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">subList</span><span style=\"color: #666666\">(3,</span> list<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">size</span><span style=\"color: #666666\">()</span> <span style=\"color: #666666\">-</span> <span style=\"color: #666666\">3);</span></pre></div></td></tr></tbody></table></center><br />"
+            ], 
+            "flags": 0, 
+            "guid": "D[-pUEinaG", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0359.&nbsp;Как одной строчкой преобразовать HashSet в ArrayList?", 
+                "<center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">ArrayList<span style=\"color: #666666\">&lt;</span>Integer<span style=\"color: #666666\">&gt;</span> list <span style=\"color: #666666\">=</span> <span style=\"color: #008000; font-weight: bold\">new</span> ArrayList<span style=\"color: #666666\">&lt;&gt;(</span><span style=\"color: #008000; font-weight: bold\">new</span> HashSet<span style=\"color: #666666\">&lt;&gt;());</span></pre></div></td></tr></tbody></table></center><br />"
+            ], 
+            "flags": 0, 
+            "guid": "A)<~8cm~s`", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0360.&nbsp;Как одной строчкой преобразовать ArrayList в HashSet?", 
+                "<center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">HashSet<span style=\"color: #666666\">&lt;</span>Integer<span style=\"color: #666666\">&gt;</span> set <span style=\"color: #666666\">=</span> <span style=\"color: #008000; font-weight: bold\">new</span> HashSet<span style=\"color: #666666\">&lt;&gt;(</span><span style=\"color: #008000; font-weight: bold\">new</span> ArrayList<span style=\"color: #666666\">&lt;&gt;());</span></pre></div></td></tr></tbody></table></center><br />"
+            ], 
+            "flags": 0, 
+            "guid": "hz[+[pYTi*", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0361.&nbsp;Сделайте HashSet из ключей HashMap.", 
+                "<center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">HashSet<span style=\"color: #666666\">&lt;</span>Object<span style=\"color: #666666\">&gt;</span> set <span style=\"color: #666666\">=</span> <span style=\"color: #008000; font-weight: bold\">new</span> HashSet<span style=\"color: #666666\">&lt;&gt;(</span>map<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">keySet</span><span style=\"color: #666666\">());</span>\n</pre></div>\n</td></tr></tbody></table></center><br />"
+            ], 
+            "flags": 0, 
+            "guid": "d=?_Bwf$4F", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0362.&nbsp;Сделайте HashMap из HashSet&lt;Map.Entry&lt;K, V&gt;&gt;", 
+                "<div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">HashMap<span style=\"color: #666666\">&lt;</span>K<span style=\"color: #666666\">,</span> V<span style=\"color: #666666\">&gt;</span> map <span style=\"color: #666666\">=</span> <span style=\"color: #008000; font-weight: bold\">new</span> HashMap<span style=\"color: #666666\">&lt;&gt;(</span>set<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">size</span><span style=\"color: #666666\">());</span>\n<span style=\"color: #008000; font-weight: bold\">for</span> <span style=\"color: #666666\">(</span>Map<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">Entry</span><span style=\"color: #666666\">&lt;</span>K<span style=\"color: #666666\">,</span> V<span style=\"color: #666666\">&gt;</span> entry <span style=\"color: #666666\">:</span> set<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>\n    map<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">put</span><span style=\"color: #666666\">(</span>entry<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">getKey</span><span style=\"color: #666666\">(),</span> entry<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">getValue</span><span style=\"color: #666666\">());</span>\n<span style=\"color: #666666\">}</span>\n</pre></div>\n</td></tr></tbody></table></center><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "NISp-@W[Ps", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Не требуют непрерывного объема в памяти</li><li>Легко подстраиваются под необходимую структуру (очередь FIFO, стек FILO, дек, циклический список)&nbsp;</li><li>Быстрая работа с началом и концом списка</li><li>Возможность добавления и удаления элемента по указателю</li></ol></div>", 
+                "0293_1.&nbsp;Достоинства списков", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Не требуют непрерывного объема в памяти}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Не требуют непрерывного объема в памяти</li><li>{{c2::Легко подстраиваются под необходимую структуру (очередь FIFO, стек FILO, дек, циклический список)&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Легко подстраиваются под необходимую структуру (очередь FIFO, стек FILO, дек, циклический список)&nbsp;</li><li>{{c3::Быстрая работа с началом и концом списка}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Быстрая работа с началом и концом списка</li><li>{{c4::Возможность добавления и удаления элемента по указателю}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Не требуют непрерывного объема в памяти}}</li><li>{{c21::Легко подстраиваются под необходимую структуру (очередь FIFO, стек FILO, дек, циклический список)&nbsp;}}</li><li>{{c21::Быстрая работа с началом и концом списка}}</li><li>{{c21::Возможность добавления и удаления элемента по указателю}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "cjv76O;rfu", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Большое количество выделяемой памяти</li><li>Кусочно размещены в памяти</li><li>Отсутствие индексации элементов</li><li>Медленный поиск</li></ol></div>", 
+                "0293_2.&nbsp;Недостатки списков", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Большое количество выделяемой памяти}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Большое количество выделяемой памяти</li><li>{{c2::Кусочно размещены в памяти}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Кусочно размещены в памяти</li><li>{{c3::Отсутствие индексации элементов}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Отсутствие индексации элементов</li><li>{{c4::Медленный поиск}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Большое количество выделяемой памяти}}</li><li>{{c21::Кусочно размещены в памяти}}</li><li>{{c21::Отсутствие индексации элементов}}</li><li>{{c21::Медленный поиск}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "xJz01gZ:^P", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Оба поддерева — левое и правое — являются двоичными деревьями поиска.</li><li>У всех узлов левого поддерева произвольного узла X значения ключей данных меньше, нежели значение ключа данных самого узла X.</li><li>У всех узлов правого поддерева произвольного узла X значения ключей данных больше либо равно, нежели значение ключа данных самого узла X.</li></ol></div>", 
+                "0344_1.&nbsp;Двоичное дерево поиска (англ. binary search tree, BST) — это двоичное дерево, для которого выполняются следующие дополнительные условия :", 
+                "<img src=\"paste-112017042046979.png\" />", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Оба поддерева — левое и правое — являются двоичными деревьями поиска.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Оба поддерева — левое и правое — являются двоичными деревьями поиска.</li><li>{{c2::У всех узлов левого поддерева произвольного узла X значения ключей данных меньше, нежели значение ключа данных самого узла X.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>У всех узлов левого поддерева произвольного узла X значения ключей данных меньше, нежели значение ключа данных самого узла X.</li><li>{{c3::У всех узлов правого поддерева произвольного узла X значения ключей данных больше либо равно, нежели значение ключа данных самого узла X.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Оба поддерева — левое и правое — являются двоичными деревьями поиска.}}</li><li>{{c21::У всех узлов левого поддерева произвольного узла X значения ключей данных меньше, нежели значение ключа данных самого узла X.}}</li><li>{{c21::У всех узлов правого поддерева произвольного узла X значения ключей данных больше либо равно, нежели значение ключа данных самого узла X.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "dfaZQdi#r4", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>хранит пары \"ключ-значение“</li><li>Каждое значение можно найти по его ключу</li><li>каждый ключ может использоваться только один раз</li><li>предусмотрено две основные реализации карт: хэш-карта (HashMap) и карта-дерево (ТгееМар)</li><li>В хэш-карте ключи расположены случайным образом, а в карте-дереве — в строгом порядке</li></ol></div>", 
+                "0318_1.&nbsp;Отображения (Map)", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::хранит пары \"ключ-значение“}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>хранит пары \"ключ-значение“</li><li>{{c2::Каждое значение можно найти по его ключу}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Каждое значение можно найти по его ключу</li><li>{{c3::каждый ключ может использоваться только один раз}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>каждый ключ может использоваться только один раз</li><li>{{c4::предусмотрено две основные реализации карт: хэш-карта (HashMap) и карта-дерево (ТгееМар)}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>предусмотрено две основные реализации карт: хэш-карта (HashMap) и карта-дерево (ТгееМар)</li><li>{{c5::В хэш-карте ключи расположены случайным образом, а в карте-дереве — в строгом порядке}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::хранит пары \"ключ-значение“}}</li><li>{{c21::Каждое значение можно найти по его ключу}}</li><li>{{c21::каждый ключ может использоваться только один раз}}</li><li>{{c21::предусмотрено две основные реализации карт: хэш-карта (HashMap) и карта-дерево (ТгееМар)}}</li><li>{{c21::В хэш-карте ключи расположены случайным образом, а в карте-дереве — в строгом порядке}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Ek5Rj0zb_L", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Интерфейсы – абстрактные типы данных, представляющие коллекции. Интерфейсы позволяют манипулировать коллекциями независимо от деталей их представления. В Java эти интерфейсы образуют иерархию.</li><li>Реализации – конкретные реализации интерфейсов коллекции. По своей сути они являются повторно используемыми структурами данных.&nbsp;</li><li>Алгоритмы – методы, выполняющие некоторые полезные действия, например, поиск или сортировку, над объектами, реализующими интерфейсы коллекций.</li></ol></div>", 
+                "0262_1.&nbsp;Все схемы коллекций содержат следующие три компонента:", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Интерфейсы – абстрактные типы данных, представляющие коллекции. Интерфейсы позволяют манипулировать коллекциями независимо от деталей их представления. В Java эти интерфейсы образуют иерархию.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Интерфейсы – абстрактные типы данных, представляющие коллекции. Интерфейсы позволяют манипулировать коллекциями независимо от деталей их представления. В Java эти интерфейсы образуют иерархию.</li><li>{{c2::Реализации – конкретные реализации интерфейсов коллекции. По своей сути они являются повторно используемыми структурами данных.&nbsp;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Реализации – конкретные реализации интерфейсов коллекции. По своей сути они являются повторно используемыми структурами данных.&nbsp;</li><li>{{c3::Алгоритмы – методы, выполняющие некоторые полезные действия, например, поиск или сортировку, над объектами, реализующими интерфейсы коллекций.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Интерфейсы – абстрактные типы данных, представляющие коллекции. Интерфейсы позволяют манипулировать коллекциями независимо от деталей их представления. В Java эти интерфейсы образуют иерархию.}}</li><li>{{c21::Реализации – конкретные реализации интерфейсов коллекции. По своей сути они являются повторно используемыми структурами данных.&nbsp;}}</li><li>{{c21::Алгоритмы – методы, выполняющие некоторые полезные действия, например, поиск или сортировку, над объектами, реализующими интерфейсы коллекций.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Gbc1`Q3^P:", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Интерфейс List является упорядоченной коллекцией (иногда называемой последовательностью). Коллекция List может содержать упорядоченные элементы.</li><li>Интерфейс Set является коллекцией, которая не должна содержать повторяющихся элементов.</li><li>Интерфейс SortedSet является расширением интерфейса Set, элементы которого отсортированы в естественном порядке или согласно порядку, задаваемому методом интерфейса Comparator.</li><li>Интерфейс Map является объектом, который ставит в соответствие ключам значения. Ключи должны быть уникальными и им должно соответствовать единственное значение. Такую коллекцию называют отображением (map), словарем (dictionary) или ассоциативным массивом (associative array).</li></ol></div>", 
+                "0263_1.&nbsp;Интерфейсы коллекций", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Интерфейс List является упорядоченной коллекцией (иногда называемой последовательностью). Коллекция List может содержать упорядоченные элементы.}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Интерфейс List является упорядоченной коллекцией (иногда называемой последовательностью). Коллекция List может содержать упорядоченные элементы.</li><li>{{c2::Интерфейс Set является коллекцией, которая не должна содержать повторяющихся элементов.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Интерфейс Set является коллекцией, которая не должна содержать повторяющихся элементов.</li><li>{{c3::Интерфейс SortedSet является расширением интерфейса Set, элементы которого отсортированы в естественном порядке или согласно порядку, задаваемому методом интерфейса Comparator.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Интерфейс SortedSet является расширением интерфейса Set, элементы которого отсортированы в естественном порядке или согласно порядку, задаваемому методом интерфейса Comparator.</li><li>{{c4::Интерфейс Map является объектом, который ставит в соответствие ключам значения. Ключи должны быть уникальными и им должно соответствовать единственное значение. Такую коллекцию называют отображением (map), словарем (dictionary) или ассоциативным массивом (associative array).}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Интерфейс List является упорядоченной коллекцией (иногда называемой последовательностью). Коллекция List может содержать упорядоченные элементы.}}</li><li>{{c21::Интерфейс Set является коллекцией, которая не должна содержать повторяющихся элементов.}}</li><li>{{c21::Интерфейс SortedSet является расширением интерфейса Set, элементы которого отсортированы в естественном порядке или согласно порядку, задаваемому методом интерфейса Comparator.}}</li><li>{{c21::Интерфейс Map является объектом, который ставит в соответствие ключам значения. Ключи должны быть уникальными и им должно соответствовать единственное значение. Такую коллекцию называют отображением (map), словарем (dictionary) или ассоциативным массивом (associative array).}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Oxr)0V$E5[", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>общецелевые реализации;</li><li>упаковщики;</li><li>альтернативные (convenience) реализации.</li></ol></div>", 
+                "0263_2. Типы реализаций коллекций&nbsp;", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::общецелевые реализации;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>общецелевые реализации;</li><li>{{c2::упаковщики;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>упаковщики;</li><li>{{c3::альтернативные (convenience) реализации.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::общецелевые реализации;}}</li><li>{{c21::упаковщики;}}</li><li>{{c21::альтернативные (convenience) реализации.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "AZ=D5IY))n", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0263_3. Таблица интерфейсов коллекций и их реализаций", 
+                "<br /><div><img src=\"paste-167641163497475.png\" /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "r@t}([qT=B", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><div><div><div>Определение размера</div></div></div></div><div>Проверки на вхождение</div><div>Добавление элементов</div><div>Удаление элементов</div>", 
+                "0263_4. Виды методов интерфейса Collection", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Определение размера}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::Проверки на вхождение}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Определение размера}}</li><li>{{c21::Проверки на вхождение}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "jEv{K7?X`u", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>size() – количество элементов</li><li>isEmpty() – проверка на пустоту</li></ul></div>", 
+                "0263_5. методы определения размера интерфейса Collection", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::size() – количество элементов}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>{{c2::isEmpty() – проверка на пустоту}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::size() – количество элементов}}</li><li>{{c21::isEmpty() – проверка на пустоту}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "o7.A:{s4q$", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>contains(Object o) – одного элемента</li><li>containsAll(Collection c) – всех элементов коллекции с</li></ul></div>", 
+                "0263_6. методы проверки на вхождение интерфейса Collection", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::contains(Object o) – одного элемента}}</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>{{c2::containsAll(Collection c) – всех элементов коллекции с}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::contains(Object o) – одного элемента}}</li><li>{{c21::containsAll(Collection c) – всех элементов коллекции с}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "f:!.xe+~UB", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>add(Object e) – одного элемента</li><li>addAll(Collection c) – элементов коллекции</li></ol></div>", 
+                "0263_7. методы добавления элементов интерфейса Collection", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::add(Object e) – одного элемента}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::addAll(Collection c) – элементов коллекции}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::add(Object e) – одного элемента}}</li><li>{{c21::addAll(Collection c) – элементов коллекции}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "p8F|c3)]7M", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>remove(Object e) – одного элемента</li><li>removeAll(Collection c) – элементов коллекции</li><li>retainAll(Collection c) – элементов, которых нет в коллекции с</li><li>clear() – всех элементов</li></ol></div>", 
+                "0263_8. методы удаления элементов интерфейса Collection", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::remove(Object e) – одного элемента}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>remove(Object e) – одного элемента</li><li>{{c2::removeAll(Collection c) – элементов коллекции}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>removeAll(Collection c) – элементов коллекции</li><li>{{c3::retainAll(Collection c) – элементов, которых нет в коллекции с}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>retainAll(Collection c) – элементов, которых нет в коллекции с</li><li>{{c4::clear() – всех элементов}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::remove(Object e) – одного элемента}}</li><li>{{c21::removeAll(Collection c) – элементов коллекции}}</li><li>{{c21::retainAll(Collection c) – элементов, которых нет в коллекции с}}</li><li>{{c21::clear() – всех элементов}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "oPjb0C58g*", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0263_9. Исключения интерфейса Collection", 
+                "<span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>UnsupportedOperationException - возникает при попытке добавить\\удалить элемент используя list полученный из массива&nbsp;<div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">String<span style=\"color: #666666\">[]</span> flowers <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">{</span> <span style=\"color: #BA2121\">\"Ageratum\"</span><span style=\"color: #666666\">,</span> <span style=\"color: #BA2121\">\"Allium\"</span><span style=\"color: #666666\">,</span> <span style=\"color: #BA2121\">\"Poppy\"</span><span style=\"color: #666666\">,</span> <span style=\"color: #BA2121\">\"Catmint\"</span> <span style=\"color: #666666\">};</span> \nList<span style=\"color: #666666\">&lt;</span>String<span style=\"color: #666666\">&gt;</span> flowerList <span style=\"color: #666666\">=</span> Arrays<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">asList</span><span style=\"color: #666666\">(</span>flowers<span style=\"color: #666666\">);</span> \nflowerList<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">add</span><span style=\"color: #666666\">(</span><span style=\"color: #BA2121\">\"Celosia\"</span><span style=\"color: #666666\">);</span></pre></div></td></tr></tbody></table></center><br /></div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "OMDZQ7^i_O", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>boolean hasNext(), проверяющий, имеется ли следующий элемент,&nbsp;</li><li>Object next(), возвращающий следующий элемент,&nbsp;</li><li>void remove(), удаляющий данный элемент.</li></ol></div>", 
+                "0280_1. методы интерфейса Iterator", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::boolean hasNext(), проверяющий, имеется ли следующий элемент,&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::Object next(), возвращающий следующий элемент,&nbsp;}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::void remove(), удаляющий данный элемент.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::boolean hasNext(), проверяющий, имеется ли следующий элемент,&nbsp;}}</li><li>{{c21::Object next(), возвращающий следующий элемент,&nbsp;}}</li><li>{{c21::void remove(), удаляющий данный элемент.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Bg,R^LRcJG", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>NoSuchElementException – бросается при достижении конца коллекции</li><li>ConcurrentModificationException – бросается при конкурентном изменении коллекции</li></ol></div>", 
+                "0280_2.&nbsp;Исключения интерфейса Iterator", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::NoSuchElementException – бросается при достижении конца коллекции}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::ConcurrentModificationException – бросается при конкурентном изменении коллекции}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::NoSuchElementException – бросается при достижении конца коллекции}}</li><li>{{c21::ConcurrentModificationException – бросается при конкурентном изменении коллекции}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "c(rG>n%:S*", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0280_3.&nbsp;пример использования метода Iterator iterator()", 
+                "<div>используется для фильтрации коллекции, то есть удаления из коллекции элементов, отвечающих определенным условиям:&nbsp;</div><div><center><table><tbody><tr><td><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000;font-weight: bold\">static</span> <span style=\"color: #B00040\">void</span> <span style=\"color: #0000FF\">filter</span><span style=\"color: #666666\">(</span>Collection c<span style=\"color: #666666\">)</span> <span style=\"color: #666666\">{</span>    \n\t\t<span style=\"color: #008000; font-weight: bold\">for</span> <span style=\"color: #666666\">(</span>Iterator i <span style=\"color: #666666\">=</span> c<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">iterator</span><span style=\"color: #666666\">();</span> i<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">hasNext</span><span style=\"color: #666666\">();</span> <span style=\"color: #666666\">)</span>        \n\t\t\t<span style=\"color: #008000; font-weight: bold\">if</span> <span style=\"color: #666666\">(!</span>cond<span style=\"color: #666666\">(</span>i<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">next</span><span style=\"color: #666666\">()))</span>            \n\t\t\t\ti<span style=\"color: #666666\">.</span><span style=\"color: #7D9029\">remove</span><span style=\"color: #666666\">();</span>\t\n\t<span style=\"color: #666666\">}</span></pre></div></td></tr></tbody></table></center></div><div>Данный код является полиморфным, то есть будет работать для любой коллекции, поддерживающей удаление элементов, независимо от реализации.&nbsp;</div>"
+            ], 
+            "flags": 0, 
+            "guid": "hK9bYoan{P", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>get (int i) – чтение</li><li>set(int i, Object e) – запись</li><li>add(int i, Object e) – добавление</li><li>remove(int i) – удаление</li><li>indexOf(Object e) – поиск с начала</li><li>lastIndexOf(Object e) – поиск с конца</li><li>List subList(int from, int to) - создание подсписка</li></ol></div>", 
+                "0266_1. методы интерфейса List", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::get (int i) – чтение}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>get (int i) – чтение</li><li>{{c2::set(int i, Object e) – запись}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>set(int i, Object e) – запись</li><li>{{c3::add(int i, Object e) – добавление}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>add(int i, Object e) – добавление</li><li>{{c4::remove(int i) – удаление}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>remove(int i) – удаление</li><li>{{c5::indexOf(Object e) – поиск с начала}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>indexOf(Object e) – поиск с начала</li><li>{{c6::lastIndexOf(Object e) – поиск с конца}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>lastIndexOf(Object e) – поиск с конца</li><li>{{c7::List subList(int from, int to) - создание подсписка}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::get (int i) – чтение}}</li><li>{{c21::set(int i, Object e) – запись}}</li><li>{{c21::add(int i, Object e) – добавление}}</li><li>{{c21::remove(int i) – удаление}}</li><li>{{c21::indexOf(Object e) – поиск с начала}}</li><li>{{c21::lastIndexOf(Object e) – поиск с конца}}</li><li>{{c21::List subList(int from, int to) - создание подсписка}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "E}xw[SPBU5", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>boolean hasNext()/hasPrevious() – проверка</li><li>E&nbsp;next()/previous() – взятие элемента</li><li>int nextIndex()/previousIndex() – определение индекса</li><li>void&nbsp;remove() – удаление элемента</li><li>void set(Object e) – изменение элемента</li><li>add(Object e) – добавление элемента</li></ol></div>", 
+                "0266_1. методы интерфейса ListIterator", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::boolean hasNext()/hasPrevious() – проверка}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>boolean hasNext()/hasPrevious() – проверка</li><li>{{c2::E&nbsp;next()/previous() – взятие элемента}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>E&nbsp;next()/previous() – взятие элемента</li><li>{{c3::int nextIndex()/previousIndex() – определение индекса}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>int nextIndex()/previousIndex() – определение индекса</li><li>{{c4::void&nbsp;remove() – удаление элемента}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>void&nbsp;remove() – удаление элемента</li><li>{{c5::void set(Object e) – изменение элемента}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>void set(Object e) – изменение элемента</li><li>{{c6::add(Object e) – добавление элемента}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::boolean hasNext()/hasPrevious() – проверка}}</li><li>{{c21::E&nbsp;next()/previous() – взятие элемента}}</li><li>{{c21::int nextIndex()/previousIndex() – определение индекса}}</li><li>{{c21::void&nbsp;remove() – удаление элемента}}</li><li>{{c21::void set(Object e) – изменение элемента}}</li><li>{{c21::add(Object e) – добавление элемента}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "d,4zW^1~Tx", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>ArrayList() – пустой список</li><li>ArrayList(Collection c) – копия коллекции</li><li>ArrayList(int initialCapacity) – пустой список заданной вместимости</li><li>void ensureCapasity(int c) – определение вместимости</li><li>void trimToSize() – «подгонка» вместимости</li></ol></div>", 
+                "0291_2. конструкторы и дополнительные методы ArrayList", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::ArrayList() – пустой список}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>ArrayList() – пустой список</li><li>{{c2::ArrayList(Collection c) – копия коллекции}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>ArrayList(Collection c) – копия коллекции</li><li>{{c3::ArrayList(int initialCapacity) – пустой список заданной вместимости}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>ArrayList(int initialCapacity) – пустой список заданной вместимости</li><li>{{c4::void ensureCapasity(int c) – определение вместимости}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>void ensureCapasity(int c) – определение вместимости</li><li>{{c5::void trimToSize() – «подгонка» вместимости}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::ArrayList() – пустой список}}</li><li>{{c21::ArrayList(Collection c) – копия коллекции}}</li><li>{{c21::ArrayList(int initialCapacity) – пустой список заданной вместимости}}</li><li>{{c21::void ensureCapasity(int c) – определение вместимости}}</li><li>{{c21::void trimToSize() – «подгонка» вместимости}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "tiwMWLUu*w", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>LinkedList() – пустой список</li><li>LinkedList(Collection c) – копия коллекции</li><li>void addFirst(Object o) – добавить в начало</li><li>void addLast(Object o) – добавить в конец</li><li>E removeFirst() – удалить первый</li><li>E removeLast() – удалить последний</li></ol></div>", 
+                "0291_3. конструкторы и дополнительные методы LinkedList", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::LinkedList() – пустой список}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>LinkedList() – пустой список</li><li>{{c2::LinkedList(Collection c) – копия коллекции}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>LinkedList(Collection c) – копия коллекции</li><li>{{c3::void addFirst(Object o) – добавить в начало}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>void addFirst(Object o) – добавить в начало</li><li>{{c4::void addLast(Object o) – добавить в конец}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>void addLast(Object o) – добавить в конец</li><li>{{c5::E removeFirst() – удалить первый}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>E removeFirst() – удалить первый</li><li>{{c6::E removeLast() – удалить последний}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::LinkedList() – пустой список}}</li><li>{{c21::LinkedList(Collection c) – копия коллекции}}</li><li>{{c21::void addFirst(Object o) – добавить в начало}}</li><li>{{c21::void addLast(Object o) – добавить в конец}}</li><li>{{c21::E removeFirst() – удалить первый}}</li><li>{{c21::E removeLast() – удалить последний}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "A>]9{|YJ4Z", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>HashSet() &nbsp;- пустое множество</li><li>HashSet(Collection c) – новый HashSet включающий элементы коллекции</li><li>HashSet(int initialCapacity) – начальная вместимость</li><li>HashSet(int initialCapacity, double loadFactor) – начальная вместимость и степень заполнения&nbsp;</li></ol></div>", 
+                "0291_4. конструкторы HashSet", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::HashSet() &nbsp;- пустое множество}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>HashSet() &nbsp;- пустое множество</li><li>{{c2::HashSet(Collection c) – элементы коллекции}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>HashSet(Collection c) – элементы коллекции</li><li>{{c3::HashSet(int initialCapacity) – начальная вместимость}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>HashSet(int initialCapacity) – начальная вместимость</li><li>{{c4::HashSet(int initialCapacity, double loadFactor) – начальная вместимость и степень заполнения&nbsp;}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::HashSet() &nbsp;- пустое множество}}</li><li>{{c21::HashSet(Collection c) – элементы коллекции}}</li><li>{{c21::HashSet(int initialCapacity) – начальная вместимость}}</li><li>{{c21::HashSet(int initialCapacity, double loadFactor) – начальная вместимость и степень заполнения&nbsp;}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "FVS^+W-x*1", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0268_1.&nbsp;HashSet", 
+                "использует HashMap для хранения данных. В качестве ключа и значения используется добавляемый элемент. Из-за особенностей реализации порядок элементов не гарантируется при добавлении."
+            ], 
+            "flags": 0, 
+            "guid": "L)$&np7R}f", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0286_2. LinkedHashSet&nbsp;гарантирует, что&nbsp;", 
+                "порядок элементов при обходе коллекции будет идентичен порядку добавления элементов."
+            ], 
+            "flags": 0, 
+            "guid": "EYD[YP<>Z@", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0286_3.&nbsp;TreeSet&nbsp;предоставляет возможность управлять...", 
+                "порядком элементов в коллекции при помощи объекта Comparator, либо сохраняет элементы с использованием «natural ordering»."
+            ], 
+            "flags": 0, 
+            "guid": "O;)F_,V;)~", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0266_1.&nbsp;ArrayList", 
+                "инкапсулирует в себе обычный массив, длина которого автоматически увеличивается при добавлении новых элементов."
+            ], 
+            "flags": 0, 
+            "guid": "B}7!k#?{E&", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0266_2.&nbsp;LinkedList", 
+                "(двунаправленный связный список) - состоит из узлов, каждый из которых содержит как собственно данные, так и две ссылки на следующий и предыдущий узел."
+            ], 
+            "flags": 0, 
+            "guid": "FsZ<.^Cr))", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0266_3.&nbsp;Vector", 
+                "реализация динамического массива объектов, методы которой синхронизированы."
+            ], 
+            "flags": 0, 
+            "guid": "Qn8w-SBL@}", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0266_4.&nbsp;Stack&nbsp;", 
+                "реализация стека LIFO (last-in-first-out)."
+            ], 
+            "flags": 0, 
+            "guid": "M!C0@L#D!c", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0270_1. PriorityQueue", 
+                "предоставляет возможность управлять порядком элементов в коллекции при помощи объекта Comparator, либо сохраняет элементы с использованием «natural ordering»."
+            ], 
+            "flags": 0, 
+            "guid": "oW?wnit8I9", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0270_2.&nbsp;ArrayDeque", 
+                "реализация интерфейса Deque, который расширяет интерфейс Queue методами, позволяющими реализовать конструкцию вида LIFO (last-in-first-out)."
+            ], 
+            "flags": 0, 
+            "guid": "zp<8ymu<UO", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0271_1.&nbsp;Hashtable", 
+                "хэш-таблица, методы которой синхронизированы. Не позволяет использовать null в качестве значения или ключа и не является упорядоченной."
+            ], 
+            "flags": 0, 
+            "guid": "sI8`-^~4(3", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0271_2.&nbsp;HashMap&nbsp;", 
+                "хэш-таблица. Позволяет использовать null в качестве значения или ключа и не является упорядоченной."
+            ], 
+            "flags": 0, 
+            "guid": "J3_(K*3!x{", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0271_3.&nbsp;LinkedHashMap", 
+                "упорядоченная реализация хэш-таблицы."
+            ], 
+            "flags": 0, 
+            "guid": "Dj4Bmd>/Y$", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0271_4.&nbsp;TreeMap", 
+                "реализация основанная на красно-чёрных деревьях. Является упорядоченной и предоставляет возможность управлять порядком элементов в коллекции при помощи объекта Comparator, либо сохраняет элементы с использованием «natural ordering»."
+            ], 
+            "flags": 0, 
+            "guid": "ePW<GJ16XM", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0271_5. WeakHashMap", 
+                "реализация хэш-таблицы, которая организована с использованием weak references для ключей (сборщик мусора автоматически удалит элемент из коллекции при следующей сборке мусора, если на ключ этого элемента нет жёстких ссылок)."
+            ], 
+            "flags": 0, 
+            "guid": "Ml|P~T`T5V", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }
+    ]
+}

@@ -1,0 +1,884 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "27a7320f-a698-11ea-ad26-005056c00008", 
+    "deck_config_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    30, 
+                    1440
+                ], 
+                "leechAction": 1, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.2
+            }, 
+            "maxTaken": 180, 
+            "name": "AnKing", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    25, 
+                    1440
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    3, 
+                    3, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 30, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.5, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 120, 
+                "minSpace": 1, 
+                "perDay": 9999
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "Java Interview::01.OOP", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "css": ".card {\n font-familiy: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bfont": "Arial", 
+                    "bqfmt": "", 
+                    "bsize": 12, 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }, 
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "css": "/* general card style */\n\nhtml {\n  /* scrollbar always visible in order to prevent shift when revealing answer*/\n  overflow-y: scroll;\n}\n\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* general layout */\n\n.text {\n  /* center left-aligned text on card */\n  display: inline-block;\n  align: center;\n  text-align: left;\n  margin: auto;\n  max-width: 40em;\n}\n\n.hidden {\n  /* guarantees a consistent width across front and back */\n  font-weight: bold;\n  display: block;\n  line-height:0;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.title {\n  font-weight: bold;\n  font-size: 1.1em;\n  margin-bottom: 1em;\n  text-align: center;\n}\n\n/* clozes */\n\n.cloze {\n  /* regular cloze deletion */\n  font-weight: bold;\n  color: #0048FF;\n}\n\n/* original text reveal hint */\n\n.fullhint a {\n  color: #0048FF;\n}\n\n.card21 .fullhint{\n  /* no need to display hint on last card */\n  display:none;\n}\n\n/* additional fields */\n\n.extra{\n  margin-top: 0.5em;\n  margin: auto;\n  max-width: 40em;\n}\n\n.extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.extra-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Original", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Title", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Remarks", 
+                    "ord": 2, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Sources", 
+                    "ord": 3, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Settings", 
+                    "ord": 4, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": true
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text1", 
+                    "ord": 5, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text2", 
+                    "ord": 6, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text3", 
+                    "ord": 7, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text4", 
+                    "ord": 8, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text5", 
+                    "ord": 9, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text6", 
+                    "ord": 10, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text7", 
+                    "ord": 11, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text8", 
+                    "ord": 12, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text9", 
+                    "ord": 13, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text10", 
+                    "ord": 14, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text11", 
+                    "ord": 15, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text12", 
+                    "ord": 16, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text13", 
+                    "ord": 17, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text14", 
+                    "ord": 18, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text15", 
+                    "ord": 19, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text16", 
+                    "ord": 20, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text17", 
+                    "ord": 21, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text18", 
+                    "ord": 22, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text19", 
+                    "ord": 23, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text20", 
+                    "ord": 24, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Full", 
+                    "ord": 25, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Cloze (overlapping)", 
+            "sortf": 1, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"back\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">{{Original}}</div>\n  </div>\n  <div class=\"extra\"><hr></div>\n  <div class=\"text\"><div class=\"fullhint\">{{hint:Original}}</div></div>\n  <div class=\"extra\">\n    {{#Remarks}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Remarks</div><div>{{Remarks}}</div>\n    </div>\n    {{/Remarks}}\n    {{#Sources}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Sources</div><div>{{Sources}}</div>\n    </div>\n    {{/Sources}}\n  </div>\n</div>\n<script>\n  // remove cloze syntax from revealed hint\n  var hint = document.querySelector('.fullhint>[id^=\"hint\"]')\n  var html = hint.innerHTML.replace(/\\[\\[oc(\\d+)::(.*?)(::(.*?))?\\]\\]/mg, \"$2\")\n  hint.innerHTML = html\n  // scroll to cloze\n  document.addEventListener('DOMContentLoaded', function() {\n    setTimeout(function(){\n      const cloze1 = document.getElementsByClassName(\"cloze\")[0];\n      const rect = cloze1.getBoundingClientRect();\n      const absTop = rect.top + window.pageYOffset;\n      const absBot = rect.bottom + window.pageYOffset;\n      if (absBot >= window.innerHeight) {\n        const height = rect.top - rect.bottom\n        const middle = absTop - (window.innerHeight/2) - (height/2);\n        window.scrollTo(0, middle);};\n    }, 1);\n  }, false);\n</script>", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "cloze-ol", 
+                    "ord": 0, 
+                    "qfmt": "<div class=\"front\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">\n       <div>{{Original}}</div>\n    </div>\n  </div>\n</div>"
+                }
+            ], 
+            "type": 1, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0001. Что такое ООП?", 
+                "<div><b>Объектно-ориентированное программирование (ООП)</b> — методология программирования, основанная на представлении программы в виде совокупности объектов, каждый из которых является экземпляром определенного класса, а классы образуют иерархию наследования.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "M%z]dFc^*l", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0003. Что такое «инкапсуляция»?", 
+                "<div><i><b>Инкапсуляция</b></i> – &nbsp;это сокрытие и отделение внутреннего представления (реализации) от внешнего (интерфейса).</div>"
+            ], 
+            "flags": 0, 
+            "guid": "wEKqg>}a*>", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0004. Что такое «наследование»?", 
+                "<div><b>Наследование</b> – это свойство системы, позволяющее описать новый класс на основе уже существующего с частично или полностью заимствующейся функциональностью.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "ww:C,+y*?k", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0005. Что такое «полиморфизм»?", 
+                "<div><i><b>Полиморфизм</b></i> – это свойство системы использовать объекты с одинаковым интерфейсом без информации о типе и внутренней структуре объекта.</div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "QkcJ-QpkpQ", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0006. Что такое <b>«абстракция»</b>?", 
+                "- это выделение минимально необходимого набора общих характеристик объекта которые с достаточной точностью представляют его в данной системе для решения конкретной задачи."
+            ], 
+            "flags": 0, 
+            "guid": "B;794a1vm?", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0007. Что значит&nbsp;<b>«послать сообщение объекту»</b>?", 
+                "вызов метода объекта, при необходимости дополненный набором аргументов.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "d9h3U{lg=3", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0008. Расскажите про понятие «класс»", 
+                "<div><b>Класс</b> – это способ описания сущности, определяющий ее состояние и поведение, а также правила для взаимодействия с данной сущностью (контракт).</div><div>В ООП, класс - расширяемый шаблон для создания объектов.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "HfsnAYV!%)", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0009.&nbsp;Что такое объект?", 
+                "<div>именнованная модель реальной сущности, обладающая конкретным состоянием и поведением (имеет поля и методы).&nbsp;</div><div>Конкретный экземпляр класса.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "rE2I4Cy=_p", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0010. Расскажите про понятие&nbsp;<b>«интерфейс класса»</b>", 
+                "<b>Интерфейс</b>&nbsp;<b>класса</b> – это набор публичных методов и, если есть, публичных переменных класса. По сути, интерфейс специфицирует класс, чётко определяя возможные действия над ним."
+            ], 
+            "flags": 0, 
+            "guid": "gL3%&-p05~", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>Объектная модель лучше ориентирована на человеческое восприятие мира, а не на компьютерную реализацию.</li><li>Классы позволяют четко выделять определенные сущности, важные в предметной области.&nbsp;</li><li>Инкапсуляция позволяет привнести свойство модульности, что упрощает обновление отдельных компонентов.</li><li>Полиморфизм снижает сложность программ.</li><li>Повторное использование кода.</li><li>Возможность создавать расширяемые системы.</li></ol></div>", 
+                "0011. В чем заключаются преимущества ООП подхода в программировании?", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Объектная модель лучше ориентирована на человеческое восприятие мира, а не на компьютерную реализацию.}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>Объектная модель лучше ориентирована на человеческое восприятие мира, а не на компьютерную реализацию.</li><li>{{c2::Классы позволяют четко выделять определенные сущности, важные в предметной области.&nbsp;}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>Классы позволяют четко выделять определенные сущности, важные в предметной области.&nbsp;</li><li>{{c3::Инкапсуляция позволяет привнести свойство модульности, что упрощает обновление отдельных компонентов.}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>Инкапсуляция позволяет привнести свойство модульности, что упрощает обновление отдельных компонентов.</li><li>{{c4::Полиморфизм снижает сложность программ.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>Полиморфизм снижает сложность программ.</li><li>{{c5::Повторное использование кода.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>Повторное использование кода.</li><li>{{c6::Возможность создавать расширяемые системы.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Объектная модель лучше ориентирована на человеческое восприятие мира, а не на компьютерную реализацию.}}</li><li>{{c21::Классы позволяют четко выделять определенные сущности, важные в предметной области.&nbsp;}}</li><li>{{c21::Инкапсуляция позволяет привнести свойство модульности, что упрощает обновление отдельных компонентов.}}</li><li>{{c21::Полиморфизм снижает сложность программ.}}</li><li>{{c21::Повторное использование кода.}}</li><li>{{c21::Возможность создавать расширяемые системы.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "t^K{7DW&s}", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": [
+                "marked"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><div>В сложных иерархиях классов поля и методы обычно наследуются с разных уровней. И не всегда легко определить, какие поля и методы фактически относятся к данному классу.</div></div><div>Код для обработки сообщения иногда «размазан» по многим методам (иначе говоря, обработка сообщения требует не одного, а многих методов, которые могут быть описаны в разных классах).</div><div>Также порой выделяют - неэффективность и неэкономное распределения памяти на этапе выполнения (по причине издержек на динамическое связывание и проверки типов на этапе выполнения) - в сравнении с процедурным программированием.</div>", 
+                "<div>0012. В чем заключаются недостатки ООП подхода в программировании?</div>", 
+                "", 
+                "", 
+                "0,1,0 | n,n,n,n", 
+                "<div>{{c1::В сложных иерархиях классов поля и методы обычно наследуются с разных уровней. И не всегда легко определить, какие поля и методы фактически относятся к данному классу.}}</div><div>...</div><div>...</div>", 
+                "<div>...</div><div>{{c2::Код для обработки сообщения иногда «размазан» по многим методам (иначе говоря, обработка сообщения требует не одного, а многих методов, которые могут быть описаны в разных классах).}}</div><div>...</div>", 
+                "<div>...</div><div>...</div><div>{{c3::Также порой выделяют - неэффективность и неэкономное распределения памяти на этапе выполнения (по причине издержек на динамическое связывание и проверки типов на этапе выполнения) - в сравнении с процедурным программированием.}}</div>", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "", 
+                "<div>{{c21::В сложных иерархиях классов поля и методы обычно наследуются с разных уровней. И не всегда легко определить, какие поля и методы фактически относятся к данному классу.}}</div><div>{{c21::Код для обработки сообщения иногда «размазан» по многим методам (иначе говоря, обработка сообщения требует не одного, а многих методов, которые могут быть описаны в разных классах).}}</div><div>{{c21::Также порой выделяют - неэффективность и неэкономное распределения памяти на этапе выполнения (по причине издержек на динамическое связывание и проверки типов на этапе выполнения) - в сравнении с процедурным программированием.}}</div>"
+            ], 
+            "flags": 0, 
+            "guid": "L4hh-Bk!Ae", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0016. Что подразумевают в плане принципов ООП выражения <b><i>«является»</i></b> и <b><i>«имеет»</i></b>?", 
+                "«является» подразумевает наследование. «имеет» подразумевает ассоциацию (агрегацию или композицию)."
+            ], 
+            "flags": 0, 
+            "guid": "s$YR)2=emg", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0018. Что такое статическое связывание?", 
+                "Присоединение вызова метода к телу метода называется <i>связыванием</i>. Если связывание проводится компилятором (компоновщиком) перед запуском программы, то оно называется <b>статическим</b> или <b>ранним</b> связыванием <i>(early binding)</i>."
+            ], 
+            "flags": 0, 
+            "guid": "h]J*aU1g{X", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0019. Что такое динамическое связывание?", 
+                "<div><b>Динамическое (позднее)</b> связывание (<i>late binding or&nbsp;runtime binding</i>) это связывание, проводимое непосредственно во время выполнения программы, в зависимости от типа объекта.&nbsp;</div><div><hr /></div><div>В языках, реализующих позднее связывание, должен существовать механизм определения фактического типа объекта во время работы программы, для вызова подходящего метода. Иначе говоря, компилятор не знает тип объекта, но механизм вызова методов определяет его и вызывает соответствующее тело метода. Механизм позднего связывания зависит от конкретного языка, но нетрудно предположить, что для его реализации в объекты должна включаться какая-то дополнительная информация.</div><div><br /></div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "E>t$uce+T,", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0023. Опишите программу соответственно парадигме ООП", 
+                "программа состоит из объектов, обменивающихся сообщениями. При этом каждый объект является экземпляром некоторого класса, а классы образуют иерархию."
+            ], 
+            "flags": 0, 
+            "guid": "rdiHylOP=w", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0013.&nbsp;В чем преимущество полиморфизма", 
+                "помогает снижать сложность программ, разрешая использование одного и того же интерфейса для задания единого набора действий.&nbsp;<br />"
+            ], 
+            "flags": 0, 
+            "guid": "kjRM#IbfU~", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; Инкапсуляция</li><li>&nbsp; &nbsp; Наследование</li><li>&nbsp; &nbsp; Полиморфизм</li><li>&nbsp; &nbsp; Абстракция</li><li>&nbsp; &nbsp; Иногда еще включают: Перегрузка, Переопределение, Обобщения</li></ol></div>", 
+                "0002. Назовите основные принципы ООП", 
+                "<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span> Incapsulation</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>&nbsp; &nbsp;Extention</div><div>OL OverRR Polymorphism &nbsp;Generics</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>&nbsp; &nbsp; &nbsp;Abstraction</div>", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; Инкапсуляция}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; Инкапсуляция</li><li>{{c2::&nbsp; &nbsp; Наследование}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; Наследование</li><li>{{c3::&nbsp; &nbsp; Полиморфизм}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>&nbsp; &nbsp; Полиморфизм</li><li>{{c4::&nbsp; &nbsp; Абстракция}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>&nbsp; &nbsp; Абстракция</li><li>{{c5::&nbsp; &nbsp; Иногда еще включают: Перегрузка, Переопределение, Обобщения}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; Инкапсуляция}}</li><li>{{c21::&nbsp; &nbsp; Наследование}}</li><li>{{c21::&nbsp; &nbsp; Полиморфизм}}</li><li>{{c21::&nbsp; &nbsp; Абстракция}}</li><li>{{c21::&nbsp; &nbsp; Иногда еще включают: Перегрузка, Переопределение, Обобщения}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "lopk?{UK<h", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0024. Что такое <b>сообщение</b> в ООП?", 
+                "&nbsp;<b><i>Сообщение</i></b>&nbsp;— это запрос на вызов метода объекта, при необходимости дополненный набором аргументов."
+            ], 
+            "flags": 0, 
+            "guid": "v-9~TB}0(r", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0021. Как в ООП передать управление объекту?", 
+                "При помощи посылки сообщения - вызова метода этого объекта"
+            ], 
+            "flags": 0, 
+            "guid": "M$c@PodvWx", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0022. Какова цель инкапсуляции?", 
+                "избавиться от зависимости внешнего интерфейса класса (т.е. то, что могут использовать другие классы) от реализации. Чтобы малейшее изменение в классе не влекло за собой изменение внешнего поведения класса."
+            ], 
+            "flags": 0, 
+            "guid": "vQ(4aaw=t.", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0020. Когда в Java используется динамическое связывание?", 
+                "Для всех методов,&nbsp;за исключением&nbsp;<code class=\"myCodeClass\">private</code>,&nbsp;<code class=\"myCodeClass\">final</code>&nbsp;и&nbsp;<code class=\"myCodeClass\">static</code>"
+            ], 
+            "flags": 0, 
+            "guid": "lYaqtwXq~y", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>&nbsp; &nbsp; Обработке разнородных структур данных. Программы могут работать, не различая вида объектов, что существенно упрощает код. Новые виды могут быть добавлены в любой момент.</li><li>&nbsp; &nbsp; Изменении поведения во время исполнения. На этапе исполнения один объект может быть заменен другим, что позволяет без изменения кода адаптировать алгоритм в зависимости от того, какой используется объект.</li><li>&nbsp; &nbsp; Реализации работы с наследниками. Алгоритмы можно обобщить настолько, что они уже смогут работать более чем с одним видом объектов.</li><li>&nbsp; &nbsp; Возможности описать независимые от приложения части предметной области в виде набора универсальных классов, или фреймворка, который в дальнейшем будет расширен за счет добавления частей, специфичных для конкретного приложения.&nbsp;</li></ul><ol></ol><ol></ol></div>", 
+                "0014. Использование полиморфизма оказывается полезным при:", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; Обработке разнородных структур данных. Программы могут работать, не различая вида объектов, что существенно упрощает код. Новые виды могут быть добавлены в любой момент.}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; Обработке разнородных структур данных. Программы могут работать, не различая вида объектов, что существенно упрощает код. Новые виды могут быть добавлены в любой момент.</li><li>{{c2::&nbsp; &nbsp; Изменении поведения во время исполнения. На этапе исполнения один объект может быть заменен другим, что позволяет без изменения кода адаптировать алгоритм в зависимости от того, какой используется объект.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; Изменении поведения во время исполнения. На этапе исполнения один объект может быть заменен другим, что позволяет без изменения кода адаптировать алгоритм в зависимости от того, какой используется объект.</li><li>{{c3::&nbsp; &nbsp; Реализации работы с наследниками. Алгоритмы можно обобщить настолько, что они уже смогут работать более чем с одним видом объектов.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>&nbsp; &nbsp; Реализации работы с наследниками. Алгоритмы можно обобщить настолько, что они уже смогут работать более чем с одним видом объектов.</li><li>{{c4::&nbsp; &nbsp; Возможности описать независимые от приложения части предметной области в виде набора универсальных классов, или фреймворка, который в дальнейшем будет расширен за счет добавления частей, специфичных для конкретного приложения.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; Обработке разнородных структур данных. Программы могут работать, не различая вида объектов, что существенно упрощает код. Новые виды могут быть добавлены в любой момент.}}</li><li>{{c21::&nbsp; &nbsp; Изменении поведения во время исполнения. На этапе исполнения один объект может быть заменен другим, что позволяет без изменения кода адаптировать алгоритм в зависимости от того, какой используется объект.}}</li><li>{{c21::&nbsp; &nbsp; Реализации работы с наследниками. Алгоритмы можно обобщить настолько, что они уже смогут работать более чем с одним видом объектов.}}</li><li>{{c21::&nbsp; &nbsp; Возможности описать независимые от приложения части предметной области в виде набора универсальных классов, или фреймворка, который в дальнейшем будет расширен за счет добавления частей, специфичных для конкретного приложения.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "F*&NG8Spbf", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": [
+                "marked"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>&nbsp; &nbsp; Сокращается время на разработку, которое может быть отдано другим задачам.</li><li>&nbsp; &nbsp; Компоненты многоразового использования обычно содержат гораздо меньше ошибок, чем вновь разработанные, ведь они уже не раз подвергались проверке.</li><li>&nbsp; &nbsp; Когда некий компонент используется сразу несколькими клиентами, улучшения, вносимые в его код, одновременно оказывают положительное влияние и на множество работающих с ним программ.</li><li>&nbsp; &nbsp; Если программа опирается на стандартизированные компоненты, ее структура и пользовательский интерфейс становятся более единообразными, что облегчает ее понимание и упрощает использование.</li></ol></div><div><br /></div>", 
+                "0015. В чем польза повторного использования кода", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::&nbsp; &nbsp; Сокращается время на разработку, которое может быть отдано другим задачам.}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>&nbsp; &nbsp; Сокращается время на разработку, которое может быть отдано другим задачам.</li><li>{{c2::&nbsp; &nbsp; Компоненты многоразового использования обычно содержат гораздо меньше ошибок, чем вновь разработанные, ведь они уже не раз подвергались проверке.}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>&nbsp; &nbsp; Компоненты многоразового использования обычно содержат гораздо меньше ошибок, чем вновь разработанные, ведь они уже не раз подвергались проверке.</li><li>{{c3::&nbsp; &nbsp; Когда некий компонент используется сразу несколькими клиентами, улучшения, вносимые в его код, одновременно оказывают положительное влияние и на множество работающих с ним программ.}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>&nbsp; &nbsp; Когда некий компонент используется сразу несколькими клиентами, улучшения, вносимые в его код, одновременно оказывают положительное влияние и на множество работающих с ним программ.</li><li>{{c4::&nbsp; &nbsp; Если программа опирается на стандартизированные компоненты, ее структура и пользовательский интерфейс становятся более единообразными, что облегчает ее понимание и упрощает использование.}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::&nbsp; &nbsp; Сокращается время на разработку, которое может быть отдано другим задачам.}}</li><li>{{c21::&nbsp; &nbsp; Компоненты многоразового использования обычно содержат гораздо меньше ошибок, чем вновь разработанные, ведь они уже не раз подвергались проверке.}}</li><li>{{c21::&nbsp; &nbsp; Когда некий компонент используется сразу несколькими клиентами, улучшения, вносимые в его код, одновременно оказывают положительное влияние и на множество работающих с ним программ.}}</li><li>{{c21::&nbsp; &nbsp; Если программа опирается на стандартизированные компоненты, ее структура и пользовательский интерфейс становятся более единообразными, что облегчает ее понимание и упрощает использование.}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "FTxQHITLY/", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0017. В чем разница между композицией и агрегацией?", 
+                "Оба отношения - частные случаи ассоциации. Композиция - объект является неотделимой частью другого объекта, оба объекта не могут существовать по отдельности. Агрегация - объект содержит другой объект, оба объекта могут существовать независимо друг от друга."
+            ], 
+            "flags": 0, 
+            "guid": "Be}6FlqZ][", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0005_1.&nbsp;Полиморфизм - положение теории", 
+                "типов, согласно которому ссылки типа некого базового класса (интерфейса), могут ссылаться на объекты типов наследников этого класса (объекты классов, реализующий этот интерфейс)."
+            ], 
+            "flags": 0, 
+            "guid": "A81(3~QLvd", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "0006_1.&nbsp;Основная идея абстракции", 
+                "состоит в том, чтобы представить объект минимальным набором полей и методов, с необходимой точностью для решаемой задачи."
+            ], 
+            "flags": 0, 
+            "guid": "ziNpvd+}`l", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ul><li>&nbsp;Имеют один и тот же набор полей</li><li>&nbsp;Общее поведение - одинаково реагируют на одинаковые сообщения</li></ul></div>", 
+                "0008_1. Что общее между всеми экземплярами одного класса", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ul><li>{{c1::&nbsp;Имеют один и тот же набор свойств}}</li><li>...</li></ul>", 
+                "<ul><li>&nbsp;Имеют один и тот же набор свойств</li><li>{{c2::&nbsp;Общее поведение - одинаково реагируют на одинаковые сообщения}}</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::&nbsp;Имеют один и тот же набор свойств}}</li><li>{{c21::&nbsp;Общее поведение - одинаково реагируют на одинаковые сообщения}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "Dl>F8lKD>c", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>снижение дублирования и повышение переиспользования кода</li><li>упрощает изменение поведения</li><li>улучшает организацию кода</li><li>позволяет использовать полиморфизм</li></ol>", 
+                "0004_1. Плюсы наследования", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::снижение дублирования и повышение переиспользования кода}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>снижение дублирования и повышение переиспользования кода</li><li>{{c2::упрощает изменение поведения}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>упрощает изменение поведения</li><li>{{c3::улучшает организацию кода}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>улучшает организацию кода</li><li>{{c4::позволяет использовать полиморфизм}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::снижение дублирования и повышение переиспользования кода}}</li><li>{{c21::упрощает изменение поведения}}</li><li>{{c21::улучшает организацию кода}}</li><li>{{c21::позволяет использовать полиморфизм}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "HdF+B6:3Se", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }
+    ]
+}
