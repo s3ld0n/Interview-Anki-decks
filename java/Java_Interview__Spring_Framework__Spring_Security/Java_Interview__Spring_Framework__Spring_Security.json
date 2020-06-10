@@ -1,0 +1,732 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "958e2bb0-ab4f-11ea-ab55-005056c00008", 
+    "deck_config_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+    "deck_configurations": [
+        {
+            "DisableFW": 0, 
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "b56b2fc1-5b76-11e9-b461-005056c00008", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 1, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Freeze", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 0, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 120, 
+                "minSpace": 1, 
+                "perDay": 0
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "mid": 1539853229554, 
+    "name": "Java Interview::Spring Framework::Spring Security", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "css": ".card {\n font-familiy: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bfont": "Arial", 
+                    "bqfmt": "", 
+                    "bsize": 12, 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }, 
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "ef2c1764-a69a-11ea-993c-005056c00008", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: left;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-family: Dejavu Sans Mono;\n color: green;\n}\n.nightMode .cloze {\n color: lightblue;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Extra", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Cloze", 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br>\n{{Extra}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Cloze", 
+                    "ord": 0, 
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ], 
+            "type": 1, 
+            "vers": []
+        }, 
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "css": "/* general card style */\n\nhtml {\n  /* scrollbar always visible in order to prevent shift when revealing answer*/\n  overflow-y: scroll;\n}\n\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* general layout */\n\n.text {\n  /* center left-aligned text on card */\n  display: inline-block;\n  align: center;\n  text-align: left;\n  margin: auto;\n  max-width: 40em;\n}\n\n.hidden {\n  /* guarantees a consistent width across front and back */\n  font-weight: bold;\n  display: block;\n  line-height:0;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.title {\n  font-weight: bold;\n  font-size: 1.1em;\n  margin-bottom: 1em;\n  text-align: center;\n}\n\n/* clozes */\n\n.cloze {\n  /* regular cloze deletion */\n  font-weight: bold;\n  color: #0048FF;\n}\n\n/* original text reveal hint */\n\n.fullhint a {\n  color: #0048FF;\n}\n\n.card21 .fullhint{\n  /* no need to display hint on last card */\n  display:none;\n}\n\n/* additional fields */\n\n.extra{\n  margin-top: 0.5em;\n  margin: auto;\n  max-width: 40em;\n}\n\n.extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.extra-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Original", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Title", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Remarks", 
+                    "ord": 2, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Sources", 
+                    "ord": 3, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Settings", 
+                    "ord": 4, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": true
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text1", 
+                    "ord": 5, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text2", 
+                    "ord": 6, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text3", 
+                    "ord": 7, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text4", 
+                    "ord": 8, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text5", 
+                    "ord": 9, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text6", 
+                    "ord": 10, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text7", 
+                    "ord": 11, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text8", 
+                    "ord": 12, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text9", 
+                    "ord": 13, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text10", 
+                    "ord": 14, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text11", 
+                    "ord": 15, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text12", 
+                    "ord": 16, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text13", 
+                    "ord": 17, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text14", 
+                    "ord": 18, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text15", 
+                    "ord": 19, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text16", 
+                    "ord": 20, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text17", 
+                    "ord": 21, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text18", 
+                    "ord": 22, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text19", 
+                    "ord": 23, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text20", 
+                    "ord": 24, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Full", 
+                    "ord": 25, 
+                    "rtl": false, 
+                    "size": 12, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Cloze (overlapping)", 
+            "sortf": 1, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"back\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">{{Original}}</div>\n  </div>\n  <div class=\"extra\"><hr></div>\n  <div class=\"text\"><div class=\"fullhint\">{{hint:Original}}</div></div>\n  <div class=\"extra\">\n    {{#Remarks}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Remarks</div><div>{{Remarks}}</div>\n    </div>\n    {{/Remarks}}\n    {{#Sources}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Sources</div><div>{{Sources}}</div>\n    </div>\n    {{/Sources}}\n  </div>\n</div>\n<script>\n  // remove cloze syntax from revealed hint\n  var hint = document.querySelector('.fullhint>[id^=\"hint\"]')\n  var html = hint.innerHTML.replace(/\\[\\[oc(\\d+)::(.*?)(::(.*?))?\\]\\]/mg, \"$2\")\n  hint.innerHTML = html\n  // scroll to cloze\n  document.addEventListener('DOMContentLoaded', function() {\n    setTimeout(function(){\n      const cloze1 = document.getElementsByClassName(\"cloze\")[0];\n      const rect = cloze1.getBoundingClientRect();\n      const absTop = rect.top + window.pageYOffset;\n      const absBot = rect.bottom + window.pageYOffset;\n      if (absBot >= window.innerHeight) {\n        const height = rect.top - rect.bottom\n        const middle = absTop - (window.innerHeight/2) - (height/2);\n        window.scrollTo(0, middle);};\n    }, 1);\n  }, false);\n</script>", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "cloze-ol", 
+                    "ord": 0, 
+                    "qfmt": "<div class=\"front\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">\n       <div>{{Original}}</div>\n    </div>\n  </div>\n</div>"
+                }
+            ], 
+            "type": 1, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ul><li>аутентификация</li><li>авторизация</li></ul>", 
+                "001. Какие задачи безопасности возникают в enterprise приложении?", 
+                "", 
+                "", 
+                "1,0,0 | n,n,n,n", 
+                "<ul><li>...</li><li>...</li></ul>", 
+                "<ul><li>аутентификация</li><li>...</li></ul>", 
+                "<ul><li>...</li><li>авторизация</li></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul></ul>", 
+                "<ul><li>{{c21::аутентификация}}</li><li>{{c21::авторизация}}</li></ul>"
+            ], 
+            "flags": 0, 
+            "guid": "q)F7=ahI_a", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "002. Аутентификация", 
+                "<div>проверка что&nbsp;пользователь, тот за кого себя&nbsp;выдаёт</div>"
+            ], 
+            "flags": 0, 
+            "guid": "en)xcS|TwQ", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "003. Авторизация -", 
+                "<div>проверка/предоставление&nbsp;пользователю прав доступа к ресурсам</div>"
+            ], 
+            "flags": 0, 
+            "guid": "ykiNPCO:88", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>HTTP Basic authentication</li><li>HTTP Digest authentication</li><li>HTTP X.509</li><li>Form-based authentication</li><li>OpenID</li><li>LDAP</li><li>JDBC/In-Memory хранение&nbsp;пользователей</li><li>есть интерфейсы для своей&nbsp;реализации</li></ol></div>", 
+                "003. Meханизмы аутентификации", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::HTTP Basic authentication}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>HTTP Basic authentication</li><li>{{c2::HTTP Digest authentication}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>HTTP Digest authentication</li><li>{{c3::HTTP X.509}}</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>HTTP X.509</li><li>{{c4::Form-based authentication}}</li><li>...</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>Form-based authentication</li><li>{{c5::OpenID}}</li><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>OpenID</li><li>{{c6::LDAP}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>LDAP</li><li>{{c7::JDBC/In-Memory хранение&nbsp;пользователей}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>...</li><li>JDBC/In-Memory хранение&nbsp;пользователей</li><li>{{c8::есть интерфейсы для своей&nbsp;реализации}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::HTTP Basic authentication}}</li><li>{{c21::HTTP Digest authentication}}</li><li>{{c21::HTTP X.509}}</li><li>{{c21::Form-based authentication}}</li><li>{{c21::OpenID}}</li><li>{{c21::LDAP}}</li><li>{{c21::JDBC/In-Memory хранение&nbsp;пользователей}}</li><li>{{c21::есть интерфейсы для своей&nbsp;реализации}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Py`^8FJi9E", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>По URL-ам</li><li>По методам в сервисах</li><li>По объектам</li></ol></div>", 
+                "004.&nbsp;Механизмы&nbsp;авторизации", 
+                "", 
+                "", 
+                "1,0,0 | n,n,n,n", 
+                "<ol><li>...</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>По URL-ам</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>По методам в сервисах</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>По объектам</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::По URL-ам}}</li><li>{{c21::По методам в сервисах}}</li><li>{{c21::По объектам}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Gv~w-)C/ov", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "005. SecurityContext&nbsp;<br />{{c1::отражает текущий контекст безопасности}}<br />{{c2::является контейнером объекта типа Authentication}}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "v/};~_BYH5", 
+            "note_model_uuid": "ef2c1764-a69a-11ea-993c-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<ol><li>класс, который ассоциирует данный SecurityContext с текущим потоком</li><li>содержит набор статических методов, которые делегируют к той или иной реализации интерфейса SecurityContextHolderStrategy, таким образом определяя тип поведения (стратегию) для&nbsp;SecurityContext'a</li><li>с его помощью можно статически получить SecurityContext, а из него Authentication</li></ol>", 
+                "006.&nbsp;SecurityContextHolder", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::класс, который ассоциирует данный SecurityContext с текущим потоком}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::содержит набор статических методов, которые делегируют к той или иной реализации интерфейса SecurityContextHolderStrategy, таким образом определяя тип поведения (стратегию) для&nbsp;SecurityContext'a}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::с его помощью можно статически получить SecurityContext, а из него Authentication}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::класс, который ассоциирует данный SecurityContext с текущим потоком}}</li><li>{{c21::содержит набор статических методов, которые делегируют к той или иной реализации интерфейса SecurityContextHolderStrategy, таким образом определяя тип поведения (стратегию) для&nbsp;SecurityContext'a}}</li><li>{{c21::с его помощью можно статически получить SecurityContext, а из него Authentication}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "GxZ=@L!FCu", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><ol><li>MODE_THREADLOCAL -&nbsp;</li><li>MODE_INHERITABLETHREADLOCAL</li><li>MODE_GLOBAL</li></ol></div>", 
+                "007. Виды стратегий (MODE) SecurityContextHolder'a &nbsp;", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::MODE_THREADLOCAL -&nbsp;}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::MODE_INHERITABLETHREADLOCAL}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::MODE_GLOBAL}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::MODE_THREADLOCAL -&nbsp;}}</li><li>{{c21::MODE_INHERITABLETHREADLOCAL}}</li><li>{{c21::MODE_GLOBAL}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "Q2MA@HgKmO", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "008.&nbsp;MODE_THREADLOCAL&nbsp;", 
+                "стратегия SecurityContextHolder'a - на каждый поток создается отдельный SecurityContext"
+            ], 
+            "flags": 0, 
+            "guid": "oK}~%w2u7b", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "009.&nbsp;MODE_INHERITABLETHREADLOCAL", 
+                "стратегия SecurityContextHolder'a -&nbsp;&nbsp;потоки, порождаемые от текущего будут разделять один и тот же SecurityContext.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "rEv&7|Lt8J", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "010. MODE_GLOBAL", 
+                "стратегия SecurityContextHolder'a -&nbsp;&nbsp;один SecurityContext на все приложение"
+            ], 
+            "flags": 0, 
+            "guid": "FH;*SKXOi;", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "011. интерфейс Authentication", 
+                "представляет токен запроса аутентификации или аутентифицированного пользователя, после того как запрос был обработан&nbsp;AuthenticationManager'ом. Отражает информацию о текущем пользователе и его привелегиях"
+            ], 
+            "flags": 0, 
+            "guid": "GuTuj?)z{w", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><div><ol><li>Представляет &nbsp;учетную запись пользователя</li><li>В Authentication представлено объектом типа Object</li><li>Зачастую реализуется объектом типа UserDetails</li></ol></div></div>", 
+                "012. Principal", 
+                "", 
+                "", 
+                "1,1,0 | n,n,n,n", 
+                "<ol><li>{{c1::Представляет &nbsp;учетную запись пользователя}}</li><li>...</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>{{c2::В Authentication представлено объектом типа Object}}</li><li>...</li></ol>", 
+                "<ol><li>...</li><li>...</li><li>{{c3::Зачастую реализуется объектом типа UserDetails}}</li></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol></ol>", 
+                "<ol><li>{{c21::Представляет &nbsp;учетную запись пользователя}}</li><li>{{c21::В Authentication представлено объектом типа Object}}</li><li>{{c21::Зачастую реализуется объектом типа UserDetails}}</li></ol>"
+            ], 
+            "flags": 0, 
+            "guid": "ocoeG,~6*m", 
+            "note_model_uuid": "27a75936-a698-11ea-a217-005056c00008", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "013. Роль Credentials&nbsp;", 
+                "подтверждение аутентичности пользователя, например при помощи пароля, цифровой подписи и т.д."
+            ], 
+            "flags": 0, 
+            "guid": "z-w&5,>9QZ", 
+            "note_model_uuid": "27a73213-a698-11ea-b04e-005056c00008", 
+            "tags": []
+        }
+    ]
+}
